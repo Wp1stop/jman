@@ -1,0 +1,1231 @@
+
+
+
+
+    <div id="divErrorMsg" style="display:none">
+        <span style="color:red"></span>
+    </div>
+    
+
+<form action="/RM/AuditFindings/FormManager" method="post">        <table style="width: 100%; border-color: #dedbdb; border-style: solid; border-width: 1px;">            
+
+            <tbody><tr>
+                <td colspan="3" align="right">
+                    <a style="color: blue" href="http://rmdwcdcdvm005.nyumc.org/RM/QA_Helpers">QA Utils</a>
+                    &nbsp;                                        
+                    <a style="color: blue" href="http://rmdwcdcdvm005.nyumc.org/RM/Login">Log In</a>
+                    &nbsp;
+                    <a style="color: blue" href="http://rmdwcdcdvm005.nyumc.org/RM/AuditFindings/Coding?a=2013618&amp;n=635406930306589623">View Page</a>                                        
+                        &nbsp;&nbsp;
+                        Current date:&nbsp;<b><span style="color: blue">
+07/11/2014                        </span></b>
+                </td>
+            </tr>
+            
+            <tr>                
+                <td colspan="3" align="right">
+                    
+                    Currently logged in as:&nbsp;<b><span style="color: blue">mannj05</span></b>
+
+                    &nbsp;&nbsp;&nbsp;
+                    Role:&nbsp;<b><span style="color: blue">ADMIN</span></b>
+                    &nbsp;&nbsp;&nbsp;
+                    Account ID:&nbsp;<b><span style="color: blue">58199</span></b>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="33%">
+
+                    <table style="width: 100%; height: 120px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top" width="40%">Auditor</td>
+                            <td valign="top" width="60%">                                
+
+                                
+<select name="frm_List_AuditorID" id="frm_List_AuditorID" onchange="selectPricer();"><option value="76">--Test Auditor22</option><option value="4">Amelia Cañete</option><option value="13">Antoine Smith</option><option value="10">Bill Sweeney</option><option value="12">Carlos Garcia</option><option value="6">Christine Weston</option><option value="19">Claire Hughes</option><option value="9" selected="selected">Cristina Magallanes</option><option value="2">Doris Nadres</option><option value="7">Erin McKay</option><option value="15">Janis Ayler</option><option value="56">Kymara Kyng</option><option value="61">Nirmala Subramhanya</option><option value="14">Odessa Taylor</option><option value="8">Phyllis Marchitelli</option><option value="78">Pttest</option><option value="21">Rosemary Bauer</option><option value="54">Test Auditor</option><option value="60">Tracy Myint</option><option value="5">Wendy Lewis</option></select>                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="40%">Pricer
+                            </td>
+                            <td valign="top" width="60%">
+<select id="frm_List_PricerID" name="frm_List_PricerID"><option selected="selected" value="5">Angela Singh</option>
+<option value="78">Candace Narain</option>
+<option value="4">Devin Mohamed</option>
+<option value="1">Kathleen O'Sullivan</option>
+<option value="3">Kele' Odom</option>
+<option value="76">Test Pricer</option>
+<option value="77">Tracy Myint</option>
+<option value="6">Veronica Ceasar</option>
+</select>                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="40%">Project Source
+                            </td>
+                            <td valign="top" width="60%">                                
+
+ACC Chemo Infusions                                        <input name="frm_List_ProjectSourceID" value="2" type="hidden">        
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+                <td valign="top" width="33%">
+
+                    <table style="width: 100%; height: 120px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top" width="40%">Audit Start
+                            </td>
+                            <td valign="top" width="60%">
+12/17/2012 09:22 AM                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="40%">Audit Complete
+                            </td>
+                            <td valign="top" width="60%">
+12/17/2012 09:33 AM                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="40%">Posting Complete</td>
+                            <td valign="top" width="60%">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="40%">Pricing Complete
+                            </td>
+                            <td valign="top" width="60%">
+12/17/2012 11:05 AM                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="40%">Rebill Date
+                            </td>
+                            <td valign="top" width="60%">
+01/04/2013 12:00 AM                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+                <td valign="top" width="33%">
+
+                    <table style="width: 100%; height: 120px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top" width="35%">
+
+                                <table style="width: 100%;">
+                                    <tbody><tr>
+                                        <td valign="top" width="50%">
+                                            <input id="frm_printType-AUDITOR" name="frm_printType" value="AUDITOR" type="radio">&nbsp;Auditor<br>
+                                            <input id="frm_printType-PRICER" name="frm_printType" value="PRICER" type="radio">&nbsp;Pricer<br>
+                                            <input id="frm_printType-ALL" name="frm_printType" value="ALL" type="radio">&nbsp;All<br>
+                                        </td>
+                                        <td valign="top" width="50%">
+                                            <input name="frm_btnPrint" value="Print" type="submit">
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+
+                            </td>
+                            <td valign="top" width="65%">
+                                <table style="width: 100%;">
+                                    <tbody><tr>
+                                        <td valign="top" width="40%">
+                                            <input name="frm_Button" value="Save" style="width: 64px" type="submit"> <!-- onclick="javascript:submitForm();" -->
+                                        </td>
+                                        <td valign="top" width="60%">
+
+                                            
+
+                                                        <input id="btnAuditComplete" name="frm_Button" value="Audit Complete" style="width: 152px" type="submit">
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" width="40%">
+                                                    <input name="frm_btnDelete" value="Delete" style="width: 64px" onclick="javascript: ConfirmDelete();" type="button">
+                                        </td>
+                                        <td valign="top" width="60%">                                            
+                                                        <input id="btn_PostingComplete" name="frm_Button" value="Posting Complete" style="width: 152px" type="submit">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" width="40%">                                             
+                                                    <input name="frm_Button" value="Open" style="width: 64px" type="submit">
+                                        </td>                                         
+
+                                         <td valign="top" width="60%">                                             
+                                                        <input id="btn_PricingComplete" name="frm_Button" value="Pricing Complete" style="width: 152px" type="submit">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" width="40%">
+                                                    <input name="frm_Button" value="Unlock" style="width: 64px" type="submit">
+                                        </td>
+                                        <td valign="top" width="60%">                                                                                                                                                                               
+                                                        <input disabled="" id="btnRebill" name="frm_Button" value="Rebill" style="width: 152px" type="submit">
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody></table>
+        <br>
+        <table style="width: 100%; border-color: #dedbdb; border-style: solid; border-width: 1px">
+            <tbody><tr>
+                <td valign="top" width="25%">
+
+                    <table style="width: 100%; height: 90px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top">HAR</td>
+                            <td valign="top">
+2013618                                            <input id="frm_HAR" name="frm_HAR" value="2013618" type="hidden">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">MRN</td>
+                            <td valign="top">
+9044695                                            <input id="frm_MRN" name="frm_MRN" value="9044695" type="hidden">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">CSN</td>
+                            <td valign="top"> 
+492078685                                            <input style="width: 100px" id="frm_CSN" name="frm_CSN" value="492078685" type="hidden">
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+                <td valign="top" width="25%">
+                    <table style="width: 100%; height: 90px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top">Last Name</td>
+                            <td valign="top">                                
+MADDEN-GURY                                            <input id="frm_PatientLastName" name="frm_PatientLastName" value="MADDEN-GURY" type="hidden">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">First Name</td>
+                            <td valign="top">
+BRIANA                                            <input id="frm_PatientFirstName" name="frm_PatientFirstName" value="BRIANA" type="hidden">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Admit Date</td>
+                            <td valign="top"> 
+11/30/2012                                            <input onblur="javascript:verifyDates();" style="width: 100px" id="frm_AdmitDate" name="frm_AdmitDate" value="11/30/2012" type="hidden">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Discharge Date</td>
+                            <td valign="top">                                                                                                
+
+                                <input onblur="javascript:verifyDates();" style="width: 100px" id="frm_DischargeDate" name="frm_DischargeDate" value="12/01/2012" type="text">
+
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+                <td valign="top" width="25%">
+                    <table style="width: 100%; height: 90px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top">Visit Type</td>
+                            <td valign="top">
+<select id="frm_List_VisitTypeID" name="frm_List_VisitTypeID"><option value="53">----INVALID VISIT TYPE</option>
+<option selected="selected" value="1">Inpatient</option>
+<option value="46">Observation</option>
+<option value="2">Outpatient</option>
+<option value="47">Recurring</option>
+</select>                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Audit Type</td>
+                            <td valign="top">                                
+<select name="frm_List_AuditTypeID" id="frm_List_AuditTypeID" onchange="setOptions('frm_List_AuditTypeID');"><option value="1" selected="selected">Concurrent</option><option value="2">Retro</option></select>                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Sub Audit Type</td>
+                            <td valign="top">
+<select id="frm_List_SubAuditTypeID" name="frm_List_SubAuditTypeID">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<option value="0">- select -</option><option value="114">_ATEST02</option><option value="116">123</option><option value="1">Abdominal Drains</option><option value="2">Angiomax</option><option value="92">Appeals</option><option value="81">Blood Products</option><option value="3">Brachytherapy</option><option value="5">Business Office Request</option><option value="7">Carve-Outs Only</option><option value="9">Cath Contrast</option><option value="100">CDE Review</option><option value="13">Compliance Review</option><option value="15">Compliance-Clinic Reviews</option><option value="16">Computer Assisted Surgery</option><option value="17">Contrast</option><option value="19">Desensitization</option><option value="21">Device Dependent</option><option value="90">Epilepsy Clinic</option><option value="22">HJD Gauchers Infusions</option><option value="23">HJD Infusions</option><option value="24">Holter Monitoring Cases</option><option value="26">Hyperemesis</option><option value="28">ICare</option><option value="29">Implants</option><option value="31">Implants w/Mlt Surg</option><option value="33">IP Carve-Outs Mult/Surg</option><option value="35">IP Carve-Outs Only</option><option value="37">IP Implants Mult/Surg</option><option value="39">IP Implants Only</option><option value="41">IPVTAM-CBR Pain Mgt</option><option value="42">IR - Missing Charges</option><option value="97">IR Procedures - Tisch at HJD</option><option value="44">Liver Biopsies</option><option value="101">Medical Necessity Denials</option><option value="93">Medicare Outlier</option><option value="45">No Primary Contact</option><option value="47">Non-Catalog Items</option><option value="48">Non-Formulary</option><option value="50">OBOP PI</option><option value="52">Observation</option><option value="53">OCE cases</option><option value="55">Pharmacy</option><option value="57">Pharmacy-Ropivacaine drug</option><option value="79">Potential Missing Charges</option><option value="58">RAC Audit Prep</option><option value="59">Random Sample - Infusions</option><option value="61">Recovery Room</option><option value="117">rhrt</option><option value="63">Routine</option><option value="65">Skin &amp; Cancer</option><option value="66">Stress Agents</option><option value="67">Syngo Suspense</option><option value="69">TEE &amp; TTE cases</option><option value="70">Tisch Infusions</option><option value="72">Tisch IP MTX drug</option><option value="11">Tisch IR Cases</option><option value="94">Tisch IR Procedure</option><option value="73">Tisch-Infusions Gauchers</option><option value="75">UCA&amp;EP Missing Procedures</option><option value="118">UNASSIGNED</option></select>                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Protected Revenue</td>
+                            <td valign="top">
+                                    <input value="1" id="frm_ProtectedRevenue" name="frm_ProtectedRevenue" checked="checked" type="checkbox">
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+                <td valign="top" width="25%">
+                    <table style="width: 100%; height: 90px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top">Facility</td>
+                            <td valign="top">                                                               
+<select name="frm_List_FacilityID" id="frm_List_FacilityID" disabled="disabled"><option value="32">-- Test Facility11</option><option value="4">Cancer Center</option><option value="2" selected="selected">HJD</option><option value="44">new</option><option value="3">Rusk</option><option value="40">TEST FACILITY1</option><option value="41">TEST FACILITY2</option><option value="42">TEST FACILITY3</option><option value="1">Tisch</option></select><input name="frm_List_FacilityID" value="2" type="hidden">                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Service Area</td>
+                            <td valign="top">
+<select name="frm_List_ServiceAreaID" id="frm_List_ServiceAreaID"><option value="0">- select -</option><option value="232">HJD 10 FLOOR</option><option value="9">HJD 11 FLOOR</option><option value="10">HJD 11 NSCU</option><option value="11">HJD 11 SDU</option><option value="12">HJD 12 NORTH</option><option value="13">HJD 12 SOUTH</option><option value="238">HJD 23RD ST RAD XRAY</option><option value="14">HJD 5 RAD MRI</option><option value="15">HJD 6 RAD CT</option><option value="16">HJD 6 RAD IR</option><option value="17">HJD 6 RAD NM</option><option value="18">HJD 6 RAD US</option><option value="19">HJD 6 RAD XRAY</option><option value="20">HJD 8 NORTH</option><option value="21">HJD 8 SOUTH</option><option value="22">HJD 9 NORTH</option><option value="23">HJD 9 SOUTH</option><option value="24">HJD C1 ASC PACU</option><option value="25">HJD C1 ASC PERI-OP</option><option value="26">HJD C2 MAIN PERI-OP</option><option value="256">HJD CMC EMG</option><option value="27">HJD CMC INFUSION</option><option value="277">HJD CMC INJECTIONS</option><option value="271">HJD CMC OT</option><option value="252">HJD CMC PT</option><option value="216">HJD CMC RAD IR</option><option value="215">HJD CMC RAD MRI</option><option value="217">HJD CMC RAD US</option><option value="218">HJD CMC RAD XRAY</option><option value="239">HJD CMC RHEUMATOLOGY</option><option value="240">HJD CMC SPINE INJ</option><option value="233">HJD CMC SPORTS</option><option value="28">HJD C-SPINE AND NECK</option><option value="29">HJD DANCE THERAPY</option><option value="30">HJD DFAC - ENDOCRINE</option><option value="31">HJD DFAC - PODIATRY</option><option value="32">HJD FOOT CLINIC</option><option value="33">HJD GAUCHER - INFUSION</option><option value="34">HJD GENETICS</option><option value="35">HJD HAND - ADULT</option><option value="36">HJD HARKNESS DANCE CLN</option><option value="38">HJD IMMEDIATE CARE</option><option value="39">HJD INFECTIOUS DISEASE</option><option value="40">HJD IWD</option><option value="41">HJD LABORATORY</option><option value="42">HJD LUPUS CLINIC</option><option value="43">HJD MED CLEARANCE</option><option value="44">HJD MS - INFUSION</option><option value="45">HJD MS CENTER - CLINIC</option><option value="46">HJD MS CENTER - FGP</option><option value="47">HJD NEUROLOGY CLINIC</option><option value="48">HJD NEUROPHYSIOLOGY</option><option value="49">HJD OIOC PHYS THER</option><option value="50">HJD ONCOLOGY CLINIC</option><option value="51">HJD ORTHO A - ADULT</option><option value="52">HJD ORTHO B - ADULT</option><option value="53">HJD ORTHO C - ADULT</option><option value="54">HJD OS PERI-OP</option><option value="55">HJD OSTEOPOROSIS</option><option value="56">HJD OT - ADULT</option><option value="57">HJD OT - PEDS</option><option value="253">HJD OT ADLT OP</option><option value="254">HJD OT PEDS OP</option><option value="58">HJD PAIN MANAGEMENT</option><option value="59">HJD PATHOLOGY</option><option value="60">HJD PEDS ADOL SPORTS</option><option value="61">HJD PEDS CLUB FOOT</option><option value="62">HJD PEDS DEV-BEHAV MED</option><option value="63">HJD PEDS GROWTH-SPINE</option><option value="64">HJD PEDS HAND</option><option value="65">HJD PEDS ITB-BACLOFEN</option><option value="66">HJD PEDS NEUROLOGY</option><option value="67">HJD PEDS NEUROMUSC</option><option value="68">HJD PEDS ORTHOPEDS</option><option value="69">HJD PEDS PRE-OP CLINIC</option><option value="70">HJD PEDS PSYCHOLOGY</option><option value="71">HJD PEDS REHAB</option><option value="72">HJD PEDS RHEUMATOLOGY</option><option value="73">HJD PEDS SCOLIOSIS</option><option value="74">HJD PEDS SKEL DYSPL</option><option value="75">HJD PEDS SPASTICITY</option><option value="76">HJD PRE-TESTING</option><option value="77">HJD PRIMARY CARE CTR</option><option value="78">HJD PT - ADULT</option><option value="79">HJD PT - PEDS</option><option value="255">HJD PT PEDS OP</option><option value="80">HJD PULMONARY</option><option value="81">HJD RH - INFUSION</option><option value="82">HJD RHEUMATOLOGY</option><option value="83">HJD RUTHERFORD RADXRAY</option><option value="84">HJD SCOLIOSIS</option><option value="85">HJD SHOULDER CLINIC</option><option value="86">HJD SPINE - ADULT</option><option value="87">HJD SPORTS MED CLINIC</option><option value="88">HJD SPORTS THERAPY</option><option value="89">HJD STARC</option><option value="90">HJD TMJ AND OROFACIAL</option><option value="91">HJD WOUND CARE</option><option value="99">OS PERI-OP</option><option value="223">--Test Service Area222</option></select>                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody></table>
+        <br>
+        <table style="width: 100%; border-color: #dedbdb; border-style: solid; border-width: 1px">
+            <tbody><tr>
+                <td valign="top" width="50%">
+                    <table style="width: 100%; height: 50px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top">Insurance Plan Name</td>
+                            <td valign="top">
+<select id="frm_List_InsuranceID" name="frm_List_InsuranceID"><option selected="selected" value="4">AETNA</option>
+</select>                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Timely Filing Days Left</td>
+                            <td valign="top">
+<b><span style="color: #FF0000">Beyond Timely Filing</span></b>                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+                <td valign="top" width="50%">
+                    <table style="width: 100%; height: 50px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top">Original Gross Charges&nbsp;&nbsp;                            
+                                <input style="text-align:right" id="frm_OriginalGrossCharge" name="frm_OriginalGrossCharge" value="$849.12" type="text">                                    
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody></table>
+        <br>
+        <div>
+            <ul id="tabs">
+                <li style="background-color: rgb(222, 219, 219); border-top-width: 3px; border-top-color: rgb(222, 219, 219);" id="tab1"><a style="font-weight: normal;" id="Actions" href="/RM/AuditFindings/Actions?a=2013618">Actions</a></li>
+                <li style="background-color: rgb(222, 219, 219); border-top-width: 3px; border-top-color: rgb(222, 219, 219);" id="tab2"><a style="font-weight: normal;" id="Financials" href="/RM/AuditFindings/Financials?a=2013618">Financials</a></li>
+                <li style="background-color: rgb(222, 219, 219); border-top-width: 3px; border-top-color: rgb(222, 219, 219);" id="tab3"><a style="font-weight: normal;" id="Details" href="/RM/AuditFindings/Details?a=2013618">Details</a></li>
+                <li style="background-color: rgb(255, 255, 255); border-top-width: 3px; border-top-color: rgb(222, 219, 219);" id="tab4"><a style="font-weight: bold;" id="Coding" href="/RM/AuditFindings/Coding?a=2013618">Coding</a></li>
+                <li style="background-color: rgb(222, 219, 219); border-top-width: 3px; border-top-color: rgb(222, 219, 219);" id="tab5"><a style="font-weight: normal;" id="DenialsAppeals" href="/RM/AuditFindings/DenialsAppeals?a=2013618">Denials/Appeals</a></li>
+                <li style="background-color: rgb(222, 219, 219); border-top-width: 3px; border-top-color: rgb(222, 219, 219);" id="tab6"><a style="font-weight: normal;" id="PaymentAnalysis" href="/RM/AuditFindings/PaymentAnalysis?a=2013618">Payment Analysis</a></li>
+            </ul>
+        </div>         
+<input id="Delete_Confirmed" name="Delete_Confirmed" value="0" type="hidden">
+
+<script>
+
+    function toggleRelatedCtl(oSourceElement)
+    { 
+        
+        var oElement_RecCt = document.getElementById("hdn_RecordCount");
+        var nValue = 0;
+
+        if(oElement_RecCt != null)
+            nValue = new Number(oElement_RecCt.value);
+
+        if (oSourceElement.id == "frm_List_HIMCoderID")
+        { 
+            var oRelatedElement = document.getElementById("frm_SendMail");
+
+            if (oSourceElement.selectedIndex == 0)
+            { 
+                oRelatedElement.disabled = true;
+            }
+            else
+            { 
+                if(nValue > 0)
+                    oRelatedElement.disabled = false;
+                else
+                    oRelatedElement.disabled = true;
+            }
+        
+        }
+    
+    }
+
+    function toggleDegreeField(oSourceElement)
+    { 
+        var sSourceElementID = oSourceElement.id;
+
+        var sValue = oSourceElement.value;
+
+        var sDelimChar = "-";
+        var arrTemp = new Array();       
+        arrTemp = sSourceElementID.split(sDelimChar);
+        var sRecordID = arrTemp[1];
+
+        var sRelatedElementID1 = "frm_Row-" + sRecordID + "-Degree";
+        var oRelatedElement1 = document.getElementById(sRelatedElementID1);
+        
+
+        if (sValue == "DX" && oSourceElement.checked == true)
+        { 
+            oRelatedElement1.disabled = false; 
+            
+            var oAllTextBox = document.getElementsByTagName("INPUT");
+
+            if (oAllTextBox != null && oAllTextBox.length > 0)
+            { 
+                var oTextBox;
+
+                for (var i = 0; i < oAllTextBox.length; i++)
+                {
+                    oTextBox = oAllTextBox[i];
+
+                    if (oTextBox.id != null)
+                    { 
+                        var s = new String(oTextBox.id);
+
+                        if (s != sSourceElementID && s.indexOf("frm_Row") > -1 && s.indexOf("-Dx") > -1)
+                        { 
+                            oTextBox.checked = false;
+                        }
+
+                    }
+
+                }
+        
+            }
+
+        }
+        else
+        { 
+            oRelatedElement1.checked = false;
+            oRelatedElement1.disabled = true;
+        }
+    
+    }
+
+    function changePrimary(sRecordID)
+    { 
+        sRecordID = new String(sRecordID);
+        
+        var oAllTextBox = document.getElementsByTagName("INPUT");
+
+        if (oAllTextBox != null && oAllTextBox.length > 0)
+        { 
+            var oTextBox;
+
+            for (var i = 0; i < oAllTextBox.length; i++)
+            {
+                oTextBox = oAllTextBox[i];
+
+                if (oTextBox.id != null)
+                { 
+                    var s = new String(oTextBox.id);                    
+
+                    if (s.indexOf("frm_Row") > -1 && s.indexOf("Degree") > -1 && s.indexOf(sRecordID) < 0)
+                    { 
+                        oTextBox.checked = false;
+                    }
+
+                }
+
+            }
+        
+        }
+
+        var oAllSpan = document.getElementsByTagName("SPAN");
+
+        if (oAllSpan != null && oAllSpan.length > 0)
+        { 
+            var oSpan;
+
+            for (var i = 0; i < oAllSpan.length; i++)
+            {
+                oSpan = oAllSpan[i];
+
+                if (oSpan.innerText == "X")
+                { 
+                    if (oSpan.id != null)
+                    { 
+                        oSpan.innerText = "";
+                    }
+
+                }
+
+            }
+        
+        }
+
+    }
+
+    function changePrimary1()
+    {     
+        var oTable = document.getElementById("tblCoding");
+
+        if (oTable == null)
+        { 
+            alert("Table is null");
+            return;
+        }
+
+        var nRecords = oTable.rows.length;
+
+        
+
+        if (nRecords > 1)
+        {
+            var oRow;
+            var sRowID;
+            var bFound = false;
+
+            for (var i = 1; i < oTable.rows.length; i++)
+            {
+                oRow = oTable.rows[i];                
+
+                var oCell;
+                var sID;
+                var sValue;
+
+                for (var j = 0; j < oRow.cells.length; j++)
+                {
+                    oCell = oRow.cells[j];
+
+                    if (j == 0)
+                    {
+                        sRowID = oCell.id;
+                        
+                    }
+                    
+                    if (oCell.id != null)
+                    {
+                        sID = new String(oCell.id);
+
+                        if (sID.indexOf("td_IsDegree") > -1)
+                        { 
+                            sValue = new String(oCell.innerText);
+                            
+                            if (sValue == "X")
+                            { 
+                                
+                                bFound = true;
+                                break;
+                            }
+
+                        }
+
+                    }
+                    
+                }
+
+                if(bFound)
+                    break;
+
+            }
+
+        }
+
+
+
+    }
+
+
+    String.prototype.trim = function () {
+        return this.replace(/^\s+|\s+$/g, "");
+    }
+
+    function verifyValue(oElement, nRecordID)
+    {
+        var sCheckID = "frm_ValidationErrors";
+        var oElement_Check = document.getElementById(sCheckID);
+
+        var sFinalCode = new String(oElement.value);
+        sFinalCode = sFinalCode.trim();
+
+        var sID;
+
+        sID = new String("frm_Row-" + nRecordID + "-AcceptedResult");
+        var oElement_AcceptedBtn = document.getElementById(sID);
+        
+        if (oElement_AcceptedBtn.checked == true)
+        {
+            
+            sID = new String("frm_Row-" + nRecordID + "-RMDCode");
+            var oElement_RMDCode = document.getElementById(sID);
+
+            var sRMDCode = new String(oElement_RMDCode.value);
+            sRMDCode = sRMDCode.trim();
+
+            if (sFinalCode != sRMDCode)
+            {
+                oElement_Check.value = 1;
+                alert("Validation Error: The Final Coded Procedure value must match the RMD Coded Procedure value.");
+            }
+            else
+            {
+                oElement_Check.value = 0;
+            }
+
+        }
+        else
+        {
+            oElement_Check.value = 0;
+        }
+
+    }
+    
+
+    function verifyDate(oElement, nRecordID)
+    {
+
+        var sCheckID = "frm_ValidationErrors";
+        var oElement_Check = document.getElementById(sCheckID);
+
+        oElement_Check.value = 0;
+
+        var sElementID_MR = new String("frm_Row-" + nRecordID + "-MRServiceDate");
+        var sElementID_RMD = new String("frm_Row-" + nRecordID + "-RMDServiceDate");
+
+        
+        var oElement_MR = document.getElementById(sElementID_MR);
+        var oElement_RMD = document.getElementById(sElementID_RMD);
+
+        var sServiceDate_MR = new String(oElement_MR.value);
+        sServiceDate_MR = sServiceDate_MR.trim();
+
+        var sServiceDate_RMD = new String(oElement_RMD.value);
+        sServiceDate_RMD = sServiceDate_RMD.trim();
+
+        var sID;
+
+        sID = new String("frm_Service_AdmitDate_" + nRecordID);
+        var oElement_AdmitDate = document.getElementById(sID);
+
+        sID = new String("frm_Service_DischargeDate_" + nRecordID);
+        var oElement_DischargeDate = document.getElementById(sID);
+
+        var sAdmitDate = new String(oElement_AdmitDate.value);
+        var sDischargeDate = new String(oElement_DischargeDate.value);
+
+        var dtAdmitDate;
+        var dtDischargeDate;
+        var dtServiceDate;
+
+        dtAdmitDate = new Date(sAdmitDate);
+        dtDischargeDate = new Date(sDischargeDate);
+
+        var bError = false;
+        var sError = "";
+
+
+        var reGoodDate = /^(?:(\d{1}|\d{2})[\/.](\d{1}|\d{2})[\/.](\d{2}|\d{4}))$/;
+
+        var bServiceDate_IsValid;
+        var bIsFutureDate;
+
+        if (sServiceDate_MR != "") 
+        {   
+
+            bServiceDate_IsValid = reGoodDate.test(sServiceDate_MR);
+
+            if (!bServiceDate_IsValid) 
+            {
+                oElement_Check.value = 1;
+
+                bError = true;
+                sError = "MR Service Date is not valid.";
+                alert(sError);
+                return;
+            }
+
+
+            dtServiceDate = new Date(sServiceDate_MR);
+
+            if (dtServiceDate < dtAdmitDate) 
+            {
+                oElement_Check.value = 1;
+
+                bError = true;
+                sError = "MR Service Date must be equal to or after the Admit Date.";
+                alert(sError);
+                return;
+            }
+
+            if (dtServiceDate > dtDischargeDate) 
+            {
+                oElement_Check.value = 1;
+
+                bError = true;
+                sError = "MR Service Date must be equal to or before the Discharge Date.";
+                alert(sError);
+                return;
+            }
+
+            
+
+            bIsFutureDate = isFutureDate(sServiceDate_MR);
+
+            if(bIsFutureDate)
+            {
+                bError = true;
+                oElement_Check.value = 1;
+
+                sError = "MR Service Date must be before or equal to the Current Date.";
+                alert(sError);
+                return;
+            }
+
+             
+
+        }
+
+        if (sServiceDate_RMD != "") 
+        {   
+
+            bServiceDate_IsValid = reGoodDate.test(sServiceDate_RMD);
+
+            if (!bServiceDate_IsValid) 
+            {
+                oElement_Check.value = 1;
+
+                bError = true;
+                sError = "RMD Service Date is not valid.";
+                alert(sError);
+                return;
+            }
+
+
+            dtServiceDate = new Date(sServiceDate_RMD);
+
+            if (dtServiceDate < dtAdmitDate) 
+            {
+                oElement_Check.value = 1;
+
+                bError = true;
+                sError = "RMD Service Date must be equal to or after the Admit Date.";
+                alert(sError);
+                return;
+            }
+
+            if (dtServiceDate > dtDischargeDate) 
+            {
+                oElement_Check.value = 1;
+
+                bError = true;
+                sError = "RMD Service Date must be equal to or before the Discharge Date.";
+                alert(sError);
+                return;
+            }
+            
+
+            bIsFutureDate = isFutureDate(sServiceDate_RMD);
+
+            if(bIsFutureDate)
+            {
+                bError = true;
+                oElement_Check.value = 1;
+
+                sError = "RMD Service Date must be before or equal to the Current Date.";
+                alert(sError);
+                return;
+            }
+
+        }
+
+    }
+
+    function setText(oElement)
+    {
+        var sID = new String(oElement.id);
+
+        var sValue = new String(oElement.value).trim();
+
+        if (sValue == "")
+        {
+            if (sID.indexOf("MR", 0) > -1)
+            {
+                oElement.value = "Not Coded";
+            }
+            else
+            {
+                oElement.value = "Delete Code";
+            }
+
+        }
+
+
+    }
+
+    function populateItems(oSourceElement, nRecordID)
+    {
+        
+
+        var oElement;
+        
+        var sFromElementID;
+        var sToElementID;
+
+        var sFromValue;
+
+        var oFromElement;
+        var oToElement;
+
+        var sTargetElementID;
+
+        //----------------------------------------------------------
+        var currentDate = new Date();
+
+        var day = currentDate.getDate();
+        var month = currentDate.getMonth() + 1;
+        var year = currentDate.getFullYear();
+
+        var sDate = month + "/" + day + "/" + year;
+
+        
+
+        sTargetElementID = new String("frm_Row-" + nRecordID + "-ResultDate");
+
+        
+        
+        oElement = document.getElementById(sTargetElementID);
+
+        
+
+        oElement.value = sDate;
+        //----------------------------------------------------------
+
+        if(oSourceElement.value == "ACCEPTED")
+        {
+            sFromElementID = new String("frm_Row-" + nRecordID + "-RMDCode");        
+        }
+        else if(oSourceElement.value == "REJECTED")
+        {
+            sFromElementID = new String("frm_Row-" + nRecordID + "-MRCode");            
+        }
+
+        oFromElement = document.getElementById(sFromElementID);            
+        sFromValue = oFromElement.value;
+
+        sToElementID = new String("frm_Row-" + nRecordID + "-FINALCode");
+        oToElement = document.getElementById(sToElementID);
+        oToElement.value = sFromValue;
+
+    }
+
+    function checkQty(oElement)
+    {
+
+        if (oElement.value != null && oElement.value != "")
+        {
+            var nQty = new Number(oElement.value);
+
+            if (nQty < 0)
+            {
+                nQty *= -1;
+                oElement.value = nQty;
+            }
+            else if (nQty == 0)
+            {
+                nQty = 1;
+                oElement.value = nQty;
+            }
+
+        }
+
+
+    }
+
+    function sendMail()
+    {
+
+        var IDX_KEY;
+
+        var oElement_CoderIDs;
+        var oElement_CoderEmails;
+        var oElement_CoderCCEmails;
+
+        oElement_CoderIDs = document.getElementById("frm_CoderIDs");
+        oElement_CoderEmails = document.getElementById("frm_CoderEmails");
+        oElement_CoderCCEmails = document.getElementById("frm_CoderCCEmails");
+
+        if (oElement_CoderIDs == null || oElement_CoderEmails == null || oElement_CoderCCEmails == null)
+        {
+            alert("One or more elements is null");
+            return;
+        }
+
+        var sDelimChar = "|";
+
+        var sDelimCoderIDs = new String(oElement_CoderIDs.value);
+        var sDelimCoderEmails = new String(oElement_CoderEmails.value);
+        var sDelimCoderCCEmails = new String(oElement_CoderCCEmails.value);
+
+
+        var oElement_SelectedCoder;
+        oElement_SelectedCoder = document.getElementById("frm_List_HIMCoderID");
+
+        var sSelectedID = new String(oElement_SelectedCoder.options[oElement_SelectedCoder.selectedIndex].value);
+
+        var i = 0;
+
+        var arrIDs = new Array();
+        var arrEmails = new Array();
+        var arrCC = new Array();
+
+        arrIDs = sDelimCoderIDs.split(sDelimChar);
+        arrEmails = sDelimCoderEmails.split(sDelimChar);
+        arrCC = sDelimCoderCCEmails.split(sDelimChar);
+
+        var sID;
+
+        for (i = 0; i < arrIDs.length; i++)
+        {
+            sID = arrIDs[i];
+
+            if (sID == sSelectedID)
+            {
+                IDX_KEY = i;
+                break;
+            }
+
+        }
+
+        var sEmail = arrEmails[IDX_KEY];
+        var sCCEmail = arrCC[IDX_KEY];
+
+        var mailInfo;
+        mailInfo = "mailto:" + sEmail + "?cc=" + sCCEmail;
+
+        window.open(mailInfo);
+
+        //-----------------------------------------------------------
+        var oElement_Action;        
+
+        oElement_Action = document.getElementById("frm_Action");        
+
+        if (oElement_Action != null)
+        {
+            var sFormAction = "SAVE_CODER_ID";
+            oElement_Action.value = sFormAction;
+        }
+
+        document.forms[0].submit();
+        //-----------------------------------------------------------
+
+    }
+
+    function formAction(sFormAction, nRowID)
+    {
+        var oElement_Action;
+        var oElement_RowID;
+
+        oElement_Action = document.getElementById("frm_Action");
+        oElement_RowID = document.getElementById("frm_RowID");
+
+        if (oElement_Action != null && oElement_RowID != null)
+        {
+            if (sFormAction == "UPDATE_ROW" || sFormAction == "ADD_ROW")
+            {
+                var sCheckID = "frm_ValidationErrors";
+                var oElement_Check = document.getElementById(sCheckID);
+
+                if (oElement_Check.value == 1)
+                {
+                    alert("Please correct all validation errors, and re-submit.");
+                    return;
+                }
+
+            }
+
+            if (sFormAction == "DELETE_ROW")
+            {
+                var bDeleteConfirmed = confirm("Are you sure you want to delete this record?");
+
+                if (!bDeleteConfirmed)
+                {
+                    return;
+                }
+
+            }
+
+            oElement_Action.value = sFormAction;
+            oElement_RowID.value = nRowID;
+
+            document.forms[0].submit();
+        }
+        else
+        {
+            alert("Error: Elements are null");
+        }
+
+    }
+
+     
+</script>
+
+<div id="tabs-4" style="border-color: #dedbdb; border-style:solid; border-width: 1px;">
+    <table bgcolor="#FFFFFF" border="0" width="100%">
+        <tbody><tr>
+        <td bgcolor="#ffffff" valign="top" width="100%">
+            <table cellspacing="0" width="100%">                                     
+            <tbody><tr>
+                <td valign="top">
+                    <table border="0" bordercolor="#cccccc" cellpadding="1" cellspacing="0" width="100%">
+                    <tbody><tr>
+                        <td align="left" valign="baseline">
+                            <b>HIM Coder Name</b>
+                            &nbsp;                            
+<select name="frm_List_HIMCoderID" id="frm_List_HIMCoderID" onchange="toggleRelatedCtl(this);"><option value="0">- select -</option><option value="66">Andrea Hazeley</option><option value="1">Awilda Colon</option><option value="2">Christopher Tyndall</option><option value="63">Fredericka Pelzer</option><option value="72">HB Coding Background</option><option value="67">Jamel Wray</option><option value="3">Joel Smith</option><option value="73">Jose Diaz</option><option value="4">Marilyn Santana</option><option value="65">Marina Goldshmidt</option><option value="68">Mercedes Arenillas</option><option value="76">Nicholas Diguglielmo</option><option value="79">Onika Jones</option><option value="71">Pilar M. Remigio</option><option value="74">Robin Gorman</option><option value="64">Shalonda Robinson</option><option value="77">Sorbourni Mckenzie</option><option value="70">Suminah Mcfadden</option><option value="5">Susan Wen</option><option value="75">Sylvia Boryga</option><option value="69">Teodora Diomampo</option><option value="104">Test</option><option value="78">Yelena Debanich</option></select>                            &nbsp;
+                            <input disabled="disabled" id="frm_SendMail" name="frm_SendMail" value="Send" onclick="javascript: sendMail();" type="button">
+                        </td>                            
+                    </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+            </tbody></table>
+        </td>
+        </tr>
+
+        <tr>
+        <td bgcolor="#ffffff" valign="top" width="100%">
+            <table cellspacing="0" width="100%">                                     
+            <tbody><tr>
+                <td valign="top">
+                    <br><b>No coding records exist yet for this account.</b><br><br><table id="tblCoding" border="0" bordercolor="#cccccc" cellpadding="2" cellspacing="2" width="100%">
+                    <tbody><tr>
+                        <td align="center">
+                            <u><b>Action</b></u>
+                        </td>
+                        <td align="center">
+                            <u><b>Proc</b></u>
+                        </td>
+                        <td align="center">
+                            <u><b>Dx</b></u>
+                        </td>
+                        <td align="center">
+                            <u><b>1°</b></u>
+                        </td>
+                        <td align="center">
+                            <u><b>MR Code</b></u>
+                        </td>
+                        <td align="center">
+                            <u><b>Qty</b></u>
+                        </td>
+                        <td align="center">
+                           <u><b>DOS</b></u>
+                        </td>
+                        <td align="center">
+                            <u><b>RMD Code</b></u>
+                        </td>
+                        <td align="center">
+                            <u><b>Qty</b></u>
+                        </td>
+                        <td align="center">
+                           <u><b>DOS</b></u>
+                        </td>
+                        <td align="center">
+                            <u><b>Query Sent</b></u>
+                        </td>
+                        <td align="center">
+                            <u><b>Accepted</b></u>
+                        </td>
+                        <td align="center">
+                            <u><b>Rejected</b></u>
+                        </td>
+                        <td align="center">
+                            <u><b>Date</b></u>
+                        </td>
+                        <td align="center">
+                            <u><b>Final Coded Procedure</b></u>
+                        </td>                        
+                    </tr>
+                    
+    
+                        <tr>
+
+    <td align="center">
+        <input id="frm_Service_AdmitDate_0" value="11/30/2012 12:00:00 AM" type="hidden">
+        <input id="frm_Service_DischargeDate_0" value="12/1/2012 12:00:00 AM" type="hidden">
+    </td>
+
+    <td align="center">
+        <input onclick="javascript:toggleDegreeField(this);" id="frm_Row-0-Proc" name="frm_Row-0-ProcDx" value="PROC" type="radio"></td>
+    
+    <td align="center">
+        <input onclick="javascript:toggleDegreeField(this);" id="frm_Row-0-Dx" "="" name="frm_Row-0-ProcDx" value="DX" type="radio"></td>
+    
+    <td align="center">
+        <input disabled="disabled" id="frm_Row-0-Degree" name="frm_Row-0-Degree" onclick="javascript:changePrimary(0);" type="checkbox"></td>
+    
+    <td align="center">
+        <input style="width: 85px; text-align:right" id="frm_Row-0-MRCode" name="frm_Row-0-MRCode" value="" onblur="javascript:setText(this);" type="text"></td>
+    
+    <td align="center">
+        <input style="width: 20px; text-align:right" id="frm_Row-0-MRQty" name="frm_Row-0-MRQty" value="" onblur="javascript:checkQty(this);" type="text"></td>
+    
+    <td align="center">
+        <input style="width: 65px; text-align:right" id="frm_Row-0-MRServiceDate" name="frm_Row-0-MRServiceDate" value="" onblur="javascript:verifyDate(this, 0);" type="text"></td>
+    
+    <td align="center">
+        <input style="width: 85px; text-align:right" id="frm_Row-0-RMDCode" name="frm_Row-0-RMDCode" value="" onblur="javascript:setText(this);" type="text"></td>
+    
+    <td align="center">
+        <input style="width: 20px; text-align:right" id="frm_Row-0-RMDQty" name="frm_Row-0-RMDQty" value="" onblur="javascript:checkQty(this);" type="text"></td>
+    
+    <td align="center">
+        <input style="width: 65px; text-align:right" id="frm_Row-0-RMDServiceDate" name="frm_Row-0-RMDServiceDate" value="" onblur="javascript:verifyDate(this, 0);" type="text"></td>
+    
+    <td align="center"><input name="btnAddRow" value="Add" onclick="javascript: formAction(&quot;ADD_ROW&quot;, 0);" type="button"></td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>    
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+
+    </tr>
+   
+
+                    </tbody></table>
+                </td>
+            </tr>
+            </tbody></table>
+        </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" valign="top">
+                <table border="0" cellspacing="8" width="100%">
+                <tbody><tr>
+                    <td align="right" valign="top" width="45%">
+                        <b>Total Code Recommendations Accepted:</b>&nbsp;0
+                    </td>
+                    <td width="10%">
+                        &nbsp;
+                    </td>
+                    <td align="left" valign="top" width="45%">
+                        <b>Total Code Recommendations Rejected:</b>&nbsp;0
+                    </td>
+                </tr>                     
+                </tbody></table>
+            </td>                
+        </tr>
+
+        <tr>
+            <td colspan="2" valign="top">
+                <table border="0" cellspacing="6" width="100%">
+                <tbody><tr>
+                    <td align="left" valign="bottom" width="45%">
+                        <b>Account Comments</b>
+                    </td>
+                    <td width="10%">
+                        &nbsp;
+                    </td>
+                    <td align="left" valign="bottom" width="45%">
+                        <b>Instructions to Pricer</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top" width="45%">
+                        <textarea name="frm_AccountComments" rows="8" cols="105"></textarea>    
+                    </td>
+                    <td width="10%">
+                        &nbsp;
+                    </td>
+                    <td align="left" valign="top" width="45%">
+                        <textarea name="frm_InstPricer" rows="8" cols="105"></textarea>    
+                    </td>
+                </tr>   
+                </tbody></table>
+            </td>                
+        </tr>
+    </tbody></table>
+
+    <input id="frm_CoderIDs" name="frm_CoderIDs" value="66|1|2|63|72|67|3|73|4|65|68|76|79|71|74|64|77|70|5|75|69|104|78" type="hidden">        
+    <input id="frm_CoderEmails" name="frm_CoderEmails" value="andrea.hazeley@nyumc.org|awilda.colon-serrant@nyumc.org|christopher.tyndall@nyumc.org|fredericka.pelzer@nyumc.org|phyllis.marchitelli@nyumc.org|jamel.wray@nyumc.org|joel.smith@nyumc.org|jose.diaz2@nyumc.org|marilyn.santana@nyumc.org|marina.goldshmidt@nyumc.org|mercedes.arenillas@nyumc.org|nicholas.diguglielmo@nyumc.org|onika.jones@nyumc.org|pilar.remigio@nyumc.org|Robin.Gorman@nyumc.org|shalonda.robinson@nyumc.org|sorbourni.mckenzie@nyumc.org|suminah.mcfadden@nyumc.org|susan.wen@nyumc.org|sylvia.boryga@nyumc.org|teodora.diomampo@nyumc.org|test@e.com|yelena.debanich@nyumc.org" type="hidden">        
+    <input id="frm_CoderCCEmails" name="frm_CoderCCEmails" value="Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org|Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org|Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org|Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org|Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org|Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org|Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org|Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org|Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org|Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org|Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org|Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org|Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org|Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org|Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org|Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org|Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org|Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org|Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org|Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org|Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org|test@e.com|Berle.Stroom@nyumc.org; Irina.Zusman@nyumc.org; Shalonda.Robinson@nyumc.org; Prabhjot.Grewal@nyumc.org; Phyllis.Marchitelli@nyumc.org" type="hidden">        
+        
+
+    <input name="frm_Action" id="frm_Action" value="" type="hidden">    
+    <input name="frm_RowID" id="frm_RowID" value="" type="hidden">
+    <input id="frm_ActiveTab" name="frm_ActiveTab" value="Coding" type="hidden">
+
+    <input id="frm_ValidationErrors" value="" type="hidden">
+
+    <input id="hdn_RecordCount" value="0" type="hidden">
+
+    
+</div>        
+
+
+
+<script>
+document.onreadystatechange = onReadyStateChange;
+    
+function onReadyStateChange()
+{
+    if (document.readyState == "complete")
+    {
+        manageTabCtlState();
+
+        manageCtlState();
+
+        managePostAuditGrid();
+
+        highlightTab();        
+    }
+}
+
+</script>
+
+

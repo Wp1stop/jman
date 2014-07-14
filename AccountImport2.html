@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by chromatangle</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body class="accountimport">
+
+  <body>
+
+<div id="container">
+
+  <div id="topbanner"><h1>Revenue Management Information Database<h1></div> <!--end topbanner-->
+
+  <div id="uppernav">
+<ul>
+  <li><a href="http://rmdwcdcdvm005.nyumc.org/RM/QA_Helpers">QA Utils</a></li>
+    <li><a href="http://rmdwcdcdvm005.nyumc.org/RM/Login">Log In</a></li>
+     <li><a href="http://rmdwcdcdvm005.nyumc.org/RM/AuditFindings/Details?a=P111111&amp;n=635403412369998311">View Page</a></li>
+     <li><span>Current date:&nbsp;07/07/2014</span></p></li>
+    <ul>
+</div><!--end uppernav-->
+
+<div id="dashboard"></div> <!--end dashboard -->
+
+
+<div id="row2">
+
+<div class="tabledata20">
+<form action="/RM/Import_Acct?n=635406932291118056" method="post">    <table border="1" cellpadding="2" cellspacing="2" width="1200px">
+
+        <tbody><tr>
+            <td>
+                <b>Excel File Name</b>
+            </td>
+            <td>
+                <b># of Accounts in Total</b>
+            </td>
+            <td>
+                <b>Date/time of Import</b>
+            </td>
+            <td>
+                <b># of Accounts that were Duplicate</b>
+            </td>
+            <td>
+                <b># of Accounts imported to TEMP table</b>
+            </td>
+            <td>
+                <b># of Accounts added to FINAL (Auditor Worklist)</b>
+            </td>
+            <td>
+                <b># of Accounts with Errors (and Logged)</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>
+C:\APPS\RM\ACCT_IMPORT\ImportFile\ImportFile\_files\Acct-Import-TestFile1.xlsx                </b>
+            </td>
+            <td>
+                <b>
+6                </b>
+            </td>
+            <td>
+                <b>
+7/11/2014 09:47 AM                </b>
+            </td>
+
+            <td>
+                <b>
+0                </b>
+            </td>
+
+            <td>
+                <b>
+5                </b>
+            </td>
+            <td>
+                 <b>
+4                </b>
+            </td>
+            <td>
+                 <b>
+1                </b>
+            </td>
+        </tr>
+
+                               
+    </tbody></table>
+        <table border="1" width="1200px">
+
+            <tbody><tr>
+                <td width="100%">
+                    <table cellpadding="3" cellspacing="7">                    
+                        <tbody><tr>
+                            <td align="center" valign="top">
+                                <b>Delete Account</b>
+                                <br><br>                            
+                                <a href="javascript: formAction('DELETE_ROWS');">Delete Selected Only</a>
+                                <br><br>                            
+                                <a href="javascript: formAction('DELETE_ALL');">Delete All</a>
+                            </td>
+
+                        
+                        </tr>
+ 
+
+                        <tr>
+                            <td align="center" valign="top">
+                                &nbsp;
+                            </td>
+
+                            <td align="center" valign="top">
+                                <b>Account Number</b>
+                            </td>
+                        
+                        </tr>
+
+
+                    
+                    </tbody></table>
+                </td>
+            </tr>          
+        </tbody></table>
+    <input name="frm_Action" id="frm_Action" value="" type="hidden">    
+    <input name="frm_RowID" id="frm_RowID" value="" type="hidden">
+    <input id="frm_ValidationErrors" value="" type="hidden">    
+    <input name="FormElementNames" id="FormElementNames" value="" type="hidden">    
+    <input name="FormElementValues" id="FormElementValues" value="" type="hidden">    
+</form>
+<script>
+document.onreadystatechange = onReadyStateChange;
+    
+function onReadyStateChange()
+{
+    if (document.readyState == "complete")
+    {
+        manageCtlState();    
+    }
+}
+</script>
+        
+        
+        	</div>
+
+</div> <!--end row2 -->
+
+    
+
+      </body>
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+
+</body>
+
+</html>

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by chromatangle</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <body>
+
+<div id="container">
+
+  <div id="topbanner"><h1>Revenue Management Information Database<h1></div> <!--end topbanner-->
+
+  
+
+<div id="dashboard"></div> <!--end dashboard -->
+
+
+<div id="toptabs">
+  <nav>
+    <ul>
+        <li><a href="#" class="current">Auto Findings</a></li>
+        <li><a href="#">Worklist</a>
+        <!-- First Tier Drop Down -->
+        <ul>
+            <li><a href="#">Themes</a></li>
+            <li><a href="#">Plugins</a></li>
+            <li><a href="#">Tutorials</a></li>
+        </ul>        
+        </li>
+        <li><a href="#">Account Import</a>
+        <li><a href="#">CDN Import</a>  
+        <li><a href="#">Admin</a>
+        <!-- First Tier Drop Down -->
+        <ul>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Links</a></li>
+            <li><a href="#">Tutorials</a>
+            <!-- Second Tier Drop Down -->
+            <ul>
+                <li><a href="#">HTML/CSS</a></li>
+                <li><a href="#">jQuery</a></li>
+                <li><a href="#">Other</a></li>
+            </ul>
+            </li>
+        </ul>
+        </li>
+        <li><a href="#">Graphic Design</a></li>
+        <li><a href="#">Inspiration</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</nav><div id="uppernav">
+<ul>
+  <li><a href="http://rmdwcdcdvm005.nyumc.org/RM/QA_Helpers">QA Utils</a></li>
+    <li><a href="http://rmdwcdcdvm005.nyumc.org/RM/Login">Log In</a></li>
+     <li><a href="http://rmdwcdcdvm005.nyumc.org/RM/AuditFindings/Details?a=P111111&amp;n=635403412369998311">View Page</a></li>
+     <li><span>Current date:&nbsp;07/07/2014</span></p></li>
+    <ul>
+</div><!--end uppernav-->
+</div>
+
+
+
+<div id="row1">
+  <div id="identification">
+
+<div class="who"><div class="title">Auditor:</div>
+          <select name='frm_List_AuditorID' id='frm_List_AuditorID' onchange = selectPricer();><option selected='selected' value="0">- Select Auditor -</option><option value='4'>Amelia Cañete</option><option value='13'>Antoine Smith</option><option value='10'>Bill Sweeney</option><option value='12'>Carlos Garcia</option><option value='6'>Christine Weston</option><option value='19'>Claire Hughes</option><option value='9'>Cristina Magallanes</option><option value='7'>Erin McKay</option><option value='15'>Janis Ayler</option><option value='56'>Kymara Kyng</option><option value='61'>Nirmala Subramhanya</option><option value='14'>Odessa Taylor</option><option value='8'>Phyllis Marchitelli</option><option value='21'>Rosemary Bauer</option><option value='54'>Test Auditor</option><option value='60'>Tracy Myint</option><option value='5'>Wendy Lewis</option></select>
+  </div><!--end who -->    
+
+  <div class="who"><div class="title">Pricer:</div>
+<select id="frm_List_PricerID" name="frm_List_PricerID">  <option value="0" selected="selected">- Select Pricer -</option><option value="5">Angela Singh</option><option value="78">Candace Narain</option><option  value="4">Devin Mohamed</option><option value="1">Kathleen O&#39;Sullivan</option><option value="3">Kele&#39; Odom</option><option value="76">Test Pricer</option><option value="77">Tracy Myint</option><option value="6">Veronica Ceasar</option></select></div><!--end who -->  
+
+<div class="who"><div class="title">Project Source:</div>
+     <select id="frm_List_ProjectSourceID" name="frm_List_ProjectSourceID"><option value="0">- Select Project Source -</option><option value="3">Abdominal Drains</option><option value="4">ACC Chemo Infusions</option><option value="5">Additional IR Accounts</option><option value="6">Bivalirudin</option><option value="7">Cancer Center Infusions</option><option value="8">Columbus 4TH FL</option><option value="9">Columbus Infusions</option><option value="10">CPT 76999 Review</option><option value="11">Destruct Premalg Lesion</option><option value="12">Hassenfeld Infusions</option><option value="13">HJD CMC INFUSIONS</option><option value="14">Inpatient Radiology</option><option value="15">Interventional Radiology</option><option value="16">Levit Accounts</option><option value="17">Medical Necessity Denials</option><option value="18">Missing Potential Charges</option><option value="19">OBOP</option><option value="20">Pain Management</option><option value="21">Percent of Charges</option><option value="22">Pipelines</option><option value="23">Potential Missing Charges</option><option value="24">Somatic Nerve Injection</option><option value="25">Surgical Log</option><option value="26">Tisch Infusions</option><option value="27">URGENT CARE</option><option value="28">WQ 881</option><option value="29">WQ 882</option></select></div><!--end who-->
+     </div><!--end identification-->
+
+		<div id="dateinfo">
+<table id="datetable"><tr><th width="40%" >Audit Start</th>
+                        <td width="60%" >04/03/2013 04:38 PM</td></tr>
+                        <tr><th width="40%" >Audit Complete</th>
+                        <td width="60%" >04/04/2013 01:18 PM</td></tr>
+                        <tr><th width="40%" >Posting Complete</th><td width="60%" ></td></tr>
+                        <tr><th width="40%" >Pricing Complete</th><td width="60%" >04/04/2013 02:48 PM</td></tr>
+                        <tr><th width="40%" >Rebill Date</th><td width="60%" >04/04/2013 12:00 AM</td></tr></table><!--end datetable -->
+		</div><!--end dateinfo -->
+
+  <div id="roles">
+
+                                            <input type="radio" id="frm_printType-AUDITOR" name="frm_printType" value="AUDITOR" />&nbsp;<strong>Auditor</strong><br />
+                                            <input type="radio" id="frm_printType-PRICER" name="frm_printType" value="PRICER" />&nbsp;<strong>Pricer</strong><br />
+                                            <input type="radio" id="frm_printType-ALL" name="frm_printType" value="ALL" />&nbsp;<strong>All</strong><br />
+
+                                            <button type="submit" name="frm_btnPrint" value="Print" id="print"/>Print</strong></button> 
+                          </div> 
+
+   <div id="filecommands">
+                                            <button type="submit" id="save" name="frm_Button" value="Save" style="width: 64px" /> Save</button><!-- onclick="javascript:submitForm();" -->
+
+      <button disabled="disabled" type="submit" name="frm_Button" value="Unlock" style="width: 64px" />Unlock</button>
+
+</div>
+
+                          <div id="accountcommands">
+
+                                                <button type="submit" id="btnAuditComplete" name="frm_Button"  value="Audit Complete" style="width: 130px" />Audit Complete</button>
+
+                                                    <button type="submit" name="frm_Button" value="Posting Complete" style="width: 130px" />Posting Complete</button>
+
+                                                    <button type="submit" name="frm_Button" value="Pricing Complete" style="width: 130px" />Pricing Complete</button>
+
+                                                 <button type="submit" id="btnRebill" name="frm_Button" value="Rebill" style="width: 130px" />Rebill</button>
+</div>
+</div>
+
+</div> <!--end row1 -->
+
+<div id="row2">
+
+<div class="tabledata20">
+  <table style="width: 100%; border-color: #dedbdb; border-style: solid; border-width: 1px"><tbody><tr>
+  <th>HAR</th><td >Q333333                                    <input type="hidden" value="Q333333" name="frm_HAR" id="frm_HAR">
+</td></tr>
+<tr>
+<th>MRN</th>
+                            <td >
+7843455                                            <input type="hidden" value="7843455" name="frm_MRN" id="frm_MRN">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>CSN</th>
+                            <td > 
+445545878     
+
+ <input type="hidden" value="445545878" name="frm_CSN" id="frm_CSN" style="width: 100px">
+                            </td>
+                        </tr>
+                    </tbody></table>
+                          </div>
+
+         <div class="tabledata20">                 
+                </td>
+                <td width="20%" >
+                    <table style="width: 100%;border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <th >Last Name</th>
+                            <td >                                
+ghg                                            <input type="hidden" value="ghg" name="frm_PatientLastName" id="frm_PatientLastName">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>First Name</th>
+                            <td >
+hhf                                            <input type="hidden" value="hhf" name="frm_PatientFirstName" id="frm_PatientFirstName">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Admit Date</th>
+                            <td > 
+11/1/2013                                            <input type="hidden" value="11/1/2013" name="frm_AdmitDate" id="frm_AdmitDate" style="width: 100px" onblur="javascript:verifyDates();">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Discharge Date</th>
+                            <td >                                                                                                
+
+                                <input type="text" value="11/1/2013" name="frm_DischargeDate" id="frm_DischargeDate" style="width: 100px" onblur="javascript:verifyDates();">
+
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+
+                          </div>
+                          <div class="tabledata30">  
+
+                <td width="25%" >
+                    <table style="width: 100%; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <th>Visit Type</th>
+                            <td >
+<select name="frm_List_VisitTypeID" id="frm_List_VisitTypeID"><option value="53">----INVALID VISIT TYPE</option>
+<option value="54">---Test1</option>
+<option value="1" selected="selected">Inpatient</option>
+<option value="46">Observation</option>
+<option value="2">Outpatient</option>
+<option value="47">Recurring</option>
+</select>                            </td>
+                        </tr>
+
+                        <tr>
+                            <th >Audit Type</th>
+                            <td >                                
+<select onchange="setOptions('frm_List_AuditTypeID');" id="frm_List_AuditTypeID" name="frm_List_AuditTypeID"><option value="1">Concurrent</option><option selected="selected" value="2">Retro</option></select>                            </td>
+                        </tr>
+                        <tr>
+                            <th>Sub Audit Type</th>
+                            <td >
+<select name="frm_List_SubAuditTypeID" id="frm_List_SubAuditTypeID">
+<option value="0">- select -</option><option value="112">_ATEST01</option><option value="116">123</option><option value="1">Abdominal Drains</option><option value="2">Angiomax</option><option value="92">Appeals</option><option value="81">Blood Products</option><option value="3">Brachytherapy</option><option value="5">Business Office Request</option><option value="7">Carve-Outs Only</option><option value="9">Cath Contrast</option><option value="100">CDE Review</option><option value="13">Compliance Review</option><option value="15">Compliance-Clinic Reviews</option><option value="16">Computer Assisted Surgery</option><option value="17">Contrast</option><option value="19">Desensitization</option><option value="21">Device Dependent</option><option value="90">Epilepsy Clinic</option><option value="22">HJD Gauchers Infusions</option><option value="23">HJD Infusions</option><option value="24">Holter Monitoring Cases</option><option value="26">Hyperemesis</option><option value="28">ICare</option><option value="29">Implants</option><option value="31">Implants w/Mlt Surg</option><option value="33">IP Carve-Outs Mult/Surg</option><option value="35">IP Carve-Outs Only</option><option value="37">IP Implants Mult/Surg</option><option value="39">IP Implants Only</option><option value="41">IPVTAM-CBR Pain Mgt</option><option value="42">IR - Missing Charges</option><option value="97">IR Procedures - Tisch at HJD</option><option value="44">Liver Biopsies</option><option value="101">Medical Necessity Denials</option><option value="93">Medicare Outlier</option><option value="45">No Primary Contact</option><option value="47">Non-Catalog Items</option><option value="48">Non-Formulary</option><option value="50">OBOP PI</option><option value="52">Observation</option><option value="53">OCE cases</option><option value="55">Pharmacy</option><option value="57">Pharmacy-Ropivacaine drug</option><option value="79">Potential Missing Charges</option><option value="58">RAC Audit Prep</option><option value="59">Random Sample - Infusions</option><option value="61">Recovery Room</option><option value="117">rhrt</option><option value="63">Routine</option><option value="65">Skin &amp; Cancer</option><option value="66">Stress Agents</option><option value="67">Syngo Suspense</option><option value="69">TEE &amp; TTE cases</option><option value="70">Tisch Infusions</option><option value="72">Tisch IP MTX drug</option><option value="11">Tisch IR Cases</option><option value="94">Tisch IR Procedure</option><option value="73">Tisch-Infusions Gauchers</option><option value="75">UCA&amp;EP Missing Procedures</option></select>                            </td>
+                        </tr>
+                        <tr>
+                            <th>Protected Revenue</th>
+                            <td >
+                                    <input type="checkbox" name="frm_ProtectedRevenue" id="frm_ProtectedRevenue" value="1">
+                            </td>
+                        </tr>
+                    </tbody></table>
+
+                      </div>
+
+                  <div class="tabledata20">
+                </td>
+                <td width="25%" >
+                    <table style="width: 100%; height: 90px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <th>Facility</th>
+                            <td >                                                               
+<select disabled="disabled" id="frm_List_FacilityID" name="frm_List_FacilityID"><option value="32">-- Test Facility11</option><option value="4">Cancer Center</option><option value="2">HJD</option><option selected="selected" value="3">Rusk</option><option value="40">TEST FACILITY1</option><option value="41">TEST FACILITY2</option><option value="42">TEST FACILITY3</option><option value="1">Tisch</option></select><input type="hidden" value="3" name="frm_List_FacilityID">                            </td>
+                        </tr>
+                        <tr>
+                            <th>Service Area</th>
+                            <td >
+<select id="frm_List_ServiceAreaID" name="frm_List_ServiceAreaID"><option value="0">- select -</option><option value="315">2 TEST</option><option value="101">Rehab Medicine</option><option value="102">RUSK 1 NORTH</option><option value="103">RUSK 1 SOUTH</option><option value="104">RUSK 4 WEST</option><option value="105">RUSK 5 SOUTH</option><option value="106">RUSK BRAIN INJURY</option><option value="107">RUSK CARD-PULM REHAB</option><option value="108">RUSK CHEST THERAPY</option><option value="109">RUSK HCC 9</option><option value="110">RUSK MUSC DYSTROPHY</option><option value="111">RUSK O/P</option><option value="112">RUSK OCC THER - OP</option><option value="113">RUSK OCC THER - PED</option><option value="114">RUSK OT HAND THERAPY</option><option value="115">RUSK PFT</option><option value="116">RUSK PHYS THER - OP</option><option value="117">RUSK PHYS THER - PED</option><option value="118">RUSK PSYCH THER - OP</option><option value="119">RUSK PSYCH THER - PED</option><option value="120">RUSK SOCIAL WORK - OP</option><option value="121">RUSK SPASTICITY</option><option value="237">RUSK SPEECH THER - IP</option><option value="122">RUSK SPEECH THER - PED</option><option value="123">RUSK SPEECH THER -ADLT</option><option value="124">RUSK SWALLOWING CENTER</option><option value="125">RUSK VESTIBULAR</option><option value="126">RUSK VOCATIONAL</option></select>                            </td>
+                        </tr>
+                          </tbody></table> </div>  
+                </td>
+            </tr>
+        </tbody></table>	</div>
+
+</div> <!--end row2 -->
+
+    <div id="row3">
+            <div class="row3side">
+                <table style="width: 100%; height: 50px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <th>Insurance Plan Name</th>
+                            <td>
+<select name="frm_List_InsuranceID" id="frm_List_InsuranceID"><option value="1901">-------------------123456</option>
+<option value="1902">----------------ABCD123</option>
+<option value="1899">--1234Test</option>
+<option value="1">A.A.R.P./UNITED HEALTHCARE</option>
+<option value="4" selected="selected">AETNA</option>
+<option value="6">AETNA HMO</option>
+<option value="11">AETNA HMO/POS</option>
+<option value="18">AETNA INDEMNITY</option>
+<option value="23">AETNA MEDICAID</option>
+<option value="7">AETNA MEDICAID HMO</option>
+<option value="27">AETNA MEDICARE</option>
+<option value="8">AETNA MEDICARE HMO</option>
+<option value="9">AETNA MEDICARE MANAGED CARE</option>
+<option value="1871">AETNA OPEN ACCESS ELECT CHOICE (EPO)</option>
+<option value="1563">AETNA OPEN ACCESS HMO</option>
+<option value="1544">AETNA POS</option>
+<option value="31">AETNA PPO</option>
+<option value="10">AETNA STUDENT HEALTH</option>
+<option value="37">AFFINITY</option>
+<option value="38">AFFINITY HP CHILD HEALTH PLUS</option>
+<option value="42">AFFINITY HP FAMILY HEALTH PLUS</option>
+<option value="46">AFFINITY HP MEDICAID HMO</option>
+<option value="1564">AFFINITY HP MEDICAID MANAGED CARE</option>
+<option value="52">AFFINITY HP SUNRISE</option>
+<option value="56">AFFINITY HP UNICARE</option>
+<option value="1565">AFFINITY MEDICARE MANAGED CARE</option>
+<option value="60">AIG CLAIMS SERVICES NF</option>
+<option value="61">AIG WORKERS COMP</option>
+<option value="62">AIM CIGNA</option>
+<option value="65">ALLSTATE INSURANCE CO</option>
+<option value="66">ALLSTATE INSURANCE COMPANY</option>
+<option value="64">ALLSTATE MANAGEMENT</option>
+<option value="69">AMERICHOICE</option>
+<option value="71">AMERICHOICE CHILD HEALTH PLUS</option>
+<option value="76">AMERICHOICE FAMILY HEALTH PLUS</option>
+<option value="80">AMERICHOICE MEDICAID HMO</option>
+<option value="85">AMERICHOICE MEDICARE HMO</option>
+<option value="89">AMERICHOICE PERSONAL CARE PLUS</option>
+<option value="1566">AMERIGROUP COMMUNITY CARE</option>
+<option value="90">AMERIHEALTH</option>
+<option value="1590">AMERIHEALTH ADMINISTRATOR</option>
+<option value="91">AMERIHEALTH OF NJ PA DE</option>
+<option value="92">ANTHEM</option>
+<option value="93">ANTHEMHEALTH PPO</option>
+<option value="94">ATLANTICARE ADMINISTRATOR</option>
+<option value="95">AVATAR COMP</option>
+<option value="96">AXA ASSISTANCE  CLAIMS DEPT</option>
+<option value="99">AXA HEALTHCARE</option>
+<option value="245">B'NAI BRITH</option>
+<option value="110">BCBS ANTHEM BLUE CARE BASIC</option>
+<option value="114">BCBS ANTHEM BLUE CARE DIRECT</option>
+<option value="118">BCBS ANTHEM BLUE CARE POS</option>
+<option value="122">BCBS ANTHEM HP BLUE CARE</option>
+<option value="125">BCBS CHILD HEALTH PLUS</option>
+<option value="1560">BCBS EMPLOYEE BENEFIT PLAN (HB ONLY)</option>
+<option value="130">BCBS EPO</option>
+<option value="135">BCBS FEDERAL PROGRAM</option>
+<option value="136">BCBS GLOBAL</option>
+<option value="137">BCBS HEALTHY NEW YORK</option>
+<option value="142">BCBS HMO</option>
+<option value="146">BCBS INDEMNITY</option>
+<option value="151">BCBS MEDIBLUE MEDICARE HMO</option>
+<option value="1874">BCBS MEDIBLUE MEDICARE PPO</option>
+<option value="1546">BCBS NEW YORK CITY EMPLOYEE BENEFIT</option>
+<option value="154">BCBS NEW YORK STATE EMPLOYEE BENEFIT</option>
+<option value="1868">BCBS NY STATE EMPLOYEE BENEFIT (HB ONLY)</option>
+<option value="171">BCBS NY STATE EMPLOYEE BENEFIT (HOSPITAL ONLY)</option>
+<option value="1568">BCBS NYC EMPLOYEE BENEFIT (HOSPITAL ONLY)</option>
+<option value="1559">BCBS NYC EMPLOYEE BENEFIT PLAN (HOSPITAL ONLY)</option>
+<option value="178">BCBS OUT OF STATE</option>
+<option value="180">BCBS OUT OF STATE EPO</option>
+<option value="204">BCBS OUT OF STATE EPO XTU</option>
+<option value="186">BCBS OUT OF STATE HMO</option>
+<option value="193">BCBS OUT OF STATE INDEMNITY</option>
+<option value="200">BCBS OUT OF STATE MEDICARE</option>
+<option value="201">BCBS OUT OF STATE POS</option>
+<option value="207">BCBS OUT OF STATE PPO</option>
+<option value="214">BCBS OUT/STATE  MEDICARE</option>
+<option value="1569">BCBS OUT/STATE  MEDICARE PAR</option>
+<option value="1870">BCBS OUT/STATE EPO PAR</option>
+<option value="1570">BCBS OUT/STATE HMO PAR</option>
+<option value="1866">BCBS OUT/STATE INDEMNITY PAR</option>
+<option value="1571">BCBS OUT/STATE POS PAR</option>
+<option value="1572">BCBS OUT/STATE PPO PAR</option>
+<option value="216">BCBS POS</option>
+<option value="220">BCBS PPO</option>
+<option value="225">BCBS SENIOR CARE SUPPLEMENTAL</option>
+<option value="226">BCBS UNICARE</option>
+<option value="231">BEECH STREET NO FAULT</option>
+<option value="233">BEECH STREET PPO</option>
+<option value="238">BELLEVUE HOSPITAL B28</option>
+<option value="239">BELLEVUE HOSPITAL B30</option>
+<option value="240">BELLEVUE I/P REFERRAL</option>
+<option value="241">BENEFIT TRUST LIFE INSURANCE CO</option>
+<option value="242">BENEFITS CONCEPTS INC.</option>
+<option value="246">BORO MEDICAL CENTER</option>
+<option value="250">CARE PLUS</option>
+<option value="251">CARECORE AETNA</option>
+<option value="252">CARECORE HEALTHNET</option>
+<option value="253">CARECORE HIP</option>
+<option value="254">CARECORE HIP MEDICAID</option>
+<option value="255">CARECORE OXFORD</option>
+<option value="256">CARECORE OXFORD MEDICARE ADVANT</option>
+<option value="257">CENTERCARE CHILD HEALTH PLUS</option>
+<option value="261">CENTERCARE FAMILY HEALTH PLUS</option>
+<option value="265">CENTERCARE MEDICAID HMO</option>
+<option value="269">CENTERCARE MEDICAID MANAGED CARE</option>
+<option value="270">CHAMPUS</option>
+<option value="272">CHAMPUS CORPORATION</option>
+<option value="273">CHAMPUS UNYSIS CORP</option>
+<option value="274">CHUBB GROUP INS</option>
+<option value="275">CHUBB GROUP WORKERS COMP NY</option>
+<option value="276">CHUBB LIFE AMERICA</option>
+<option value="278">CHUBBHEALTH HMO</option>
+<option value="284">CHUBBHEALTH INDEMNITY</option>
+<option value="286">CHUBBHEALTH POS</option>
+<option value="289">CIGNA</option>
+<option value="1880">CIGNA GREAT WEST PPO</option>
+<option value="1573">CIGNA HMO</option>
+<option value="297">CIGNA HMO/POS</option>
+<option value="291">CIGNA INDEMNITY</option>
+<option value="295">CIGNA MANAGED CARE/POS</option>
+<option value="304">CIGNA MEDICARE</option>
+<option value="296">CIGNA MENTAL HEALTH CLAIMS</option>
+<option value="1574">CIGNA OPEN ACCESS</option>
+<option value="1884">CIGNA OPEN ACCESS PPO</option>
+<option value="309">CIGNA POS</option>
+<option value="310">CIGNA PPO</option>
+<option value="316">CIGNA-PREMIER PLUS</option>
+<option value="320">CITY OF NEW YORK LAW DEPT</option>
+<option value="321">CNA - MAILHANDLERS</option>
+<option value="322">CNA NO FAULT</option>
+<option value="323">CNA WORKERS COMP</option>
+<option value="324">COMBINED LIFE INS OF NY</option>
+<option value="325">COMMERCIAL INSURANCE</option>
+<option value="326">CON EDISON OF NY</option>
+<option value="327">CONN MUTUAL LIFE INSURANCE CO</option>
+<option value="328">CONSOLIDATED HEALTH PLAN</option>
+<option value="330">CONTINENTAL AMERICAN LIFE</option>
+<option value="331">CORVEL W/C</option>
+<option value="333">COUNTRY WIDE INSURANCE CO</option>
+<option value="335">CRAWFORD AND COMPANY</option>
+<option value="336">CRIME VICTIMS BOARD</option>
+<option value="341">ELECTRICAL WORKERS FUND</option>
+<option value="346">EQUITABLE LIFE ASSURANCE</option>
+<option value="348">FEDERAL RESERVE BANK</option>
+<option value="349">FIDELIS CARE</option>
+<option value="358">FIDELIS CARE CHILD HEALTH PLUS</option>
+<option value="362">FIDELIS CARE FAMILY HEALTH PLU</option>
+<option value="368">FIDELIS CARE MEDICAID HMO</option>
+<option value="352">FIDELIS CARE MEDICAID MANAGED CARE</option>
+<option value="373">FIREMAN FUND</option>
+<option value="374">FIRST HEALTH</option>
+<option value="375">FIRST HEALTH MEDICAID HMO</option>
+<option value="379">FIRST HEALTH PPO</option>
+<option value="384">FIRST HEALTH STRATEGIES</option>
+<option value="385">FIRST UNUM LIFE INSURANCE CO</option>
+<option value="387">FOUNDATION HLTH (CHAMPUS) ACUT</option>
+<option value="388">FOUNDATION HLTH (CHAMPUS) XRU</option>
+<option value="389">FOUNDATION HLTH (CHAMPUS) XTU</option>
+<option value="391">G.A.B. BUSINESS SERVICES</option>
+<option value="392">GAB ROBBIN NORTH AMERICA</option>
+<option value="393">GALAXY HEALTH PLANS</option>
+<option value="394">GEHA</option>
+<option value="395">GEICO INSURANCE CO</option>
+<option value="397">GENERIC COMMERCIAL</option>
+<option value="399">GENERIC HMO</option>
+<option value="400">GENERIC MEDICAID MANAGED CARE</option>
+<option value="401">GENERIC MEDICARE MANAGED CARE</option>
+<option value="408">GHI CBP</option>
+<option value="413">GHI EMBLEM HEALTH EPO</option>
+<option value="415">GHI EMBLEM HEALTH PPO</option>
+<option value="418">GHI HMO</option>
+<option value="419">GHI HMO MEDICARE</option>
+<option value="420">GHI MEDICARE (QUEENS)</option>
+<option value="421">GHI MEDICARE PPO</option>
+<option value="422">GHI MEDICARE SUPPLEMENT</option>
+<option value="423">GHI MEDICARE+ CHOICE PPO</option>
+<option value="428">GHI NETWORK ACCESS</option>
+<option value="431">GHI POS</option>
+<option value="427">GHI PPO</option>
+<option value="452">GUARDIAN LIFE INS OF NY</option>
+<option value="453">GUARDIAN LIFE INSURANCE CO OF AMERICA</option>
+<option value="455">HARTFORD ACCIDENT &amp; INDEM</option>
+<option value="456">HARTFORD INS NO FAULT</option>
+<option value="457">HARTFORD INSURANCE WC</option>
+<option value="459">HARTFORD LIFE INS CO</option>
+<option value="460">HARTFORD LIFE INSURANCE CO</option>
+<option value="462">HEALTH CARE PARTNERS</option>
+<option value="1575">HEALTH PLUS AMERIGROUP</option>
+<option value="1875">HEALTH PLUS AMERIGROUP FAMILY HEALTH PLUS</option>
+<option value="1576">HEALTH PLUS AMERIGROUP NY CHILD HEALTH PLUS NY</option>
+<option value="1577">HEALTH PLUS AMERIGROUP NY FAMILY HEALTH PLUS NY</option>
+<option value="1869">HEALTH PLUS AMERIGROUP NY MEDICAID</option>
+<option value="1578">HEALTH PLUS AMERIGROUP NY MEDICAID MANAGED CARE NY</option>
+<option value="466">HEALTH PLUS MEDICAID MANAGED CARE</option>
+<option value="467">HEALTHCARE PARTNERS IPA</option>
+<option value="470">HEALTHCARE PARTNERS IPA MCD</option>
+<option value="473">HEALTHCARE PARTNERS IPA MCR</option>
+<option value="481">HEALTHFIRST CHILD HEALTH PLUS</option>
+<option value="486">HEALTHFIRST FAMILY HEALTH PLUS</option>
+<option value="490">HEALTHFIRST HEALTH NEW YORK</option>
+<option value="494">HEALTHFIRST MEDICAID</option>
+<option value="495">HEALTHFIRST MEDICAID HMO</option>
+<option value="500">HEALTHFIRST MEDICARE + CHOICE</option>
+<option value="505">HEALTHFIRST PPO</option>
+<option value="509">HEALTHNET BLUE CROSS HMO</option>
+<option value="512">HEALTHNET GLOBAL HMO</option>
+<option value="513">HEALTHNET GLOBAL MCR</option>
+<option value="514">HEALTHNET GLOBAL POS</option>
+<option value="515">HEALTHNET HMO</option>
+<option value="517">HEALTHNET MANAGED CARE</option>
+<option value="518">HEALTHNET MEDICARE</option>
+<option value="519">HEALTHNET OF CALIFORNIA</option>
+<option value="520">HEALTHNET POS</option>
+<option value="522">HEALTHNET PPO</option>
+<option value="532">HEALTHPLUS</option>
+<option value="533">HEALTHPLUS CHILD HEALTH PLUS</option>
+<option value="537">HEALTHPLUS FAMILY HEALTH PLUS</option>
+<option value="541">HEALTHPLUS MEDICAID HMO</option>
+<option value="545">HEALTHPLUS MEDICAID MANAGED CARE</option>
+<option value="547">HEALTHSHIELD COMMUNITY HEALTH</option>
+<option value="548">HIP</option>
+<option value="549">HIP  HEALTH PLAN OF NY</option>
+<option value="550">HIP ACCESS I</option>
+<option value="551">HIP ACCESS II</option>
+<option value="552">HIP BASIC</option>
+<option value="553">HIP BRONX EAST CENTER</option>
+<option value="554">HIP CHILD HEALTH PLUS</option>
+<option value="555">HIP COMPRE HEALTH</option>
+<option value="556">HIP COMPRE HEALTH EPO</option>
+<option value="557">HIP DOCTORS CARE NETWORK</option>
+<option value="560">HIP EPO</option>
+<option value="563">HIP HEALTH PLAN OF NJ</option>
+<option value="564">HIP HEALTH PLAN OF NY</option>
+<option value="565">HIP HERITAGE NY MED GRP</option>
+<option value="569">HIP HMO</option>
+<option value="1579">HIP HMO (HEALTHCARE PARTNERS)</option>
+<option value="570">HIP HMO/NON MEDICARE ACUTE</option>
+<option value="571">HIP LICH</option>
+<option value="572">HIP MEDICAID</option>
+<option value="1580">HIP MEDICAID (HEALTHCARE PARTNERS)</option>
+<option value="575">HIP MEDICARE</option>
+<option value="1581">HIP MEDICARE (HEALTHCARE PARTNERS)</option>
+<option value="580">HIP MONTEFIORE</option>
+<option value="581">HIP MONTEFIORE MEDICARE</option>
+<option value="582">HIP POS</option>
+<option value="583">HIP SMARTSTART</option>
+<option value="584">HIP TRIPLE OPTION</option>
+<option value="605">HORIZON NJ</option>
+<option value="1561">HORIZON NJ DIRECT</option>
+<option value="607">HORIZON NJ MCD HMO</option>
+<option value="608">HORIZON OF NJ DIRECT ACCESS</option>
+<option value="614">HORIZON OF NJ EPO</option>
+<option value="617">HORIZON OF NJ FEP</option>
+<option value="621">HORIZON OF NJ HMO</option>
+<option value="626">HORIZON OF NJ IND BLU CARD</option>
+<option value="628">HORIZON OF NJ INDMTY BLUE CARD</option>
+<option value="630">HORIZON OF NJ MCARE BBPLUS</option>
+<option value="633">HORIZON OF NJ MCARE BL VAL</option>
+<option value="636">HORIZON OF NJ MCARE BLUE BPLUS</option>
+<option value="637">HORIZON OF NJ MCARE BLUE VALUE</option>
+<option value="638">HORIZON OF NJ MY WAY DIR ACCES</option>
+<option value="642">HORIZON OF NJ MY WAY PPO</option>
+<option value="646">HORIZON OF NJ POS</option>
+<option value="651">HORIZON OF NJ PPO</option>
+<option value="656">HORIZON OF NJ STANDARD</option>
+<option value="660">HORIZON OF NY EPO</option>
+<option value="664">HORIZON OF NY HMO</option>
+<option value="668">HORIZON OF NY MY WAY</option>
+<option value="672">HORIZON OF NY POS</option>
+<option value="675">HORIZON OF NY PPO</option>
+<option value="680">HSBC</option>
+<option value="681">HUDSON HEALTH</option>
+<option value="682">HUMANA HEALTH PLAN</option>
+<option value="687">INTERNATIONAL PATIENT SERVICES</option>
+<option value="695">INTRACORP-INDEMNITY (RUSK O/P)</option>
+<option value="696">ISLAND GROUP ADMINISTRATION</option>
+<option value="697">KAISER FOUNDATION HEALTH PLAN</option>
+<option value="1879">KAISER PERMANENTE</option>
+<option value="703">LIBERTY MUTUAL</option>
+<option value="704">LIRR</option>
+<option value="705">LOCAL 1199</option>
+<option value="709">LOCAL 1199 CHP</option>
+<option value="712">LOCAL 1199 FHP</option>
+<option value="708">LOCAL 1199 NYU MEMBER CHOICE</option>
+<option value="715">LOCAL 1199 PPO</option>
+<option value="728">LOCAL 1199-FIDELIS CHP</option>
+<option value="729">LOCAL 1199-FIDELIS FHP</option>
+<option value="732">MAGNACARE</option>
+<option value="1873">MAGNACARE DIRECT PLUS</option>
+<option value="733">MAGNACARE PPO</option>
+<option value="739">MAGNACARE WORKERS COMP</option>
+<option value="743">MAGNAHEALTH HMO</option>
+<option value="1865">MASKIN GROUP</option>
+<option value="758">MEDICAID</option>
+<option value="763">MEDICAID NJ/UNISYS</option>
+<option value="767">MEDICARE</option>
+<option value="773">MEDICARE PART A</option>
+<option value="775">MEDICARE PART A &amp; B</option>
+<option value="777">MEDICARE PART B</option>
+<option value="782">MEDSAVE USA INC</option>
+<option value="783">MERITAIN HEALTH</option>
+<option value="784">METROPLUS</option>
+<option value="785">METROPLUS CHILD HEALTH PLUS</option>
+<option value="791">METROPLUS FAMILY HEALTH PLUS</option>
+<option value="1583">METROPLUS MCD MANAGED CARE</option>
+<option value="796">METROPLUS MEDICAID HMO</option>
+<option value="1883">METROPLUS MEDICARE</option>
+<option value="801">METROPLUS MEDICARE ADV</option>
+<option value="804">MONTEFIORE HIP</option>
+<option value="805">MONTEFIORE HIP - MEDICAID</option>
+<option value="810">MONTEFIORE HIP - MEDICARE</option>
+<option value="816">MULTIPLAN</option>
+<option value="817">MULTIPLAN - CIGNA</option>
+<option value="818">MULTIPLAN PPO</option>
+<option value="825">MULTIPLAN-PHCS SAVILITY</option>
+<option value="827">MUTUAL OF OMAHA</option>
+<option value="829">MVP HEALTH CARE HMO</option>
+<option value="833">MVP HEALTH CARE PPO</option>
+<option value="838">MVP HEALTH CARE PPO XTU</option>
+<option value="836">MVP SELECT CARE INC</option>
+<option value="837">MVP-CIGNA NETWORK</option>
+<option value="839">NATIONAL HEALTH PLAN PPO</option>
+<option value="840">NATIONWIDE LIFE INSURANCE CO</option>
+<option value="847">NEIGHBORHOOD HP CHILD HEALTH PLAN</option>
+<option value="852">NEIGHBORHOOD HP FAMILY HEALTH</option>
+<option value="858">NEIGHBORHOOD HP MEDICAID HMO</option>
+<option value="1584">NEIGHBORHOOD HP MEDICAID MANAGED CARE</option>
+<option value="865">NEW JERSEY POLICE DEPARTMENT</option>
+<option value="867">NEW YORK CITY POLICE DEPT</option>
+<option value="869">NEW YORK POLICE DEPT.</option>
+<option value="870">NEW YORK STATE DEPTARTMENT OF INSURANCE</option>
+<option value="872">NIPPON LIFE OF AMERICA</option>
+<option value="1882">NIPPON LIFE-AETNA</option>
+<option value="875">NO FAULT - OTHER</option>
+<option value="885">NY CITY TRANSIT AUTHORITY</option>
+<option value="886">NY FIRE DEPARTMENT</option>
+<option value="888">NYC DEPT. OF SANITATION</option>
+<option value="889">NYC FIRE DEPT.</option>
+<option value="891">NYHTC</option>
+<option value="1881">NYU CC BONE MARROW (HB ONLY)</option>
+<option value="893">ONE HEALTH PLAN PPO</option>
+<option value="894">OTHER</option>
+<option value="895">OTHER AUTO/NO FAULT</option>
+<option value="896">OTHER COMMERCIAL</option>
+<option value="897">OTHER HIP</option>
+<option value="898">OTHER HMO</option>
+<option value="899">OTHER HMO/EPO</option>
+<option value="900">OTHER MEDICAID HMO</option>
+<option value="1591">OTHER MEDICAID MANAGED CARE</option>
+<option value="906">OTHER MEDICARE HMO</option>
+<option value="1592">OTHER MEDICARE MANAGED CARE</option>
+<option value="911">OTHER POS</option>
+<option value="912">OTHER PPO</option>
+<option value="913">OTHER WORKER COMP</option>
+<option value="914">OUT OF STATE MEDICAID</option>
+<option value="920">OXFORD</option>
+<option value="922">OXFORD CMG-MEDICARE HMO</option>
+<option value="926">OXFORD HEALTH PLANS</option>
+<option value="930">OXFORD HEALTH PLANS FREEDOM</option>
+<option value="934">OXFORD HEALTH PLANS HMO</option>
+<option value="937">OXFORD HEALTH PLANS LIBERTY</option>
+<option value="941">OXFORD HEALTH PLANS MEDICARE ADVANTAGE</option>
+<option value="942">OXFORD HEALTH PLANS POS</option>
+<option value="944">OXFORD HEALTH PLANS-HMO</option>
+<option value="945">OXFORD HLTH PLANS GLOBAL HMO</option>
+<option value="949">OXFORD HLTH PLANS GLOBAL MEDICAID</option>
+<option value="952">OXFORD HLTH PLANS GLOBAL MEDICARE</option>
+<option value="954">OXFORD HLTH PLANS GLOBAL MEDICARE ADVANCED</option>
+<option value="960">OXFORD HLTH PLANS GLOBAL POS</option>
+<option value="961">OXFORD HLTH PLANS LIBERTY</option>
+<option value="973">PARAMOUNT INSURANCE</option>
+<option value="1876">PENDING MEDICAID</option>
+<option value="976">PHCS DIRECTOR GUILD</option>
+<option value="977">PHCS MULTIPLAN</option>
+<option value="978">PHCS SAVILITY</option>
+<option value="984">POMCO INSURANCE CO</option>
+<option value="1001">RAILROAD MEDICARE</option>
+<option value="1002">RESEARCH ACCOUNT</option>
+<option value="1006">RISK MANAGEMENT BENEFITS</option>
+<option value="1008">RISK MANAGEMENT PLANNING GROUP</option>
+<option value="1012">ROYAL INS CO NF</option>
+<option value="1014">RSKCO INSURANCE</option>
+<option value="1016">SELF PAY</option>
+<option value="1022">SENTRY INSURANCE</option>
+<option value="1023">SPECIAL RISK SERVICES</option>
+<option value="1024">STATE FARM INSURANCE NF</option>
+<option value="1025">STATE INSURANCE FUND</option>
+<option value="1028">STATE MUTUAL LIFE INS</option>
+<option value="1029">STRONGWATER GROUP 1</option>
+<option value="1030">STRONGWATER GROUP 2</option>
+<option value="1031">STRONGWATER GROUP 3</option>
+<option value="1032">STRONGWATER GROUP 4</option>
+<option value="1033">SULLIVAN AND CROMWELL</option>
+<option value="1034">T.I.G. SPECIALTY INS</option>
+<option value="1035">TEAMSTERS ALLIED BENEFITS</option>
+<option value="1038">TOUCHSTONE HEALTH HMO</option>
+<option value="1041">TRANSATLANTIC REINSURANCE CO.</option>
+<option value="1042">TRAVELERS HMO</option>
+<option value="1046">TRAVELERS INDEMNITY</option>
+<option value="1050">TRAVELERS MEDICARE</option>
+<option value="1051">TRAVELERS POS</option>
+<option value="1055">TRAVELERS PPO</option>
+<option value="1058">TRICARE CORP</option>
+<option value="1897">UHC EMPLOYEE PPO</option>
+<option value="1877">UHC HOTEL TRADES COUNCIL (HOSPITAL ONLY)</option>
+<option value="1878">UMR</option>
+<option value="1062">UMR UNITED MEDICAL RESOURCES PPO</option>
+<option value="1066">UNITED HEALTHCARE</option>
+<option value="1069">UNITED HEALTHCARE BENESIGHT</option>
+<option value="1074">UNITED HEALTHCARE CHILD HLTH PL</option>
+<option value="1075">UNITED HEALTHCARE CHILD HLTH PLUS</option>
+<option value="1080">UNITED HEALTHCARE CHOICE</option>
+<option value="1081">UNITED HEALTHCARE CHOICE EPO</option>
+<option value="1084">UNITED HEALTHCARE CHOICE PRODUCT</option>
+<option value="1086">UNITED HEALTHCARE COMMUNITY</option>
+<option value="1585">UNITED HEALTHCARE COMMUNITY CHILD HEALTH PLUS</option>
+<option value="1856">UNITED HEALTHCARE COMMUNITY FAMILY HEALTH PLUS</option>
+<option value="1857">UNITED HEALTHCARE COMMUNITY MEDICAID HMO</option>
+<option value="1858">UNITED HEALTHCARE COMMUNITY MEDICARE</option>
+<option value="1885">UNITED HEALTHCARE COMMUNITY OF NJ</option>
+<option value="1087">UNITED HEALTHCARE EMPIRE</option>
+<option value="1090">UNITED HEALTHCARE EMPLOYEE</option>
+<option value="1095">UNITED HEALTHCARE EMPLOYEE PPO</option>
+<option value="1097">UNITED HEALTHCARE EPO</option>
+<option value="1105">UNITED HEALTHCARE FAM HLTH PLUS</option>
+<option value="1110">UNITED HEALTHCARE HMO</option>
+<option value="1117">UNITED HEALTHCARE INDEMNITY</option>
+<option value="1124">UNITED HEALTHCARE INS AARP</option>
+<option value="1872">UNITED HEALTHCARE JP MORGAN (HB ONLY)</option>
+<option value="1126">UNITED HEALTHCARE MEDICAID</option>
+<option value="1131">UNITED HEALTHCARE MEDICARE</option>
+<option value="1138">UNITED HEALTHCARE NPP</option>
+<option value="1143">UNITED HEALTHCARE POS</option>
+<option value="1152">UNITED HEALTHCARE POS PLUS</option>
+<option value="1157">UNITED HEALTHCARE PPO</option>
+<option value="1589">UNITED HEALTHCARE STUDENT RESOURCES</option>
+<option value="1164">UNITED HEALTHCARE TSP</option>
+<option value="1170">US DEPARTMENT OF LABOR</option>
+<option value="1172">US LIFE INS CO</option>
+<option value="1173">USHC CORP HEALTH HMO/POS</option>
+<option value="1184">USHC CORP HEALTH INDEMNITY</option>
+<option value="1189">USHC CORP HEALTH MEDICAID</option>
+<option value="1193">USHC CORP HEALTH MEDICARE</option>
+<option value="1197">USHC CORP HEALTH MEDICARE HMO</option>
+<option value="1198">USHC CORP HEALTH PPO</option>
+<option value="1201">USHC NYS CHILDREN'S PLAN</option>
+<option value="1204">VERIZON WORKERS COMP</option>
+<option value="1205">VETERANS ADMIN. REFERRAL</option>
+<option value="1208">VISITING NURSE SERVICE</option>
+<option value="1867">VNS MEDICARE/MEDICAID ADVANTAGE (HB)</option>
+<option value="1210">VYTRA HEALTHCARE HMO</option>
+<option value="1215">VYTRA HEALTHCARE MEDICARE</option>
+<option value="1219">VYTRA HEALTHCARE POS</option>
+<option value="1224">VYTRA HEALTHCARE PPO</option>
+<option value="1229">VYTRA HEALTHCARE-GLOBAL HMO</option>
+<option value="1230">VYTRA HEALTHCARE-GLOBAL MCR</option>
+<option value="1231">VYTRA HEALTHCARE-GLOBAL POS</option>
+<option value="1232">VYTRA HEALTHCARE-GLOBAL PPO</option>
+<option value="1233">WAUSAU BENEFITS</option>
+<option value="1234">WELLCARE</option>
+<option value="1236">WELLCARE CHILD HEALTH PLUS</option>
+<option value="1237">WELLCARE FAMILY HEALTH PLUS</option>
+<option value="1238">WELLCARE MEDICAID HMO</option>
+<option value="1242">WELLCARE MEDICARE</option>
+<option value="1243">WELLCARE OF NY CHP</option>
+<option value="1246">WELLCARE OF NY FHP</option>
+<option value="1250">WELLCARE OF NY MCAID HMO</option>
+<option value="1254">WELLCARE OF NY MEDICARE</option>
+<option value="1259">WORKERS' COMP OTHER</option>
+<option value="1267">WORKERS' COMPENSATION</option>
+<option value="1272">ZURICH LIFE INS CO</option>
+<option value="1273">ZURICH NORTH AMERICA</option>
+</select>                            </td>
+                        </tr>
+                        <tr>
+                            <th>Timely Filing Days Left</th>
+                            <td>
+<b><span style="color: #FF0000">Beyond Timely Filing</span></b>                            </td>
+                        </tr>
+                    </tbody></table>
+            </div>
+    
+    <div class="row3side2">
+             <table style="width: 100%; height: 50px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                          <th>Original Gross Charges                          
+                                <input type="text" value="$0.00" name="frm_OriginalGrossCharge" id="frm_OriginalGrossCharge" style="text-align:right">                                    
+                            </th>  
+                        </tr>
+                    </tbody></table>
+           </div>
+  
+  </div>
+
+      <div>
+            <ul id="tabs">
+                <li id="tab1" class="active"> <a href="/RM/AuditFindings/Actions?a=P111111" id="Actions">Actions</a></li>
+                <li id="tab2"><a href="/RM/AuditFindings/Financials?a=P111111" id="Financials">Financials</a></li>
+                <li id="tab3"><a href="/RM/AuditFindings/Details?a=P111111" id="Details" >Details</a></li>
+                <li id="tab4"><a href="/RM/AuditFindings/Coding?a=P111111" id="Coding">Coding</a></li>
+                <li id="tab5"><a href="/RM/AuditFindings/DenialsAppeals?a=P111111" id="DenialsAppeals">Denials/Appeals</a></li>
+                <li id="tab6"><a href="/RM/AuditFindings/PaymentAnalysis?a=P111111" id="PaymentAnalysis">Payment Analysis</a></li>
+            </ul>
+        </div>
+
+      <div id="row4">
+
+         <div id="detailsection">
+    <table cellspacing="2" cellpadding="5" id="tblMain">                                     
+           <tr id="detailsheader"> 		<th>Action</th>
+                        <th>Service Date</th>
+                        <th>Department<br>Cost Center</th>
+                        <th>CDM Description/<br>CDM Code</th>
+                        <th>Rev Code</th>
+                        <th>HCPCS</th>
+                        <th>Mod</th>
+                        <th>Unit Amount</th>
+                        <th>Qty</th>
+                        <th>U</th>
+                        <th>O</th>
+                        <th>P</th>
+                        <th>Total Amount</th>
+                        <th>Root Cause</th>
+                        <th>CE Comments</th>                        
+                    </tr>
+
+<tr><td><a href="javascript: formAction('EDIT_ROW', 241793);">Edit</a>&nbsp;<a href="javascript: formAction('DELETE_ROW', 241793);">Delete</a></td><td>12/2/2013</td><td >RUSK SPEECH LANGUAGE PATHOLOGY<br>8RM111801</td><td ><br>6054446</td><td>272</td><td></td><td></td><td>$2.00 </td><td>2</td><td>X</td><td></td><td></td><td>$4.00 </td><td >Bundled Procedure</td><td ></td></tr><tr ><td colspan="16"><b>Add New Item</b></td></tr><tr><td><input type="hidden" value="0" name="frm_ID"><input type="hidden" value="11/01/2013" id="frm_Service_AdmitDate"><input type="hidden" value="11/01/2013" id="frm_Service_DischargeDate"><a href="javascript: formAction('UPDATE_ROW', 0);">Add Item</a><br><br><a href="javascript: formAction('CANCEL_ROW', 0);">Cancel</a></td><td><input type="text" value="12/2/2013" onblur="javascript:verifyDate(this);" name="frm_Row-0-ServiceDate" id="frm_Row-0-ServiceDate" style="width: 60px; text-align:right"></td><td><select id="frm_Row-0-DeptID" name="frm_Row-0-DeptID"><option value="0">- select -</option><option value="140">RUSK 1N</option><option value="141">RUSK 1S</option><option value="142">RUSK 4W</option><option value="143">RUSK 5S</option><option value="144">RUSK HCC 9/CARDIAC REHAB</option><option value="145">RUSK IRM  ADULT CLINIC</option><option value="146">RUSK IRM  CARDIAC REHAB</option><option value="147">RUSK IRM  ORTHOTICS IMPLANTS</option><option value="148">RUSK IRM  PSYCHOLOGY</option><option value="149">RUSK IRM  PULMONARY SERVICES</option><option value="150">RUSK IRM  RECREATION THERAPY</option><option value="151">RUSK IRM  VOCATIONAL SERVICES</option><option value="152">RUSK IRM HEAD TRAUMA PROGRAM</option><option value="153">RUSK IRM ORTHOTICS</option><option value="154">RUSK IRM ORTHOTICS SUPPLIES</option><option value="155">RUSK IRM PHYSICAL THERAPY SUPPLIES</option><option value="156">RUSK MEDICAL SOCIAL WORK</option><option value="157">RUSK MUSCULAR DYSTROPHY CLINIC</option><option value="158">RUSK OT</option><option value="159">RUSK OT SUPPLIES</option><option value="160">RUSK PT</option><option value="161">RUSK SPEECH LANGUAGE PATHOLOGY</option><option value="202">TH ANESTHESIA</option><option value="215">TH CHEMISTRY LAB</option><option value="226">TH CYTOLOGY LAB</option><option value="230">TH ENDO/GI</option><option value="231">TH ENDO/GI IMPLANTS</option><option value="232">TH ENDO/GI SUPPLIES</option><option value="261">TH NON-INVASIVE CARDIOLOGY</option><option value="279">TH VASCULAR LAB</option><option value="280">TH X-RAY</option></select><div id="frm_Row-0-CostCenterName"></div></td>
+
+<td><input type="text" name="frm_Row-0-CDMDescription" id="frm_Row-0-CDMDescription" style="width: 70px; text-align:left"><br><input type="text" name="frm_Row-0-CDMCode" id="frm_Row-0-CDMCode" style="width: 55px; text-align:right" onblur="javascript:runClientSearch(this.value, 0);"><a href="javascript: popupSearchCDM(0);"><img src="../Images/search_icon_1.png" style="border-style: none;"></a></td>
+                    <tr>
+                        <td colspan="15">
+                            <hr style="color:#cccccc">
+                        </td>                            
+                    </tr>
+
+                    <tr >
+                        <td  colspan="7">
+                            <b>Account Comments</b>
+                            <br>
+                            <textarea cols="110" rows="5" name="frm_AccountComments"></textarea>    
+                        </td>
+
+                        <td  colspan="7">
+                            <b>Instructions to Pricer</b>
+                            <br>
+                            <textarea cols="110" rows="5" name="frm_InstPricer">Text</textarea>    
+                        </td>
+                    </tr>
+                    </tbody></table>
+
+    <input type="hidden" value="" id="frm_Action" name="frm_Action">    
+    <input type="hidden" value="" id="frm_RowID" name="frm_RowID">
+    <input type="hidden" value="Details" name="frm_ActiveTab" id="frm_ActiveTab">
+
+    <input type="hidden" value="rmdwcdcdvm005.nyumc.org" id="SERVER_NAME">
+    <input type="hidden" value="RM" id="APP_NAME">
+
+    <input type="hidden" value="" id="frm_ValidationErrors">
+
+      </div></div>
+
+</div> <!--end container-->
+
+      </body>
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+
+</body>
+
+</html>

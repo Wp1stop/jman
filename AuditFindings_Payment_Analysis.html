@@ -1,0 +1,1498 @@
+
+
+<b><span style="color: #FF0000">Could not find stored procedure 'Sel_DenialAppealItems'.  -  4:36:58 PM</span></b>
+
+    <div id="divErrorMsg" style="display:none">
+        <span style="color:red"></span>
+    </div>
+    
+
+<form action="/RM/AuditFindings/FormManager" method="post">        <table style="width: 100%; border-color: #dedbdb; border-style: solid; border-width: 1px;">            
+
+            <tbody><tr>
+                <td colspan="3" align="right">
+                    <a style="color: blue" href="http://rmdwcdcdvm005.nyumc.org/RM/QA_Helpers">QA Utils</a>
+                    &nbsp;                                        
+                    <a style="color: blue" href="http://rmdwcdcdvm005.nyumc.org/RM/Login">Log In</a>
+                    &nbsp;
+                    <a style="color: blue" href="http://rmdwcdcdvm005.nyumc.org/RM/AuditFindings/PaymentAnalysis?a=2036242&amp;n=635406935778656775">View Page</a>                                        
+                        &nbsp;&nbsp;
+                        Current date:&nbsp;<b><span style="color: blue">
+07/11/2014                        </span></b>
+                </td>
+            </tr>
+            
+            <tr>                
+                <td colspan="3" align="right">
+                    
+                    Currently logged in as:&nbsp;<b><span style="color: blue">mannj05</span></b>
+
+                    &nbsp;&nbsp;&nbsp;
+                    Role:&nbsp;<b><span style="color: blue">ADMIN</span></b>
+                    &nbsp;&nbsp;&nbsp;
+                    Account ID:&nbsp;<b><span style="color: blue">57085</span></b>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="33%">
+
+                    <table style="width: 100%; height: 120px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top" width="40%">Auditor</td>
+                            <td valign="top" width="60%">                                
+
+                                
+<select name="frm_List_AuditorID" id="frm_List_AuditorID" onchange="selectPricer();"><option value="76">--Test Auditor22</option><option value="4">Amelia Cañete</option><option value="13">Antoine Smith</option><option value="10">Bill Sweeney</option><option value="12">Carlos Garcia</option><option value="6">Christine Weston</option><option value="19">Claire Hughes</option><option value="9">Cristina Magallanes</option><option value="2">Doris Nadres</option><option value="7">Erin McKay</option><option value="15">Janis Ayler</option><option value="56">Kymara Kyng</option><option value="61">Nirmala Subramhanya</option><option value="14" selected="selected">Odessa Taylor</option><option value="8">Phyllis Marchitelli</option><option value="78">Pttest</option><option value="21">Rosemary Bauer</option><option value="54">Test Auditor</option><option value="60">Tracy Myint</option><option value="5">Wendy Lewis</option></select>                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="40%">Pricer
+                            </td>
+                            <td valign="top" width="60%">
+<select id="frm_List_PricerID" name="frm_List_PricerID"><option value="5">Angela Singh</option>
+<option value="78">Candace Narain</option>
+<option selected="selected" value="4">Devin Mohamed</option>
+<option value="1">Kathleen O'Sullivan</option>
+<option value="3">Kele' Odom</option>
+<option value="76">Test Pricer</option>
+<option value="77">Tracy Myint</option>
+<option value="6">Veronica Ceasar</option>
+</select>                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="40%">Project Source
+                            </td>
+                            <td valign="top" width="60%">                                
+
+Additional IR Accounts                                        <input name="frm_List_ProjectSourceID" value="3" type="hidden">        
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+                <td valign="top" width="33%">
+
+                    <table style="width: 100%; height: 120px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top" width="40%">Audit Start
+                            </td>
+                            <td valign="top" width="60%">
+11/30/2012 09:50 AM                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="40%">Audit Complete
+                            </td>
+                            <td valign="top" width="60%">
+12/05/2012 05:21 PM                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="40%">Posting Complete</td>
+                            <td valign="top" width="60%">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="40%">Pricing Complete
+                            </td>
+                            <td valign="top" width="60%">
+12/06/2012 08:49 AM                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="40%">Rebill Date
+                            </td>
+                            <td valign="top" width="60%">
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+                <td valign="top" width="33%">
+
+                    <table style="width: 100%; height: 120px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top" width="35%">
+
+                                <table style="width: 100%;">
+                                    <tbody><tr>
+                                        <td valign="top" width="50%">
+                                            <input id="frm_printType-AUDITOR" name="frm_printType" value="AUDITOR" type="radio">&nbsp;Auditor<br>
+                                            <input id="frm_printType-PRICER" name="frm_printType" value="PRICER" type="radio">&nbsp;Pricer<br>
+                                            <input id="frm_printType-ALL" name="frm_printType" value="ALL" type="radio">&nbsp;All<br>
+                                        </td>
+                                        <td valign="top" width="50%">
+                                            <input name="frm_btnPrint" value="Print" type="submit">
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+
+                            </td>
+                            <td valign="top" width="65%">
+                                <table style="width: 100%;">
+                                    <tbody><tr>
+                                        <td valign="top" width="40%">
+                                            <input name="frm_Button" value="Save" style="width: 64px" type="submit"> <!-- onclick="javascript:submitForm();" -->
+                                        </td>
+                                        <td valign="top" width="60%">
+
+                                            
+
+                                                        <input id="btnAuditComplete" name="frm_Button" value="Audit Complete" style="width: 152px" type="submit">
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" width="40%">
+                                                    <input name="frm_btnDelete" value="Delete" style="width: 64px" onclick="javascript: ConfirmDelete();" type="button">
+                                        </td>
+                                        <td valign="top" width="60%">                                            
+                                                        <input id="btn_PostingComplete" name="frm_Button" value="Posting Complete" style="width: 152px" type="submit">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" width="40%">                                             
+                                                    <input name="frm_Button" value="Open" style="width: 64px" type="submit">
+                                        </td>                                         
+
+                                         <td valign="top" width="60%">                                             
+                                                        <input id="btn_PricingComplete" name="frm_Button" value="Pricing Complete" style="width: 152px" type="submit">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" width="40%">
+                                                    <input name="frm_Button" value="Unlock" style="width: 64px" type="submit">
+                                        </td>
+                                        <td valign="top" width="60%">                                                                                                                                                                               
+                                                        <input id="btnRebill" name="frm_Button" value="Rebill" style="width: 152px" type="submit">
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody></table>
+        <br>
+        <table style="width: 100%; border-color: #dedbdb; border-style: solid; border-width: 1px">
+            <tbody><tr>
+                <td valign="top" width="25%">
+
+                    <table style="width: 100%; height: 90px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top">HAR</td>
+                            <td valign="top">
+2036242                                            <input id="frm_HAR" name="frm_HAR" value="2036242" type="hidden">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">MRN</td>
+                            <td valign="top">
+1656315                                            <input id="frm_MRN" name="frm_MRN" value="1656315" type="hidden">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">CSN</td>
+                            <td valign="top"> 
+492236396                                            <input style="width: 100px" id="frm_CSN" name="frm_CSN" value="492236396" type="hidden">
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+                <td valign="top" width="25%">
+                    <table style="width: 100%; height: 90px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top">Last Name</td>
+                            <td valign="top">                                
+Konival                                            <input id="frm_PatientLastName" name="frm_PatientLastName" value="Konival" type="hidden">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">First Name</td>
+                            <td valign="top">
+Dennis                                            <input id="frm_PatientFirstName" name="frm_PatientFirstName" value="Dennis" type="hidden">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Admit Date</td>
+                            <td valign="top"> 
+11/29/2012                                            <input onblur="javascript:verifyDates();" style="width: 100px" id="frm_AdmitDate" name="frm_AdmitDate" value="11/29/2012" type="hidden">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Discharge Date</td>
+                            <td valign="top">                                                                                                
+
+                                <input onblur="javascript:verifyDates();" style="width: 100px" id="frm_DischargeDate" name="frm_DischargeDate" value="11/29/2012" type="text">
+
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+                <td valign="top" width="25%">
+                    <table style="width: 100%; height: 90px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top">Visit Type</td>
+                            <td valign="top">
+<select id="frm_List_VisitTypeID" name="frm_List_VisitTypeID"><option value="53">----INVALID VISIT TYPE</option>
+<option value="1">Inpatient</option>
+<option value="46">Observation</option>
+<option selected="selected" value="2">Outpatient</option>
+<option value="47">Recurring</option>
+</select>                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Audit Type</td>
+                            <td valign="top">                                
+<select name="frm_List_AuditTypeID" id="frm_List_AuditTypeID" onchange="setOptions('frm_List_AuditTypeID');"><option value="1">Concurrent</option><option value="2" selected="selected">Retro</option></select>                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Sub Audit Type</td>
+                            <td valign="top">
+<select id="frm_List_SubAuditTypeID" name="frm_List_SubAuditTypeID">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<option value="0">- select -</option><option value="112">_ATEST01</option><option value="116">123</option><option value="1">Abdominal Drains</option><option value="2">Angiomax</option><option value="92">Appeals</option><option value="81">Blood Products</option><option value="3">Brachytherapy</option><option value="5">Business Office Request</option><option value="7">Carve-Outs Only</option><option value="9">Cath Contrast</option><option value="100">CDE Review</option><option value="13">Compliance Review</option><option value="15">Compliance-Clinic Reviews</option><option value="16">Computer Assisted Surgery</option><option value="17">Contrast</option><option value="19">Desensitization</option><option value="21">Device Dependent</option><option value="90">Epilepsy Clinic</option><option value="22">HJD Gauchers Infusions</option><option value="23">HJD Infusions</option><option value="24">Holter Monitoring Cases</option><option value="26">Hyperemesis</option><option value="28">ICare</option><option value="29">Implants</option><option value="31">Implants w/Mlt Surg</option><option value="33">IP Carve-Outs Mult/Surg</option><option value="35">IP Carve-Outs Only</option><option value="37">IP Implants Mult/Surg</option><option value="39">IP Implants Only</option><option value="41">IPVTAM-CBR Pain Mgt</option><option value="42">IR - Missing Charges</option><option value="97">IR Procedures - Tisch at HJD</option><option value="44">Liver Biopsies</option><option value="101">Medical Necessity Denials</option><option value="93">Medicare Outlier</option><option value="45">No Primary Contact</option><option value="47">Non-Catalog Items</option><option value="48">Non-Formulary</option><option value="50">OBOP PI</option><option value="52">Observation</option><option value="53">OCE cases</option><option value="55">Pharmacy</option><option value="57">Pharmacy-Ropivacaine drug</option><option value="79">Potential Missing Charges</option><option value="58">RAC Audit Prep</option><option value="59">Random Sample - Infusions</option><option value="61">Recovery Room</option><option value="117">rhrt</option><option value="63">Routine</option><option value="65">Skin &amp; Cancer</option><option value="66">Stress Agents</option><option value="67">Syngo Suspense</option><option value="69">TEE &amp; TTE cases</option><option value="70">Tisch Infusions</option><option value="72">Tisch IP MTX drug</option><option value="11">Tisch IR Cases</option><option value="94">Tisch IR Procedure</option><option value="73">Tisch-Infusions Gauchers</option><option value="75">UCA&amp;EP Missing Procedures</option><option value="118">UNASSIGNED</option></select>                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Protected Revenue</td>
+                            <td valign="top">
+                                    <input value="1" id="frm_ProtectedRevenue" name="frm_ProtectedRevenue" type="checkbox">
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+                <td valign="top" width="25%">
+                    <table style="width: 100%; height: 90px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top">Facility</td>
+                            <td valign="top">                                                               
+<select name="frm_List_FacilityID" id="frm_List_FacilityID" disabled="disabled"><option value="32">-- Test Facility11</option><option value="4">Cancer Center</option><option value="2" selected="selected">HJD</option><option value="44">new</option><option value="3">Rusk</option><option value="40">TEST FACILITY1</option><option value="41">TEST FACILITY2</option><option value="42">TEST FACILITY3</option><option value="1">Tisch</option></select><input name="frm_List_FacilityID" value="2" type="hidden">                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Service Area</td>
+                            <td valign="top">
+<select name="frm_List_ServiceAreaID" id="frm_List_ServiceAreaID"><option value="0">- select -</option><option value="232">HJD 10 FLOOR</option><option value="9">HJD 11 FLOOR</option><option value="10">HJD 11 NSCU</option><option value="11">HJD 11 SDU</option><option value="12">HJD 12 NORTH</option><option value="13">HJD 12 SOUTH</option><option value="238">HJD 23RD ST RAD XRAY</option><option value="14">HJD 5 RAD MRI</option><option value="15">HJD 6 RAD CT</option><option value="16">HJD 6 RAD IR</option><option value="17">HJD 6 RAD NM</option><option value="18">HJD 6 RAD US</option><option value="19">HJD 6 RAD XRAY</option><option value="20">HJD 8 NORTH</option><option value="21">HJD 8 SOUTH</option><option value="22">HJD 9 NORTH</option><option value="23">HJD 9 SOUTH</option><option value="24">HJD C1 ASC PACU</option><option value="25">HJD C1 ASC PERI-OP</option><option value="26">HJD C2 MAIN PERI-OP</option><option value="256">HJD CMC EMG</option><option value="27">HJD CMC INFUSION</option><option value="277">HJD CMC INJECTIONS</option><option value="271">HJD CMC OT</option><option value="252">HJD CMC PT</option><option value="216">HJD CMC RAD IR</option><option value="215">HJD CMC RAD MRI</option><option value="217">HJD CMC RAD US</option><option value="218">HJD CMC RAD XRAY</option><option value="239">HJD CMC RHEUMATOLOGY</option><option value="240">HJD CMC SPINE INJ</option><option value="233">HJD CMC SPORTS</option><option value="28">HJD C-SPINE AND NECK</option><option value="29">HJD DANCE THERAPY</option><option value="30">HJD DFAC - ENDOCRINE</option><option value="31">HJD DFAC - PODIATRY</option><option value="32">HJD FOOT CLINIC</option><option value="33">HJD GAUCHER - INFUSION</option><option value="34">HJD GENETICS</option><option value="35">HJD HAND - ADULT</option><option value="36">HJD HARKNESS DANCE CLN</option><option value="38">HJD IMMEDIATE CARE</option><option value="39">HJD INFECTIOUS DISEASE</option><option value="40">HJD IWD</option><option value="41">HJD LABORATORY</option><option value="42">HJD LUPUS CLINIC</option><option value="43">HJD MED CLEARANCE</option><option value="44">HJD MS - INFUSION</option><option value="45">HJD MS CENTER - CLINIC</option><option value="46">HJD MS CENTER - FGP</option><option value="47">HJD NEUROLOGY CLINIC</option><option value="48">HJD NEUROPHYSIOLOGY</option><option value="49">HJD OIOC PHYS THER</option><option value="50">HJD ONCOLOGY CLINIC</option><option value="51">HJD ORTHO A - ADULT</option><option value="52">HJD ORTHO B - ADULT</option><option value="53">HJD ORTHO C - ADULT</option><option value="54">HJD OS PERI-OP</option><option value="55">HJD OSTEOPOROSIS</option><option value="56">HJD OT - ADULT</option><option value="57">HJD OT - PEDS</option><option value="253">HJD OT ADLT OP</option><option value="254">HJD OT PEDS OP</option><option value="58">HJD PAIN MANAGEMENT</option><option value="59">HJD PATHOLOGY</option><option value="60">HJD PEDS ADOL SPORTS</option><option value="61">HJD PEDS CLUB FOOT</option><option value="62">HJD PEDS DEV-BEHAV MED</option><option value="63">HJD PEDS GROWTH-SPINE</option><option value="64">HJD PEDS HAND</option><option value="65">HJD PEDS ITB-BACLOFEN</option><option value="66">HJD PEDS NEUROLOGY</option><option value="67">HJD PEDS NEUROMUSC</option><option value="68">HJD PEDS ORTHOPEDS</option><option value="69">HJD PEDS PRE-OP CLINIC</option><option value="70">HJD PEDS PSYCHOLOGY</option><option value="71">HJD PEDS REHAB</option><option value="72">HJD PEDS RHEUMATOLOGY</option><option value="73">HJD PEDS SCOLIOSIS</option><option value="74">HJD PEDS SKEL DYSPL</option><option value="75">HJD PEDS SPASTICITY</option><option value="76">HJD PRE-TESTING</option><option value="77">HJD PRIMARY CARE CTR</option><option value="78">HJD PT - ADULT</option><option value="79">HJD PT - PEDS</option><option value="255">HJD PT PEDS OP</option><option value="80">HJD PULMONARY</option><option value="81">HJD RH - INFUSION</option><option value="82">HJD RHEUMATOLOGY</option><option value="83">HJD RUTHERFORD RADXRAY</option><option value="84">HJD SCOLIOSIS</option><option value="85">HJD SHOULDER CLINIC</option><option value="86">HJD SPINE - ADULT</option><option value="87">HJD SPORTS MED CLINIC</option><option value="88">HJD SPORTS THERAPY</option><option value="89">HJD STARC</option><option value="90">HJD TMJ AND OROFACIAL</option><option value="91">HJD WOUND CARE</option><option value="99">OS PERI-OP</option><option value="223">--Test Service Area222</option></select>                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody></table>
+        <br>
+        <table style="width: 100%; border-color: #dedbdb; border-style: solid; border-width: 1px">
+            <tbody><tr>
+                <td valign="top" width="50%">
+                    <table style="width: 100%; height: 50px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top">Insurance Plan Name</td>
+                            <td valign="top">
+<select id="frm_List_InsuranceID" name="frm_List_InsuranceID"><option value="1902">----------------ABCD123</option>
+<option value="1899">--1234Test</option>
+<option value="1">A.A.R.P./UNITED HEALTHCARE</option>
+<option value="4">AETNA</option>
+<option value="6">AETNA HMO</option>
+<option value="11">AETNA HMO/POS</option>
+<option value="18">AETNA INDEMNITY</option>
+<option value="23">AETNA MEDICAID</option>
+<option value="7">AETNA MEDICAID HMO</option>
+<option value="27">AETNA MEDICARE</option>
+<option value="8">AETNA MEDICARE HMO</option>
+<option value="9">AETNA MEDICARE MANAGED CARE</option>
+<option value="1871">AETNA OPEN ACCESS ELECT CHOICE (EPO)</option>
+<option value="1563">AETNA OPEN ACCESS HMO</option>
+<option value="1544">AETNA POS</option>
+<option value="31">AETNA PPO</option>
+<option value="10">AETNA STUDENT HEALTH</option>
+<option value="37">AFFINITY</option>
+<option value="38">AFFINITY HP CHILD HEALTH PLUS</option>
+<option value="42">AFFINITY HP FAMILY HEALTH PLUS</option>
+<option value="46">AFFINITY HP MEDICAID HMO</option>
+<option value="1564">AFFINITY HP MEDICAID MANAGED CARE</option>
+<option value="52">AFFINITY HP SUNRISE</option>
+<option value="56">AFFINITY HP UNICARE</option>
+<option value="1565">AFFINITY MEDICARE MANAGED CARE</option>
+<option value="60">AIG CLAIMS SERVICES NF</option>
+<option value="61">AIG WORKERS COMP</option>
+<option value="62">AIM CIGNA</option>
+<option value="65">ALLSTATE INSURANCE CO</option>
+<option value="66">ALLSTATE INSURANCE COMPANY</option>
+<option value="64">ALLSTATE MANAGEMENT</option>
+<option value="69">AMERICHOICE</option>
+<option value="71">AMERICHOICE CHILD HEALTH PLUS</option>
+<option value="76">AMERICHOICE FAMILY HEALTH PLUS</option>
+<option value="80">AMERICHOICE MEDICAID HMO</option>
+<option value="85">AMERICHOICE MEDICARE HMO</option>
+<option value="89">AMERICHOICE PERSONAL CARE PLUS</option>
+<option value="1566">AMERIGROUP COMMUNITY CARE</option>
+<option value="90">AMERIHEALTH</option>
+<option value="1590">AMERIHEALTH ADMINISTRATOR</option>
+<option value="91">AMERIHEALTH OF NJ PA DE</option>
+<option value="92">ANTHEM</option>
+<option value="93">ANTHEMHEALTH PPO</option>
+<option value="94">ATLANTICARE ADMINISTRATOR</option>
+<option value="95">AVATAR COMP</option>
+<option value="96">AXA ASSISTANCE  CLAIMS DEPT</option>
+<option value="99">AXA HEALTHCARE</option>
+<option value="245">B'NAI BRITH</option>
+<option value="110">BCBS ANTHEM BLUE CARE BASIC</option>
+<option value="114">BCBS ANTHEM BLUE CARE DIRECT</option>
+<option value="118">BCBS ANTHEM BLUE CARE POS</option>
+<option value="122">BCBS ANTHEM HP BLUE CARE</option>
+<option value="125">BCBS CHILD HEALTH PLUS</option>
+<option value="1560">BCBS EMPLOYEE BENEFIT PLAN (HB ONLY)</option>
+<option value="130">BCBS EPO</option>
+<option value="135">BCBS FEDERAL PROGRAM</option>
+<option value="136">BCBS GLOBAL</option>
+<option value="137">BCBS HEALTHY NEW YORK</option>
+<option value="142">BCBS HMO</option>
+<option value="146">BCBS INDEMNITY</option>
+<option value="151">BCBS MEDIBLUE MEDICARE HMO</option>
+<option value="1874">BCBS MEDIBLUE MEDICARE PPO</option>
+<option value="1546">BCBS NEW YORK CITY EMPLOYEE BENEFIT</option>
+<option value="154">BCBS NEW YORK STATE EMPLOYEE BENEFIT</option>
+<option value="1868">BCBS NY STATE EMPLOYEE BENEFIT (HB ONLY)</option>
+<option value="171">BCBS NY STATE EMPLOYEE BENEFIT (HOSPITAL ONLY)</option>
+<option value="1568">BCBS NYC EMPLOYEE BENEFIT (HOSPITAL ONLY)</option>
+<option value="1559">BCBS NYC EMPLOYEE BENEFIT PLAN (HOSPITAL ONLY)</option>
+<option value="178">BCBS OUT OF STATE</option>
+<option value="180">BCBS OUT OF STATE EPO</option>
+<option value="204">BCBS OUT OF STATE EPO XTU</option>
+<option value="186">BCBS OUT OF STATE HMO</option>
+<option value="193">BCBS OUT OF STATE INDEMNITY</option>
+<option value="200">BCBS OUT OF STATE MEDICARE</option>
+<option value="201">BCBS OUT OF STATE POS</option>
+<option value="207">BCBS OUT OF STATE PPO</option>
+<option value="214">BCBS OUT/STATE  MEDICARE</option>
+<option value="1569">BCBS OUT/STATE  MEDICARE PAR</option>
+<option value="1870">BCBS OUT/STATE EPO PAR</option>
+<option value="1570">BCBS OUT/STATE HMO PAR</option>
+<option value="1866">BCBS OUT/STATE INDEMNITY PAR</option>
+<option value="1571">BCBS OUT/STATE POS PAR</option>
+<option value="1572">BCBS OUT/STATE PPO PAR</option>
+<option value="216">BCBS POS</option>
+<option value="220">BCBS PPO</option>
+<option value="225">BCBS SENIOR CARE SUPPLEMENTAL</option>
+<option value="226">BCBS UNICARE</option>
+<option value="231">BEECH STREET NO FAULT</option>
+<option value="233">BEECH STREET PPO</option>
+<option value="238">BELLEVUE HOSPITAL B28</option>
+<option value="239">BELLEVUE HOSPITAL B30</option>
+<option value="240">BELLEVUE I/P REFERRAL</option>
+<option value="241">BENEFIT TRUST LIFE INSURANCE CO</option>
+<option value="242">BENEFITS CONCEPTS INC.</option>
+<option value="246">BORO MEDICAL CENTER</option>
+<option value="250">CARE PLUS</option>
+<option value="251">CARECORE AETNA</option>
+<option value="252">CARECORE HEALTHNET</option>
+<option value="253">CARECORE HIP</option>
+<option value="254">CARECORE HIP MEDICAID</option>
+<option value="255">CARECORE OXFORD</option>
+<option value="256">CARECORE OXFORD MEDICARE ADVANT</option>
+<option value="257">CENTERCARE CHILD HEALTH PLUS</option>
+<option value="261">CENTERCARE FAMILY HEALTH PLUS</option>
+<option value="265">CENTERCARE MEDICAID HMO</option>
+<option value="269">CENTERCARE MEDICAID MANAGED CARE</option>
+<option value="270">CHAMPUS</option>
+<option value="272">CHAMPUS CORPORATION</option>
+<option value="273">CHAMPUS UNYSIS CORP</option>
+<option value="274">CHUBB GROUP INS</option>
+<option value="275">CHUBB GROUP WORKERS COMP NY</option>
+<option value="276">CHUBB LIFE AMERICA</option>
+<option value="278">CHUBBHEALTH HMO</option>
+<option value="284">CHUBBHEALTH INDEMNITY</option>
+<option value="286">CHUBBHEALTH POS</option>
+<option value="289">CIGNA</option>
+<option value="1880">CIGNA GREAT WEST PPO</option>
+<option value="1573">CIGNA HMO</option>
+<option value="297">CIGNA HMO/POS</option>
+<option value="291">CIGNA INDEMNITY</option>
+<option value="295">CIGNA MANAGED CARE/POS</option>
+<option value="304">CIGNA MEDICARE</option>
+<option value="296">CIGNA MENTAL HEALTH CLAIMS</option>
+<option value="1574">CIGNA OPEN ACCESS</option>
+<option value="1884">CIGNA OPEN ACCESS PPO</option>
+<option value="309">CIGNA POS</option>
+<option value="310">CIGNA PPO</option>
+<option value="316">CIGNA-PREMIER PLUS</option>
+<option value="320">CITY OF NEW YORK LAW DEPT</option>
+<option value="321">CNA - MAILHANDLERS</option>
+<option value="322">CNA NO FAULT</option>
+<option value="323">CNA WORKERS COMP</option>
+<option value="324">COMBINED LIFE INS OF NY</option>
+<option value="325">COMMERCIAL INSURANCE</option>
+<option value="326">CON EDISON OF NY</option>
+<option value="327">CONN MUTUAL LIFE INSURANCE CO</option>
+<option value="328">CONSOLIDATED HEALTH PLAN</option>
+<option value="330">CONTINENTAL AMERICAN LIFE</option>
+<option value="331">CORVEL W/C</option>
+<option value="333">COUNTRY WIDE INSURANCE CO</option>
+<option value="335">CRAWFORD AND COMPANY</option>
+<option value="336">CRIME VICTIMS BOARD</option>
+<option value="341">ELECTRICAL WORKERS FUND</option>
+<option value="346">EQUITABLE LIFE ASSURANCE</option>
+<option value="348">FEDERAL RESERVE BANK</option>
+<option value="349">FIDELIS CARE</option>
+<option value="358">FIDELIS CARE CHILD HEALTH PLUS</option>
+<option value="362">FIDELIS CARE FAMILY HEALTH PLU</option>
+<option value="368">FIDELIS CARE MEDICAID HMO</option>
+<option value="352">FIDELIS CARE MEDICAID MANAGED CARE</option>
+<option value="373">FIREMAN FUND</option>
+<option value="374">FIRST HEALTH</option>
+<option value="375">FIRST HEALTH MEDICAID HMO</option>
+<option value="379">FIRST HEALTH PPO</option>
+<option value="384">FIRST HEALTH STRATEGIES</option>
+<option value="385">FIRST UNUM LIFE INSURANCE CO</option>
+<option value="387">FOUNDATION HLTH (CHAMPUS) ACUT</option>
+<option value="388">FOUNDATION HLTH (CHAMPUS) XRU</option>
+<option value="389">FOUNDATION HLTH (CHAMPUS) XTU</option>
+<option value="391">G.A.B. BUSINESS SERVICES</option>
+<option value="392">GAB ROBBIN NORTH AMERICA</option>
+<option value="393">GALAXY HEALTH PLANS</option>
+<option value="394">GEHA</option>
+<option value="395">GEICO INSURANCE CO</option>
+<option value="397">GENERIC COMMERCIAL</option>
+<option value="399">GENERIC HMO</option>
+<option value="400">GENERIC MEDICAID MANAGED CARE</option>
+<option value="401">GENERIC MEDICARE MANAGED CARE</option>
+<option value="408">GHI CBP</option>
+<option value="413">GHI EMBLEM HEALTH EPO</option>
+<option value="415">GHI EMBLEM HEALTH PPO</option>
+<option value="418">GHI HMO</option>
+<option value="419">GHI HMO MEDICARE</option>
+<option value="420">GHI MEDICARE (QUEENS)</option>
+<option value="421">GHI MEDICARE PPO</option>
+<option value="422">GHI MEDICARE SUPPLEMENT</option>
+<option value="423">GHI MEDICARE+ CHOICE PPO</option>
+<option value="428">GHI NETWORK ACCESS</option>
+<option value="431">GHI POS</option>
+<option value="427">GHI PPO</option>
+<option value="452">GUARDIAN LIFE INS OF NY</option>
+<option value="453">GUARDIAN LIFE INSURANCE CO OF AMERICA</option>
+<option value="455">HARTFORD ACCIDENT &amp; INDEM</option>
+<option value="456">HARTFORD INS NO FAULT</option>
+<option value="457">HARTFORD INSURANCE WC</option>
+<option value="459">HARTFORD LIFE INS CO</option>
+<option value="460">HARTFORD LIFE INSURANCE CO</option>
+<option value="462">HEALTH CARE PARTNERS</option>
+<option value="1575">HEALTH PLUS AMERIGROUP</option>
+<option value="1875">HEALTH PLUS AMERIGROUP FAMILY HEALTH PLUS</option>
+<option value="1576">HEALTH PLUS AMERIGROUP NY CHILD HEALTH PLUS NY</option>
+<option value="1577">HEALTH PLUS AMERIGROUP NY FAMILY HEALTH PLUS NY</option>
+<option value="1869">HEALTH PLUS AMERIGROUP NY MEDICAID</option>
+<option value="1578">HEALTH PLUS AMERIGROUP NY MEDICAID MANAGED CARE NY</option>
+<option value="466">HEALTH PLUS MEDICAID MANAGED CARE</option>
+<option value="467">HEALTHCARE PARTNERS IPA</option>
+<option value="470">HEALTHCARE PARTNERS IPA MCD</option>
+<option value="473">HEALTHCARE PARTNERS IPA MCR</option>
+<option value="481">HEALTHFIRST CHILD HEALTH PLUS</option>
+<option value="486">HEALTHFIRST FAMILY HEALTH PLUS</option>
+<option value="490">HEALTHFIRST HEALTH NEW YORK</option>
+<option value="494">HEALTHFIRST MEDICAID</option>
+<option value="495">HEALTHFIRST MEDICAID HMO</option>
+<option value="500">HEALTHFIRST MEDICARE + CHOICE</option>
+<option value="505">HEALTHFIRST PPO</option>
+<option value="509">HEALTHNET BLUE CROSS HMO</option>
+<option value="512">HEALTHNET GLOBAL HMO</option>
+<option value="513">HEALTHNET GLOBAL MCR</option>
+<option value="514">HEALTHNET GLOBAL POS</option>
+<option value="515">HEALTHNET HMO</option>
+<option value="517">HEALTHNET MANAGED CARE</option>
+<option value="518">HEALTHNET MEDICARE</option>
+<option value="519">HEALTHNET OF CALIFORNIA</option>
+<option value="520">HEALTHNET POS</option>
+<option value="522">HEALTHNET PPO</option>
+<option value="532">HEALTHPLUS</option>
+<option value="533">HEALTHPLUS CHILD HEALTH PLUS</option>
+<option value="537">HEALTHPLUS FAMILY HEALTH PLUS</option>
+<option value="541">HEALTHPLUS MEDICAID HMO</option>
+<option value="545">HEALTHPLUS MEDICAID MANAGED CARE</option>
+<option value="547">HEALTHSHIELD COMMUNITY HEALTH</option>
+<option value="548">HIP</option>
+<option value="549">HIP  HEALTH PLAN OF NY</option>
+<option value="550">HIP ACCESS I</option>
+<option value="551">HIP ACCESS II</option>
+<option value="552">HIP BASIC</option>
+<option value="553">HIP BRONX EAST CENTER</option>
+<option value="554">HIP CHILD HEALTH PLUS</option>
+<option value="555">HIP COMPRE HEALTH</option>
+<option value="556">HIP COMPRE HEALTH EPO</option>
+<option value="557">HIP DOCTORS CARE NETWORK</option>
+<option value="560">HIP EPO</option>
+<option value="563">HIP HEALTH PLAN OF NJ</option>
+<option value="564">HIP HEALTH PLAN OF NY</option>
+<option value="565">HIP HERITAGE NY MED GRP</option>
+<option value="569">HIP HMO</option>
+<option value="1579">HIP HMO (HEALTHCARE PARTNERS)</option>
+<option value="570">HIP HMO/NON MEDICARE ACUTE</option>
+<option value="571">HIP LICH</option>
+<option value="572">HIP MEDICAID</option>
+<option value="1580">HIP MEDICAID (HEALTHCARE PARTNERS)</option>
+<option value="575">HIP MEDICARE</option>
+<option value="1581">HIP MEDICARE (HEALTHCARE PARTNERS)</option>
+<option value="580">HIP MONTEFIORE</option>
+<option value="581">HIP MONTEFIORE MEDICARE</option>
+<option value="582">HIP POS</option>
+<option value="583">HIP SMARTSTART</option>
+<option value="584">HIP TRIPLE OPTION</option>
+<option value="605">HORIZON NJ</option>
+<option value="1561">HORIZON NJ DIRECT</option>
+<option value="607">HORIZON NJ MCD HMO</option>
+<option value="608">HORIZON OF NJ DIRECT ACCESS</option>
+<option value="614">HORIZON OF NJ EPO</option>
+<option value="617">HORIZON OF NJ FEP</option>
+<option value="621">HORIZON OF NJ HMO</option>
+<option value="626">HORIZON OF NJ IND BLU CARD</option>
+<option value="628">HORIZON OF NJ INDMTY BLUE CARD</option>
+<option value="630">HORIZON OF NJ MCARE BBPLUS</option>
+<option value="633">HORIZON OF NJ MCARE BL VAL</option>
+<option value="636">HORIZON OF NJ MCARE BLUE BPLUS</option>
+<option value="637">HORIZON OF NJ MCARE BLUE VALUE</option>
+<option value="638">HORIZON OF NJ MY WAY DIR ACCES</option>
+<option value="642">HORIZON OF NJ MY WAY PPO</option>
+<option value="646">HORIZON OF NJ POS</option>
+<option value="651">HORIZON OF NJ PPO</option>
+<option value="656">HORIZON OF NJ STANDARD</option>
+<option value="660">HORIZON OF NY EPO</option>
+<option value="664">HORIZON OF NY HMO</option>
+<option value="668">HORIZON OF NY MY WAY</option>
+<option value="672">HORIZON OF NY POS</option>
+<option value="675">HORIZON OF NY PPO</option>
+<option value="680">HSBC</option>
+<option value="681">HUDSON HEALTH</option>
+<option value="682">HUMANA HEALTH PLAN</option>
+<option value="687">INTERNATIONAL PATIENT SERVICES</option>
+<option value="695">INTRACORP-INDEMNITY (RUSK O/P)</option>
+<option value="696">ISLAND GROUP ADMINISTRATION</option>
+<option value="697">KAISER FOUNDATION HEALTH PLAN</option>
+<option value="1879">KAISER PERMANENTE</option>
+<option value="703">LIBERTY MUTUAL</option>
+<option value="704">LIRR</option>
+<option value="705">LOCAL 1199</option>
+<option value="709">LOCAL 1199 CHP</option>
+<option value="712">LOCAL 1199 FHP</option>
+<option value="708">LOCAL 1199 NYU MEMBER CHOICE</option>
+<option value="715">LOCAL 1199 PPO</option>
+<option value="728">LOCAL 1199-FIDELIS CHP</option>
+<option value="729">LOCAL 1199-FIDELIS FHP</option>
+<option value="732">MAGNACARE</option>
+<option value="1873">MAGNACARE DIRECT PLUS</option>
+<option value="733">MAGNACARE PPO</option>
+<option value="739">MAGNACARE WORKERS COMP</option>
+<option value="743">MAGNAHEALTH HMO</option>
+<option value="1865">MASKIN GROUP</option>
+<option value="758">MEDICAID</option>
+<option value="763">MEDICAID NJ/UNISYS</option>
+<option value="767">MEDICARE</option>
+<option value="773">MEDICARE PART A</option>
+<option selected="selected" value="775">MEDICARE PART A &amp; B</option>
+<option value="777">MEDICARE PART B</option>
+<option value="782">MEDSAVE USA INC</option>
+<option value="783">MERITAIN HEALTH</option>
+<option value="784">METROPLUS</option>
+<option value="785">METROPLUS CHILD HEALTH PLUS</option>
+<option value="791">METROPLUS FAMILY HEALTH PLUS</option>
+<option value="1583">METROPLUS MCD MANAGED CARE</option>
+<option value="796">METROPLUS MEDICAID HMO</option>
+<option value="1883">METROPLUS MEDICARE</option>
+<option value="801">METROPLUS MEDICARE ADV</option>
+<option value="804">MONTEFIORE HIP</option>
+<option value="805">MONTEFIORE HIP - MEDICAID</option>
+<option value="810">MONTEFIORE HIP - MEDICARE</option>
+<option value="816">MULTIPLAN</option>
+<option value="817">MULTIPLAN - CIGNA</option>
+<option value="818">MULTIPLAN PPO</option>
+<option value="825">MULTIPLAN-PHCS SAVILITY</option>
+<option value="827">MUTUAL OF OMAHA</option>
+<option value="829">MVP HEALTH CARE HMO</option>
+<option value="833">MVP HEALTH CARE PPO</option>
+<option value="838">MVP HEALTH CARE PPO XTU</option>
+<option value="836">MVP SELECT CARE INC</option>
+<option value="837">MVP-CIGNA NETWORK</option>
+<option value="839">NATIONAL HEALTH PLAN PPO</option>
+<option value="840">NATIONWIDE LIFE INSURANCE CO</option>
+<option value="847">NEIGHBORHOOD HP CHILD HEALTH PLAN</option>
+<option value="852">NEIGHBORHOOD HP FAMILY HEALTH</option>
+<option value="858">NEIGHBORHOOD HP MEDICAID HMO</option>
+<option value="1584">NEIGHBORHOOD HP MEDICAID MANAGED CARE</option>
+<option value="865">NEW JERSEY POLICE DEPARTMENT</option>
+<option value="867">NEW YORK CITY POLICE DEPT</option>
+<option value="869">NEW YORK POLICE DEPT.</option>
+<option value="870">NEW YORK STATE DEPTARTMENT OF INSURANCE</option>
+<option value="872">NIPPON LIFE OF AMERICA</option>
+<option value="1882">NIPPON LIFE-AETNA</option>
+<option value="875">NO FAULT - OTHER</option>
+<option value="885">NY CITY TRANSIT AUTHORITY</option>
+<option value="886">NY FIRE DEPARTMENT</option>
+<option value="888">NYC DEPT. OF SANITATION</option>
+<option value="889">NYC FIRE DEPT.</option>
+<option value="891">NYHTC</option>
+<option value="1881">NYU CC BONE MARROW (HB ONLY)</option>
+<option value="893">ONE HEALTH PLAN PPO</option>
+<option value="894">OTHER</option>
+<option value="895">OTHER AUTO/NO FAULT</option>
+<option value="896">OTHER COMMERCIAL</option>
+<option value="897">OTHER HIP</option>
+<option value="898">OTHER HMO</option>
+<option value="899">OTHER HMO/EPO</option>
+<option value="900">OTHER MEDICAID HMO</option>
+<option value="1591">OTHER MEDICAID MANAGED CARE</option>
+<option value="906">OTHER MEDICARE HMO</option>
+<option value="1592">OTHER MEDICARE MANAGED CARE</option>
+<option value="911">OTHER POS</option>
+<option value="912">OTHER PPO</option>
+<option value="913">OTHER WORKER COMP</option>
+<option value="914">OUT OF STATE MEDICAID</option>
+<option value="920">OXFORD</option>
+<option value="922">OXFORD CMG-MEDICARE HMO</option>
+<option value="926">OXFORD HEALTH PLANS</option>
+<option value="930">OXFORD HEALTH PLANS FREEDOM</option>
+<option value="934">OXFORD HEALTH PLANS HMO</option>
+<option value="937">OXFORD HEALTH PLANS LIBERTY</option>
+<option value="941">OXFORD HEALTH PLANS MEDICARE ADVANTAGE</option>
+<option value="942">OXFORD HEALTH PLANS POS</option>
+<option value="944">OXFORD HEALTH PLANS-HMO</option>
+<option value="945">OXFORD HLTH PLANS GLOBAL HMO</option>
+<option value="949">OXFORD HLTH PLANS GLOBAL MEDICAID</option>
+<option value="952">OXFORD HLTH PLANS GLOBAL MEDICARE</option>
+<option value="954">OXFORD HLTH PLANS GLOBAL MEDICARE ADVANCED</option>
+<option value="960">OXFORD HLTH PLANS GLOBAL POS</option>
+<option value="961">OXFORD HLTH PLANS LIBERTY</option>
+<option value="973">PARAMOUNT INSURANCE</option>
+<option value="1876">PENDING MEDICAID</option>
+<option value="976">PHCS DIRECTOR GUILD</option>
+<option value="977">PHCS MULTIPLAN</option>
+<option value="978">PHCS SAVILITY</option>
+<option value="984">POMCO INSURANCE CO</option>
+<option value="1001">RAILROAD MEDICARE</option>
+<option value="1002">RESEARCH ACCOUNT</option>
+<option value="1006">RISK MANAGEMENT BENEFITS</option>
+<option value="1008">RISK MANAGEMENT PLANNING GROUP</option>
+<option value="1012">ROYAL INS CO NF</option>
+<option value="1014">RSKCO INSURANCE</option>
+<option value="1016">SELF PAY</option>
+<option value="1022">SENTRY INSURANCE</option>
+<option value="1023">SPECIAL RISK SERVICES</option>
+<option value="1024">STATE FARM INSURANCE NF</option>
+<option value="1025">STATE INSURANCE FUND</option>
+<option value="1028">STATE MUTUAL LIFE INS</option>
+<option value="1029">STRONGWATER GROUP 1</option>
+<option value="1030">STRONGWATER GROUP 2</option>
+<option value="1031">STRONGWATER GROUP 3</option>
+<option value="1032">STRONGWATER GROUP 4</option>
+<option value="1033">SULLIVAN AND CROMWELL</option>
+<option value="1034">T.I.G. SPECIALTY INS</option>
+<option value="1035">TEAMSTERS ALLIED BENEFITS</option>
+<option value="1038">TOUCHSTONE HEALTH HMO</option>
+<option value="1041">TRANSATLANTIC REINSURANCE CO.</option>
+<option value="1042">TRAVELERS HMO</option>
+<option value="1046">TRAVELERS INDEMNITY</option>
+<option value="1050">TRAVELERS MEDICARE</option>
+<option value="1051">TRAVELERS POS</option>
+<option value="1055">TRAVELERS PPO</option>
+<option value="1058">TRICARE CORP</option>
+<option value="1897">UHC EMPLOYEE PPO</option>
+<option value="1877">UHC HOTEL TRADES COUNCIL (HOSPITAL ONLY)</option>
+<option value="1878">UMR</option>
+<option value="1062">UMR UNITED MEDICAL RESOURCES PPO</option>
+<option value="1066">UNITED HEALTHCARE</option>
+<option value="1069">UNITED HEALTHCARE BENESIGHT</option>
+<option value="1074">UNITED HEALTHCARE CHILD HLTH PL</option>
+<option value="1075">UNITED HEALTHCARE CHILD HLTH PLUS</option>
+<option value="1080">UNITED HEALTHCARE CHOICE</option>
+<option value="1081">UNITED HEALTHCARE CHOICE EPO</option>
+<option value="1084">UNITED HEALTHCARE CHOICE PRODUCT</option>
+<option value="1086">UNITED HEALTHCARE COMMUNITY</option>
+<option value="1585">UNITED HEALTHCARE COMMUNITY CHILD HEALTH PLUS</option>
+<option value="1856">UNITED HEALTHCARE COMMUNITY FAMILY HEALTH PLUS</option>
+<option value="1857">UNITED HEALTHCARE COMMUNITY MEDICAID HMO</option>
+<option value="1858">UNITED HEALTHCARE COMMUNITY MEDICARE</option>
+<option value="1885">UNITED HEALTHCARE COMMUNITY OF NJ</option>
+<option value="1087">UNITED HEALTHCARE EMPIRE</option>
+<option value="1090">UNITED HEALTHCARE EMPLOYEE</option>
+<option value="1095">UNITED HEALTHCARE EMPLOYEE PPO</option>
+<option value="1097">UNITED HEALTHCARE EPO</option>
+<option value="1105">UNITED HEALTHCARE FAM HLTH PLUS</option>
+<option value="1110">UNITED HEALTHCARE HMO</option>
+<option value="1117">UNITED HEALTHCARE INDEMNITY</option>
+<option value="1124">UNITED HEALTHCARE INS AARP</option>
+<option value="1872">UNITED HEALTHCARE JP MORGAN (HB ONLY)</option>
+<option value="1126">UNITED HEALTHCARE MEDICAID</option>
+<option value="1131">UNITED HEALTHCARE MEDICARE</option>
+<option value="1138">UNITED HEALTHCARE NPP</option>
+<option value="1143">UNITED HEALTHCARE POS</option>
+<option value="1152">UNITED HEALTHCARE POS PLUS</option>
+<option value="1157">UNITED HEALTHCARE PPO</option>
+<option value="1589">UNITED HEALTHCARE STUDENT RESOURCES</option>
+<option value="1164">UNITED HEALTHCARE TSP</option>
+<option value="1170">US DEPARTMENT OF LABOR</option>
+<option value="1172">US LIFE INS CO</option>
+<option value="1173">USHC CORP HEALTH HMO/POS</option>
+<option value="1184">USHC CORP HEALTH INDEMNITY</option>
+<option value="1189">USHC CORP HEALTH MEDICAID</option>
+<option value="1193">USHC CORP HEALTH MEDICARE</option>
+<option value="1197">USHC CORP HEALTH MEDICARE HMO</option>
+<option value="1198">USHC CORP HEALTH PPO</option>
+<option value="1201">USHC NYS CHILDREN'S PLAN</option>
+<option value="1204">VERIZON WORKERS COMP</option>
+<option value="1205">VETERANS ADMIN. REFERRAL</option>
+<option value="1208">VISITING NURSE SERVICE</option>
+<option value="1867">VNS MEDICARE/MEDICAID ADVANTAGE (HB)</option>
+<option value="1210">VYTRA HEALTHCARE HMO</option>
+<option value="1215">VYTRA HEALTHCARE MEDICARE</option>
+<option value="1219">VYTRA HEALTHCARE POS</option>
+<option value="1224">VYTRA HEALTHCARE PPO</option>
+<option value="1229">VYTRA HEALTHCARE-GLOBAL HMO</option>
+<option value="1230">VYTRA HEALTHCARE-GLOBAL MCR</option>
+<option value="1231">VYTRA HEALTHCARE-GLOBAL POS</option>
+<option value="1232">VYTRA HEALTHCARE-GLOBAL PPO</option>
+<option value="1233">WAUSAU BENEFITS</option>
+<option value="1234">WELLCARE</option>
+<option value="1236">WELLCARE CHILD HEALTH PLUS</option>
+<option value="1237">WELLCARE FAMILY HEALTH PLUS</option>
+<option value="1238">WELLCARE MEDICAID HMO</option>
+<option value="1242">WELLCARE MEDICARE</option>
+<option value="1243">WELLCARE OF NY CHP</option>
+<option value="1246">WELLCARE OF NY FHP</option>
+<option value="1250">WELLCARE OF NY MCAID HMO</option>
+<option value="1254">WELLCARE OF NY MEDICARE</option>
+<option value="1259">WORKERS' COMP OTHER</option>
+<option value="1267">WORKERS' COMPENSATION</option>
+<option value="1272">ZURICH LIFE INS CO</option>
+<option value="1273">ZURICH NORTH AMERICA</option>
+</select>                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Timely Filing Days Left</td>
+                            <td valign="top">
+<b><span style="color: #FF0000">Beyond Timely Filing</span></b>                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+                <td valign="top" width="50%">
+                    <table style="width: 100%; height: 50px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top">Original Gross Charges&nbsp;&nbsp;                            
+                                <input style="text-align:right" id="frm_OriginalGrossCharge" name="frm_OriginalGrossCharge" value="$5,359.91" type="text">                                    
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody></table>
+        <br>
+        <div>
+            <ul id="tabs">
+                <li style="background-color: rgb(222, 219, 219); border-top-width: 3px; border-top-color: rgb(222, 219, 219);" id="tab1"><a style="font-weight: normal;" id="Actions" href="/RM/AuditFindings/Actions?a=2036242">Actions</a></li>
+                <li style="background-color: rgb(222, 219, 219); border-top-width: 3px; border-top-color: rgb(222, 219, 219);" id="tab2"><a style="font-weight: normal;" id="Financials" href="/RM/AuditFindings/Financials?a=2036242">Financials</a></li>
+                <li style="background-color: rgb(222, 219, 219); border-top-width: 3px; border-top-color: rgb(222, 219, 219);" id="tab3"><a style="font-weight: normal;" id="Details" href="/RM/AuditFindings/Details?a=2036242">Details</a></li>
+                <li style="background-color: rgb(222, 219, 219); border-top-width: 3px; border-top-color: rgb(222, 219, 219);" id="tab4"><a style="font-weight: normal;" id="Coding" href="/RM/AuditFindings/Coding?a=2036242">Coding</a></li>
+                <li style="background-color: rgb(222, 219, 219); border-top-width: 3px; border-top-color: rgb(222, 219, 219);" id="tab5"><a style="font-weight: normal;" id="DenialsAppeals" href="/RM/AuditFindings/DenialsAppeals?a=2036242">Denials/Appeals</a></li>
+                <li style="background-color: rgb(255, 255, 255); border-top-width: 3px; border-top-color: rgb(222, 219, 219);" id="tab6"><a style="font-weight: bold;" id="PaymentAnalysis" href="/RM/AuditFindings/PaymentAnalysis?a=2036242">Payment Analysis</a></li>
+            </ul>
+        </div>         
+<input id="Delete_Confirmed" name="Delete_Confirmed" value="0" type="hidden">
+<script>
+
+    String.prototype.trim = function () {
+        return this.replace(/^\s+|\s+$/g, "");
+    }
+
+    function verifyQty(oSourceElement)
+    { 
+        
+        var nQty = 0;
+        var s;
+ 
+        if (oSourceElement.value != null && oSourceElement.value != "") 
+        {
+            var sCheckID = "frm_ValidationErrors";
+            var oElement_Check = document.getElementById(sCheckID);
+
+            if (isNaN(oSourceElement.value))
+            { 
+                alert("Invalid value for Quantity.");
+                oElement_Check.value = 1;
+                return;
+            }
+
+            nQty = new Number(oSourceElement.value);
+
+            if (nQty < 0) 
+            {
+                nQty *= -1;
+                oSourceElement.value = nQty;
+            }
+            else if (nQty == 0) 
+            {
+                nQty = 1;
+                oSourceElement.value = nQty;
+            }
+
+            oElement_Check.value = 0;
+        
+        }
+
+    }
+
+    function updateVariance(oSourceElement)
+    { 
+        var sCheckID = "frm_ValidationErrors";
+        var oElement_Check = document.getElementById(sCheckID);
+
+        var sDelimChar = "-";
+        var arrTemp = new Array();
+
+
+        var sRegExp = "^-?[0-9]+(\.[0-9]{2})?$";
+        var regEx = new RegExp(sRegExp);
+        var bMatch;
+        
+        //-------------------------------------------------------
+        var sID = new String(oSourceElement.id);
+
+        arrTemp = sID.split(sDelimChar);
+
+        var sRecordID = arrTemp[1];
+        var sElementType = arrTemp[2];
+
+        var sElementID_NetRevenue = new String("frm_Row-" + sRecordID + "-NetRevenue");
+        var oElement_NetRevenue = document.getElementById(sElementID_NetRevenue);
+
+        var sNetRevenueValue = new String(oElement_NetRevenue.value);        
+
+        if (sID.indexOf("NetRevenue") > -1)
+        {
+            bMatch = regEx.test(sNetRevenueValue);
+
+            if (sNetRevenueValue.length == 0 || (!bMatch))
+            {
+                alert("Invalid value for Net Revenue.");
+                oElement_Check.value = 1;
+                return;
+            }
+
+        }
+        //-------------------------------------------------------
+        
+        var sElementID_PaymentReceived = "";
+        var oElement_PaymentReceived;
+        var nPaymentReceived;        
+        var nNetRevenue;
+        var bIsNegative;
+        
+
+        sElementID_PaymentReceived = new String("frm_Row-" + sRecordID + "-PaymentReceived");
+        oElement_PaymentReceived = document.getElementById(sElementID_PaymentReceived);        
+
+        
+        
+
+
+        //alert("oElement_PaymentReceived.value: " + oElement_PaymentReceived.value);
+        //alert("oElement_NetRevenue.value: " + oElement_NetRevenue.value);
+
+
+        //=========================================================================================        
+        
+
+        sNetRevenueValue = sNetRevenueValue.trim();
+        sNetRevenueValue = sNetRevenueValue.replace("$", "");
+        sNetRevenueValue = sNetRevenueValue.replace(",", "");
+
+        bIsNegative = false;
+        
+        if(sNetRevenueValue.indexOf("(") > -1 && sNetRevenueValue.indexOf(")") > -1 || sNetRevenueValue.indexOf("-") > -1)
+        {
+            bIsNegative = true;
+            sNetRevenueValue = sNetRevenueValue.replace("(", "");
+            sNetRevenueValue = sNetRevenueValue.replace(")", "");
+            sNetRevenueValue = sNetRevenueValue.replace("-", "");
+        }  
+        
+        
+        nNetRevenue = new Number(sNetRevenueValue);
+        nNetRevenue = Math.abs(nNetRevenue);
+
+        if (bIsNegative)
+        { 
+            nNetRevenue *= -1;
+        }
+
+        //alert("nNetRevenue: " + nNetRevenue);
+        //=========================================================================================
+
+
+
+        //=========================================================================================        
+        var sPaymentReceivedValue = new String(oElement_PaymentReceived.value);
+
+        sPaymentReceivedValue = sPaymentReceivedValue.trim();
+        sPaymentReceivedValue = sPaymentReceivedValue.replace("$", "");
+        sPaymentReceivedValue = sPaymentReceivedValue.replace(",", "");
+
+        bIsNegative = false;
+        
+        if(sPaymentReceivedValue.indexOf("(") > -1 && sPaymentReceivedValue.indexOf(")") > -1 || sPaymentReceivedValue.indexOf("-") > -1)
+        {
+            bIsNegative = true;
+            sPaymentReceivedValue = sPaymentReceivedValue.replace("(", "");
+            sPaymentReceivedValue = sPaymentReceivedValue.replace(")", "");
+            sPaymentReceivedValue = sPaymentReceivedValue.replace("-", "");
+        }
+        
+        //-----------------------------------------------------------------------------------------
+      
+         
+
+        
+
+
+        if (sID.indexOf("PaymentReceived") > -1)
+        {
+            bMatch = regEx.test(sPaymentReceivedValue);
+
+            if (sPaymentReceivedValue.length == 0 || (!bMatch))
+            {
+                alert("Invalid value for Payment Received.");
+                oElement_Check.value = 1;
+                return;
+            }
+        }
+
+        
+        nPaymentReceived = new Number(sPaymentReceivedValue);
+        nPaymentReceived = Math.abs(nPaymentReceived);
+               
+        if (bIsNegative)
+        { 
+            nPaymentReceived *= -1;
+        }
+        
+        
+        //alert("nPaymentReceived: " + nPaymentReceived);
+
+
+        
+        var sHdnElementID_Variance = new String("frm_Row-" + sRecordID + "-Variance");
+        var oHdn_Variance = document.getElementById(sHdnElementID_Variance);
+
+        var sHdnElementID_PctVariance = new String("frm_Row-" + sRecordID + "-PctVariance");
+        var oHdn_PctVariance = document.getElementById(sHdnElementID_PctVariance);
+
+        var sSpanElementID_Variance = new String("spnVariance-" + sRecordID);
+        var oSpan_Variance = document.getElementById(sSpanElementID_Variance);
+
+        var sSpanElementID_PctVariance = new String("spnPctVariance-" + sRecordID);
+        var oSpan_PctVariance = document.getElementById(sSpanElementID_PctVariance);
+
+        var nVariance = (nPaymentReceived - nNetRevenue);
+        
+        //alert("nVariance: " + nVariance);
+
+
+        oHdn_Variance.value = nVariance;
+
+        //alert("oHdn_Variance.value: " + oHdn_Variance.value);
+
+        var nNetRevenue_Denom;
+
+        if(nNetRevenue == 0)
+            nNetRevenue_Denom = 1;
+        else
+            nNetRevenue_Denom = nNetRevenue;
+
+        oSpan_Variance.innerText = "$" + nVariance.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+
+        var nPctVariance = (((nPaymentReceived - nNetRevenue) / nNetRevenue_Denom) * 100);
+        oHdn_PctVariance.value = nPctVariance;
+
+        //alert("oHdn_PctVariance.value: " + oHdn_PctVariance.value);
+        
+
+        nPctVariance = nPctVariance.toFixed(2);
+        oSpan_PctVariance.innerText = nPctVariance + "%";
+
+        oElement_Check.value = 0;
+
+        //=========================================================================================
+    
+    }
+
+    function checkDate(oSourceElement, sServiceDate)
+    { 
+        
+        var sDate = oSourceElement.value;
+        var sCheckID = "frm_ValidationErrors";
+        var oElement_Check = document.getElementById(sCheckID);
+
+        if (sDate != "") 
+        {
+            var reGoodDate = /^(?:(\d{1}|\d{2})[\/.](\d{1}|\d{2})[\/.](\d{2}|\d{4}))$/;
+
+            var bDate_IsValid = reGoodDate.test(sDate);
+
+            if (!bDate_IsValid)
+            {
+                oElement_Check.value = 1;
+
+                bError = true;
+                sError = "Remittance Date is not valid.";
+                alert(sError);
+                return;
+            }
+
+            var dtRemitDate = new Date(sDate);
+            var dtServiceDate = new Date(sServiceDate);
+
+            if(dtRemitDate < dtServiceDate)
+            {
+                oElement_Check.value = 1;
+                bError = true;                
+
+                sError = "Remittance Date must be equal to or after the Service Date.";
+                alert(sError);
+                return;
+            }
+
+
+
+            var bIsFutureDate = isFutureDate(sDate);
+
+            if(bIsFutureDate)
+            {
+                oElement_Check.value = 1;
+                bError = true;                
+
+                sError = "Remittance Date must be before or equal to the Current Date.";
+                alert(sError);
+                return;
+            }
+
+            oElement_Check.value = 0;
+
+        }
+
+    }
+
+    function verifyDate(oElement)
+    {
+
+        var sCheckID = "frm_ValidationErrors";
+        var oElement_Check = document.getElementById(sCheckID);
+
+        var sServiceDate = new String(oElement.value);
+        sServiceDate = sServiceDate.trim();
+
+        var oElement_AdmitDate = document.getElementById("frm_Service_AdmitDate");
+        var oElement_DischargeDate = document.getElementById("frm_Service_DischargeDate");
+
+        var sAdmitDate = new String(oElement_AdmitDate.value);
+        var sDischargeDate = new String(oElement_DischargeDate.value);
+
+        var dtAdmitDate;
+        var dtDischargeDate;
+        var dtServiceDate;
+
+        dtAdmitDate = new Date(sAdmitDate);
+        dtDischargeDate = new Date(sDischargeDate);
+
+        var bError = false;
+        var sError = "";
+
+        var bIsFutureDate;
+
+        if (sServiceDate != "") {
+
+            var reGoodDate = /^(?:(\d{1}|\d{2})[\/.](\d{1}|\d{2})[\/.](\d{2}|\d{4}))$/;
+
+            var bServiceDate_IsValid = reGoodDate.test(sServiceDate);
+
+            if (!bServiceDate_IsValid) {
+                oElement_Check.value = 1;
+
+                bError = true;
+                sError = "Service Date is not valid.";
+                alert(sError);
+                return;
+            }
+
+
+
+            dtServiceDate = new Date(sServiceDate);
+
+            if (dtServiceDate < dtAdmitDate) 
+            {
+                oElement_Check.value = 1;
+                bError = true;
+
+                sError = "Service Date must be equal to or after the Admit Date.";
+                alert(sError);
+                return;
+            }
+
+            if (dtServiceDate > dtDischargeDate) 
+            {
+                oElement_Check.value = 1;
+                bError = true;
+
+                sError = "Service Date must be equal to or before the Discharge Date.";
+                alert(sError);
+                return;
+            }
+
+            bIsFutureDate = isFutureDate(sServiceDate);
+
+            if(bIsFutureDate)
+            {
+                oElement_Check.value = 1;
+                bError = true;                
+
+                sError = "Service Date must be before or equal to the Current Date.";
+                alert(sError);
+                return;
+            }
+
+            oElement_Check.value = 0;
+
+        }
+        else
+        {
+            oElement_Check.value = 1;
+        }
+
+    }
+
+    function updateTotal(nRecordID) 
+    {
+
+        var nFactor = new Number(1);
+
+        var sRecordID = new String(nRecordID);
+
+        var sElementName_ChargeType_U = new String("frm_Row-" + sRecordID + "-ChargeType-U");
+        var sElementName_ChargeType_O = new String("frm_Row-" + sRecordID + "-ChargeType-O");
+        var sElementName_ChargeType_P = new String("frm_Row-" + sRecordID + "-ChargeType-P");
+
+        var oElement_ChargeType_U = document.getElementById(sElementName_ChargeType_U);
+        var oElement_ChargeType_O = document.getElementById(sElementName_ChargeType_O);
+        var oElement_ChargeType_P = document.getElementById(sElementName_ChargeType_P);
+
+
+        if (oElement_ChargeType_O.checked == true) 
+        {
+            nFactor = -1;
+        }
+        else 
+        {
+            nFactor = 1;
+        }
+
+
+        var sElementName_Amount = new String("frm_Row-" + sRecordID + "-Amount");
+        var sElementName_Qty = new String("frm_Row-" + sRecordID + "-Qty");
+        var sElementName_TotalAmount = new String("frm_Row-" + sRecordID + "-TotalAmount");
+
+
+        var oElement_Amount = document.getElementById(sElementName_Amount);
+        var oElement_Qty = document.getElementById(sElementName_Qty);
+        var oElement_TotalAmount = document.getElementById(sElementName_TotalAmount);
+
+        var nAmount = 0;
+        var nQty = 0;
+        var nTotalAmount = 0;
+
+        var s;
+
+
+        if (oElement_Amount.value != null && oElement_Amount.value != "") {
+            s = new String(oElement_Amount.value);
+
+            s = s.replace("$", "");
+            s = s.replace(",", "");
+            s = s.replace("(", "");
+            s = s.replace(")", "");
+
+            nAmount = new Number(s);
+        }
+
+        if (oElement_Qty.value != null && oElement_Qty.value != "") 
+        {
+            nQty = new Number(oElement_Qty.value);
+
+            if (nQty < 0) {
+                nQty *= -1;
+                oElement_Qty.value = nQty;
+            }
+            else if (nQty == 0) {
+                nQty = 1;
+                oElement_Qty.value = nQty;
+            }
+
+        }
+
+        nTotalAmount = new Number(nAmount * nQty * nFactor);
+
+        oElement_TotalAmount.value = (Math.round(nTotalAmount * 100) / 100);
+
+    }
+
+    function popupSearchCDM(nRecordID) {
+        var p1 = "scrollbars=yes,resizable=yes,status=no,location=no,toolbar=no,menubar=no,";
+        var p2 = "width=600px,height=700px,left=350,top=50";
+
+        var oElement;
+        var sServerName;
+        var sAppName;
+
+        oElement = document.getElementById("SERVER_NAME");
+        sServerName = oElement.value;
+
+        oElement = document.getElementById("APP_NAME");
+        sAppName = oElement.value;
+
+        window.open('http://' + sServerName + '/' + sAppName + '/CDM_Search?rowID=' + nRecordID, 'CDM_Search', p1 + p2);
+    }
+
+    function formAction(sFormAction, nRowID) 
+    {
+
+        var oElement_Action;
+        var oElement_RowID;
+
+        oElement_Action = document.getElementById("frm_Action");
+        oElement_RowID = document.getElementById("frm_RowID");
+
+        if (oElement_Action != null && oElement_RowID != null) 
+        {
+
+            if (sFormAction == "UPDATE_ROW" || sFormAction == "ADD_ROW")
+            {
+                var sCheckID = "frm_ValidationErrors";
+                var oElement_Check = document.getElementById(sCheckID);
+
+                if (oElement_Check.value == 1)
+                {
+                    alert("Please correct all validation errors, and re-submit.");
+                    return;
+                }
+
+            }
+
+            if (sFormAction == "DELETE_ROW") 
+            {
+
+                var bDeleteConfirmed = confirm("Are you sure you want to delete this record?");
+
+                if (!bDeleteConfirmed)
+                    return;
+            }
+
+            oElement_Action.value = sFormAction;
+            oElement_RowID.value = nRowID;
+
+            document.forms[0].submit();
+
+        }
+        else {
+            alert("Error: Elements are null");
+        }
+
+    }
+
+</script>
+
+<div id="tabs-6" style="border-color: #dedbdb; border-style:solid; border-width: 1px;">
+
+    <table bgcolor="#FFFFFF" border="0" width="800px">
+        <tbody><tr>
+        <td bgcolor="#ffffff" valign="top" width="75%">
+            
+            <table id="tblMain" cellspacing="0">                                     
+            <tbody><tr>
+                <td valign="top">
+                    
+                    <table border="0" cellpadding="1" cellspacing="1">
+
+                    <tbody><tr>
+
+                        <td style="background-color:#dedbdb;width:40px" align="center" valign="middle">
+                            <b>Action</b>
+                        </td>
+                        <td style="background-color:#dedbdb;width:40px" align="center" valign="middle">
+                            <b>Rev<br>Code</b>
+                        </td>
+                        <td style="background-color:#dedbdb;width:50px" align="center" valign="middle">
+                            <b>Service<br>Date</b>
+                        </td>                        
+                        <td style="background-color:#dedbdb;width:50px" align="center" valign="middle">
+                            <b>HCPCS</b>
+                        </td>
+                        <td style="background-color:#dedbdb;width:50px" align="center" valign="middle">
+                            <b>Mod</b>
+                        </td>                        
+                        <td style="background-color:#dedbdb;width:25px" align="center" valign="middle">
+                            <b>Qty</b>
+                        </td>
+                        <td style="background-color:#dedbdb;width:50px" align="center" valign="middle">
+                            <b>Charge<br>Type</b>
+                        </td>
+                        <td style="background-color:#dedbdb;width:50px" align="center" valign="middle">
+                            <b>Total<br>Amount</b>
+                        </td>
+                        <td style="background-color:#dedbdb;width:50px" align="center" valign="middle">
+                            <b>Net<br>Revenue</b>
+                        </td>
+
+                        <td style="background-color:#dedbdb;width:50px" align="center" valign="middle">
+                            <b>Remittance<br>Date</b>
+                        </td>
+                        <td style="background-color:#dedbdb;width:100px" align="center" valign="middle">
+                            <b>Rcd</b>
+                        </td>
+                        <td style="background-color:#dedbdb;width:50px" align="center" valign="middle">
+                            <b>Variance</b>
+                        </td>
+                        <td style="background-color:#dedbdb" align="center" nowrap="nowrap" valign="middle">
+                            <b>% Variance</b>
+                        </td>
+                        <td style="background-color:#dedbdb;width:50px" align="center" valign="middle">
+                            <b>Denied?</b>
+                        </td>
+                        <td style="background-color:#dedbdb" align="center" valign="middle">
+                            <b>Remark</b>
+                        </td>
+                        <td style="background-color:#dedbdb;width:50px" align="center" valign="middle">
+                            <b>Comment</b>
+                        </td>                        
+                    </tr>
+                        
+<tr style="background-color:#ffffff"><td align="center"><a href="javascript: formAction('EDIT_ROW', 210911);">Edit</a></td><td align="center"><span style="color:#000000">278</span></td><td align="center"><span style="color:#000000">11/29/2012</span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000">1</span></td><td align="left"><span style="color:#000000">Under</span></td><td align="right"><span style="color:#000000">$217.83</span></td><td align="right"><span style="color:#000000">$196.05</span></td><td align="center"><span style="color:#000000"></span></td><td align="right"><span style="color:#000000">$0.00</span></td><td align="right"><span style="color:#000000">($196.05)</span></td><td align="right"><span style="color:#000000">-100.00%</span></td><td align="center"><span style="color:#000000"></span></td><td align="left" nowrap="nowrap"><span style="color:#000000"></span></td><td align="left"><span style="color:#000000"></span></td></tr><tr style="background-color:#dedbdb"><td align="center"><a href="javascript: formAction('EDIT_ROW', 210910);">Edit</a></td><td align="center"><span style="color:#000000">278</span></td><td align="center"><span style="color:#000000">11/29/2012</span></td><td align="center"><span style="color:#000000">C1894</span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000">1</span></td><td align="left"><span style="color:#000000">Under</span></td><td align="right"><span style="color:#000000">$275.57</span></td><td align="right"><span style="color:#000000">$248.01</span></td><td align="center"><span style="color:#000000"></span></td><td align="right"><span style="color:#000000">$0.00</span></td><td align="right"><span style="color:#000000">($248.01)</span></td><td align="right"><span style="color:#000000">-100.00%</span></td><td align="center"><span style="color:#000000"></span></td><td align="left" nowrap="nowrap"><span style="color:#000000"></span></td><td align="left"><span style="color:#000000"></span></td></tr><tr style="background-color:#ffffff"><td align="center"><a href="javascript: formAction('EDIT_ROW', 210908);">Edit</a></td><td align="center"><span style="color:#000000">636</span></td><td align="center"><span style="color:#000000">11/29/2012</span></td><td align="center"><span style="color:#000000">Q9967</span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000">100</span></td><td align="left"><span style="color:#000000">Under</span></td><td align="right"><span style="color:#000000">$185.00</span></td><td align="right"><span style="color:#000000">$18.50</span></td><td align="center"><span style="color:#000000"></span></td><td align="right"><span style="color:#000000">$0.00</span></td><td align="right"><span style="color:#000000">($18.50)</span></td><td align="right"><span style="color:#000000">-100.00%</span></td><td align="center"><span style="color:#000000"></span></td><td align="left" nowrap="nowrap"><span style="color:#000000"></span></td><td align="left"><span style="color:#000000"></span></td></tr><tr style="background-color:#dedbdb"><td align="center"><a href="javascript: formAction('EDIT_ROW', 210912);">Edit</a></td><td align="center"><span style="color:#000000">710</span></td><td align="center"><span style="color:#000000">11/29/2012</span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000">1</span></td><td align="left"><span style="color:#000000">Over</span></td><td align="right"><span style="color:#000000">($2,343.00)</span></td><td align="right"><span style="color:#000000">($1,757.25)</span></td><td align="center"><span style="color:#000000"></span></td><td align="right"><span style="color:#000000">$0.00</span></td><td align="right"><span style="color:#000000">$1,757.25</span></td><td align="right"><span style="color:#000000">-100.00%</span></td><td align="center"><span style="color:#000000"></span></td><td align="left" nowrap="nowrap"><span style="color:#000000"></span></td><td align="left"><span style="color:#000000"></span></td></tr><tr style="background-color:#ffffff"><td align="center"><a href="javascript: formAction('EDIT_ROW', 210909);">Edit</a></td><td align="center"><span style="color:#000000">761</span></td><td align="center"><span style="color:#000000">11/29/2012</span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000">1</span></td><td align="left"><span style="color:#000000">Under</span></td><td align="right"><span style="color:#000000">$3,497.21</span></td><td align="right"><span style="color:#000000">$0.00</span></td><td align="center"><span style="color:#000000"></span></td><td align="right"><span style="color:#000000">$0.00</span></td><td align="right"><span style="color:#000000">$0.00</span></td><td align="right"><span style="color:#000000">0.00%</span></td><td align="center"><span style="color:#000000"></span></td><td align="left" nowrap="nowrap"><span style="color:#000000"></span></td><td align="left"><span style="color:#000000"></span></td></tr><tr style="background-color:#dedbdb"><td align="center"><a href="javascript: formAction('EDIT_ROW', 210907);">Edit</a></td><td align="center"><span style="color:#000000">761</span></td><td align="center"><span style="color:#000000">11/29/2012</span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000">1</span></td><td align="left"><span style="color:#000000">Under</span></td><td align="right"><span style="color:#000000">$1,596.48</span></td><td align="right"><span style="color:#000000">$0.00</span></td><td align="center"><span style="color:#000000"></span></td><td align="right"><span style="color:#000000">$0.00</span></td><td align="right"><span style="color:#000000">$0.00</span></td><td align="right"><span style="color:#000000">0.00%</span></td><td align="center"><span style="color:#000000"></span></td><td align="left" nowrap="nowrap"><span style="color:#000000"></span></td><td align="left"><span style="color:#000000"></span></td></tr><tr style="background-color:#ffffff"><td align="center"><a href="javascript: formAction('EDIT_ROW', 210906);">Edit</a></td><td align="center"><span style="color:#000000">761</span></td><td align="center"><span style="color:#000000">11/29/2012</span></td><td align="center"><span style="color:#000000">20206</span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000">1</span></td><td align="left"><span style="color:#000000">Over</span></td><td align="right"><span style="color:#000000">($794.65)</span></td><td align="right"><span style="color:#000000">$0.00</span></td><td align="center"><span style="color:#000000"></span></td><td align="right"><span style="color:#000000">$0.00</span></td><td align="right"><span style="color:#000000">$0.00</span></td><td align="right"><span style="color:#000000">0.00%</span></td><td align="center"><span style="color:#000000"></span></td><td align="left" nowrap="nowrap"><span style="color:#000000"></span></td><td align="left"><span style="color:#000000"></span></td></tr><tr><td>&nbsp;</td></tr><tr style="background-color:#dedbdb"><td align="center" valign="top"><a href="javascript: formAction('EDIT_ROW', -1);">Edit Total</a></td><td colspan="6" align="right" valign="top"><b>Totals</b></td><td align="right" valign="top"><b>$2,634.44</b></td><td align="right" valign="top"><b>($1,294.69)</b><input id="frm_Row-FINAL-NetRevenue" name="frm_Row-FINAL-NetRevenue" value="($1,294.69)" type="hidden"></td><td align="center" valign="top">&nbsp;</td><td align="right" valign="top"><b>$0.00</b></td><td align="right" valign="top"><span id="spnVariance-FINAL"><b>$1,294.69</b></span><input id="frm_Row-FINAL-Variance" name="frm_Row-FINAL-Variance" value="$1,294.69" type="hidden"></td><td align="right" valign="top"><span id="spnPctVariance-FINAL"><b>-100.00%</b></span><input id="frm_Row-FINAL-PctVariance" name="frm_Row-FINAL-PctVariance" value="-100.00%" type="hidden"></td><td colspan="3" valign="top">&nbsp;</td></tr><tr style="background-color:#ffffff"><td>&nbsp;</td></tr><tr style="background-color:#dedbdb"><td colspan="17"><b>Add New Item</b></td></tr><tr><td align="center"><input name="frm_ID" value="0" type="hidden"><input id="frm_Service_AdmitDate" name="frm_Service_AdmitDate" value="11/29/2012" type="hidden"><input id="frm_Service_DischargeDate" name="frm_Service_DischargeDate" value="11/29/2012" type="hidden"><a href="javascript: formAction('UPDATE_ROW', 0);">Add Item</a><br><br><a href="javascript: formAction('CANCEL_ROW', 0);">Cancel</a></td><td align="center" valign="top"><select name="frm_Row-0-RevCode" id="frm_Row-0-RevCode"><option value="0">- select -</option><option value="18">121</option><option value="19">122</option><option value="20">123</option><option value="28">131</option><option value="29">132</option><option value="62">171</option><option value="63">172</option><option value="64">173</option><option value="65">174</option><option value="83">206</option><option value="92">219</option><option value="111">250</option><option value="112">251</option><option value="113">252</option><option value="115">254</option><option value="116">255</option><option value="117">256</option><option value="118">257</option><option value="119">258</option><option value="120">259</option><option value="121">260</option><option value="122">261</option><option value="123">262</option><option value="124">263</option><option value="125">264</option><option value="126">269</option><option value="127">270</option><option value="128">271</option><option value="129">272</option><option value="130">273</option><option value="131">274</option><option value="132">275</option><option value="133">276</option><option value="135">278</option><option value="136">279</option><option value="137">280</option><option value="138">289</option><option value="139">290</option><option value="140">291</option><option value="141">292</option><option value="142">293</option><option value="143">294</option><option value="144">299</option><option value="145">300</option><option value="146">301</option><option value="147">302</option><option value="148">303</option><option value="149">304</option><option value="150">305</option><option value="151">306</option><option value="152">307</option><option value="153">309</option><option value="154">310</option><option value="155">311</option><option value="156">312</option><option value="157">314</option><option value="158">319</option><option value="159">320</option><option value="160">321</option><option value="161">322</option><option value="162">323</option><option value="163">324</option><option value="164">329</option><option value="165">330</option><option value="166">331</option><option value="167">332</option><option value="168">333</option><option value="169">335</option><option value="170">339</option><option value="171">340</option><option value="172">341</option><option value="173">342</option><option value="174">343</option><option value="175">344</option><option value="176">349</option><option value="177">350</option><option value="178">351</option><option value="179">352</option><option value="180">359</option><option value="181">360</option><option value="182">361</option><option value="183">362</option><option value="184">367</option><option value="185">369</option><option value="186">370</option><option value="187">371</option><option value="188">372</option><option value="190">379</option><option value="191">380</option><option value="192">381</option><option value="193">382</option><option value="194">383</option><option value="195">384</option><option value="196">385</option><option value="197">386</option><option value="198">387</option><option value="199">389</option><option value="200">390</option><option value="201">391</option><option value="202">392</option><option value="203">399</option><option value="204">400</option><option value="205">401</option><option value="206">402</option><option value="207">403</option><option value="208">404</option><option value="209">409</option><option value="210">410</option><option value="211">412</option><option value="212">413</option><option value="213">419</option><option value="214">420</option><option value="215">421</option><option value="216">422</option><option value="217">423</option><option value="218">424</option><option value="219">429</option><option value="220">430</option><option value="221">431</option><option value="222">432</option><option value="223">433</option><option value="224">434</option><option value="225">439</option><option value="226">440</option><option value="227">441</option><option value="228">442</option><option value="229">443</option><option value="230">444</option><option value="231">449</option><option value="232">450</option><option value="233">451</option><option value="234">452</option><option value="235">456</option><option value="236">459</option><option value="237">460</option><option value="238">469</option><option value="239">470</option><option value="240">471</option><option value="241">472</option><option value="242">479</option><option value="243">480</option><option value="244">481</option><option value="245">482</option><option value="246">483</option><option value="247">489</option><option value="248">490</option><option value="249">499</option><option value="252">510</option><option value="253">511</option><option value="254">512</option><option value="255">513</option><option value="256">514</option><option value="257">515</option><option value="258">516</option><option value="259">517</option><option value="260">519</option><option value="271">530</option><option value="272">531</option><option value="273">539</option><option value="308">610</option><option value="309">611</option><option value="310">612</option><option value="311">614</option><option value="312">615</option><option value="313">616</option><option value="314">618</option><option value="315">619</option><option value="316">621</option><option value="317">622</option><option value="318">623</option><option value="319">624</option><option value="320">631</option><option value="321">632</option><option value="322">633</option><option value="323">634</option><option value="324">635</option><option value="325">636</option><option value="326">637</option><option value="355">681</option><option value="356">682</option><option value="357">683</option><option value="358">684</option><option value="359">689</option><option value="360">700</option><option value="361">710</option><option value="362">720</option><option value="363">721</option><option value="364">722</option><option value="365">723</option><option value="366">724</option><option value="367">729</option><option value="368">730</option><option value="369">731</option><option value="370">732</option><option value="371">739</option><option value="372">740</option><option value="373">750</option><option value="374">760</option><option value="375">761</option><option value="376">762</option><option value="377">769</option><option value="378">770</option><option value="379">771</option><option value="381">790</option><option value="382">800</option><option value="383">801</option><option value="384">802</option><option value="385">803</option><option value="386">804</option><option value="387">809</option><option value="388">810</option><option value="389">811</option><option value="390">812</option><option value="391">813</option><option value="392">814</option><option value="393">819</option><option value="394">820</option><option value="395">821</option><option value="396">822</option><option value="397">823</option><option value="398">824</option><option value="399">825</option><option value="400">829</option><option value="401">830</option><option value="402">831</option><option value="407">839</option><option value="408">840</option><option value="409">841</option><option value="414">849</option><option value="415">850</option><option value="416">851</option><option value="421">859</option><option value="422">880</option><option value="423">881</option><option value="425">889</option><option value="426">900</option><option value="427">901</option><option value="428">902</option><option value="429">903</option><option value="430">904</option><option value="431">905</option><option value="432">906</option><option value="433">907</option><option value="434">911</option><option value="435">912</option><option value="436">913</option><option value="437">914</option><option value="438">915</option><option value="439">916</option><option value="440">917</option><option value="441">918</option><option value="442">919</option><option value="443">920</option><option value="444">921</option><option value="445">922</option><option value="446">923</option><option value="447">924</option><option value="448">925</option><option value="449">929</option><option value="452">940</option><option value="453">941</option><option value="454">942</option><option value="455">943</option><option value="456">944</option><option value="457">945</option><option value="460">948</option><option value="461">949</option><option value="486">988</option><option value="488">990</option><option value="496">998</option></select></td><td align="center" valign="top"><input style="width: 60px; text-align:right" name="frm_Row-0-ServiceDate" onblur="javascript:verifyDate(this);" value="11/29/2012" type="text"></td><td align="center" valign="top"><input style="width: 55px; text-align:right" name="frm_Row-0-HCPCSCPT" id="frm_Row-0-HCPCSCPT" type="text"></td><td align="center" valign="top"><input style="width: 55px; text-align:right" name="frm_Row-0-HCPCSCPTModifier" id="frm_Row-0-HCPCSCPTModifier" type="text"></td><td align="center" valign="top"><input onblur="javascript:verifyQty(this);" style="width: 22px; text-align:right" name="frm_Row-0-Qty" id="frm_Row-0-Qty" type="text"></td><td align="center" valign="top"><select name="frm_Row-0-ChargeTypeID" id="frm_Row-0-ChargeTypeID"><option value="0">- select -</option><option value="2">Under</option><option value="1">Over</option></select></td><td align="center" valign="top"><input style="width: 65px; text-align:right" name="frm_Row-0-TotalAmount" id="frm_Row-0-TotalAmount" type="text"></td><td align="center" valign="top"><input onblur="javascript:updateVariance(this);" style="width: 65px; text-align:right" name="frm_Row-0-NetRevenue" id="frm_Row-0-NetRevenue" type="text"></td><td align="center" valign="top"><input onblur="javascript:checkDate(this, &quot;11/29/2012 12:00:00 AM&quot;);" style="width: 60px; text-align:right" name="frm_Row-0-RemittanceDate" id="frm_Row-0-RemittanceDate" type="text"></td><td align="center" valign="top"><input onblur="javascript:updateVariance(this);" style="width: 65px; text-align:right" name="frm_Row-0-PaymentReceived" id="frm_Row-0-PaymentReceived" type="text"></td><td align="center" valign="top"><span id="spnVariance-0"></span><input id="frm_Row-0-Variance" name="frm_Row-0-Variance" value="@@VARIANCE@@" type="hidden"></td><td align="center" valign="top"><span id="spnPctVariance-0"></span><input id="frm_Row-0-PctVariance" name="frm_Row-0-PctVariance" value="@@PCT_VARIANCE@@" type="hidden"></td><td align="center" valign="top"><input value="1" name="frm_Row-0-Denied" id="frm_Row-0-Denied" type="checkbox"></td><td align="center" valign="top"><select name="frm_Row-0-RemarkID" id="frm_Row-0-RemarkID" style="font-size: 7pt;"><option value="0">- select -</option><option value="290">--REMARK1234</option><option value="299">--REMARKTEST12345</option><option value="20">HB CR (CTSI) CLINICAL TRIAL PAYMENT (INS)</option><option value="21">HB CR 2% SEQUESTRATION REDUCTION</option><option value="22">HB CR ABANDONED MONEY ADJUSTMENT (ACCT)</option><option value="23">HB CR ADMINISTRATIVE W/OFF (INS)</option><option value="24">HB CR ADMINISTRATIVE WRITE OFF (ACCT)</option><option value="25">HB CR AFIR &ndash; FINANCIAL RESEARCH (INS)</option><option value="26">HB CR BAD DEBT ADJUSTMENT  (ACCT)</option><option value="27">HB CR BAD DEBT MEDICARE ADJUSTMENT  (ACCT)</option><option value="28">HB CR BAD DEBT MEDICARE REVERSAL (ACCT)</option><option value="29">HB CR BAD DEBT MEDICARE WRITE-OFF (ACCT)</option><option value="30">HB CR BAD DEBT REVERSAL (ACCT)</option><option value="31">HB CR BAD DEBT WRITE-OFF (ACCT)</option><option value="32">HB CR BANKRUPTCY ADJUSTMENT (ACCT)</option><option value="33">HB CR BELLEVUE ADJUSTMENT - OP BOP (INS)</option><option value="34">HB CR BELLEVUE ADJUSTMENT I/P B30 (INS)</option><option value="35">HB CR BELLEVUE ADJUSTMENT O/P B28 (INS)</option><option value="36">HB CR BENEFIT ADJ - NOT MEDICALLY NECESSARY (INS)</option><option value="37">HB CR BENEFITS ADJUSTMENT(INS)</option><option value="38">HB CR BLC E&amp;M SP DISCOUNT (ACCT)</option><option value="39">HB CR BODY PROJECT ADJ. (ACCT)</option><option value="40">HB CR CAPITATED W/O (INS)</option><option value="41">HB CR CAPITATION DEBIT ADJ (INS)</option><option value="42">HB CR CASE RATE ADJUSTMENT (INS)</option><option value="43">HB CR CC BELLEVUE ADJ (INS)</option><option value="44">HB CR CC BONE MARROW ADJ (INS)</option><option value="45">HB CR CC MRI ADJ (INS)</option><option value="46">HB CR CC WOODHULL ADJ (INS)</option><option value="47">HB CR CENTER FOR CORPORATE WELLNESS(INS)</option><option value="48">HB CR CHARITY CARE (ACCT)</option><option value="49">HB CR CHAT WRITE-OFF (INS)</option><option value="50">HB CR CHAT WRITEOFF (ACCT)</option><option value="51">HB CR CHAT WRITEOFF (INS)</option><option value="52">HB CR CLINCAL TRIAL PAYMENT (ACCT)</option><option value="53">HB CR CLINICAL TRIAL PAYMENT (INS)</option><option value="54">HB CR COLLECTION AGENCY ADJUSTMENT(ACCT)</option><option value="55">HB CR CONTRACTUAL WRITE-OFF (INS)</option><option value="56">HB CR COSMETICS ADJUSTMENT (ACCT)</option><option value="57">HB CR COSMETICS ADJUSTMENT (INS)</option><option value="58">HB CR COST OUTLIER ADJUSTMENT (INS)</option><option value="59">HB CR CREDIT ADJUSTMENT  (INS)</option><option value="60">HB CR CREDIT ADJUSTMENT (ACCT)</option><option value="61">HB CR CYCLING CLUB (ACCT)</option><option value="62">HB CR DENIAL - APPEAL DENIED (INS)</option><option value="63">HB CR DENIAL - CODING RELATED (INS)</option><option value="64">HB CR DENIAL - CREDENTIALLING (INS)</option><option value="65">HB CR DENIAL - ELIGIBILITY (INS)</option><option value="66">HB CR DENIAL - MEDICAL NECESSITY (INS)</option><option value="67">HB CR DENIAL - MEDICARE RAC - MEDICAL NECESSITY (INS)</option><option value="68">HB CR DENIAL - NONCOVERED (INS)</option><option value="69">HB CR DENIAL - OTHER PROVIDER FAULT (INS)</option><option value="70">HB CR DENIAL - PRECERTIFICATION/NOTIFICATION (AUTHORIZATION)  (INS)</option><option value="71">HB CR DENIAL - TECHNICAL DENIAL (INS)</option><option value="72">HB CR DENIAL - TIMELY FILING (INS)</option><option value="73">HB CR DENIAL - UNTIMELY APPEAL OF MEDICAL NECESSITY DENIAL (INS)</option><option value="74">HB CR DENIAL- AUTH OR REFERRAL (INS)</option><option value="75">HB CR DENIAL- PROCEDURES/SERVICES BUNDLED (INS)</option><option value="76">HB CR DISCOUNT (ACCT)</option><option value="77">HB CR DRG CHANGE FISCAL IMPACT( INS)</option><option value="78">HB CR EMPLOYEE DISCOUNT (INS)</option><option value="79">HB CR EXECUTIVE PHYSICAL (ACCT)</option><option value="80">HB CR FERTILITY CENTER (INS)</option><option value="81">HB CR FINANCIAL ASSISTANCE (ACCT)</option><option value="82">HB CR FINANCIAL ASSISTANCE 25% (ACCT)</option><option value="83">HB CR FINANCIAL ASSISTANCE 50% (ACCT)</option><option value="84">HB CR FINANCIAL ASSISTANCE 75% (ACCT)</option><option value="85">HB CR GLOBAL PHYSICIAN LIABILITY (INS)</option><option value="86">HB CR GLOBAL RATE ADJUSTMENT (INS)</option><option value="87">HB CR GME ADJUSTMENT (INS)</option><option value="88">HB CR HAC WRITE OFF (ACCT)</option><option value="89">HB CR HAC WRITE OFF (INS)</option><option value="90">HB CR HARKNESS ADJUSTMENT</option><option value="91">HB CR IME ADJUSTMENT (INS)</option><option value="92">HB CR IMPLANTS CREDIT ADJUSTEMENT</option><option value="93">HB CR INCENTIVE ADJUSTMENT (INS)</option><option value="94">HB CR INSURANCE DISCOUNT REVERSAL (INS)</option><option value="95">HB CR INTEREST DEBIT (INS)</option><option value="96">HB CR LATE CHARGE WRITE OFF (INS)</option><option value="97">HB CR LATE CHARGE WRITE-OFF (ACCT)</option><option value="98">HB CR LEGAL WRITE OFF (ACCT)</option><option value="99">HB CR LIABILITY TRANSFER (INS)</option><option value="100">HB CR MANAGED CARE COMPLIANCE ISSUES (INS)</option><option value="101">HB CR MANAGED CARE SETTLEMENT ADJUSTMENT (INS)</option><option value="102">HB CR MANUAL ALLOWANCE (ACCT)</option><option value="103">HB CR MANUAL ALLOWANCE (INS)</option><option value="104">HB CR MEDICAL CHART LOSS ALLOWANCE (INS)</option><option value="105">HB CR MEDICARE RAC - DRG VALIDATION (INS)</option><option value="106">HB CR MUSCULAR DYS ( ACCT)</option><option value="107">HB CR MUSCULAR DYS (INS)</option><option value="108">HB CR NEGOTIATED PAYMENT DISCOUNT (INS)</option><option value="109">HB CR NSF FEE REVERSAL (ACCT)</option><option value="110">HB CR NYS SURCHARGE (ACCT)</option><option value="111">HB CR NYU FERTILITY CENTER (ACCT)</option><option value="112">HB CR ORGAN PROCUREMENT (INS)</option><option value="113">HB CR PATIENT DECEASED ADJUSTMENT (ACCT)</option><option value="114">HB CR PAYMENT RATE DISCREPENCY (ACCOUNT)</option><option value="115">HB CR PAYMENT RATE DISCREPENCY (INS)</option><option value="116">HB CR PAYMENT REVERSAL (ACCT)</option><option value="117">HB CR PAYMENT REVERSAL (INS)</option><option value="118">HB CR PAYOR INTIATIED COMBINED ADMISSIONS ADJ (INS)</option><option value="119">HB CR PEDIATRIC FEEDING FUND (ACCT)</option><option value="120">HB CR PEDIATRIC FEEDING FUND (INS)</option><option value="121">HB CR PRO ADJUSTMENT (INS)</option><option value="122">HB CR PROVIDER ADJUSTMENT (ACCT)</option><option value="123">HB CR REFUND REVERSAL (ACCT)</option><option value="124">HB CR REFUND REVERSAL (INS)</option><option value="125">HB CR RESEARCH &ndash; UNCOLLECTIBLE (INS)</option><option value="126">HB CR RESEARCH ADJ (ACCT)</option><option value="127">HB CR RETURNED CHECK RTCK (ACCT)</option><option value="128">HB CR RETURNED CHECK RTCK (INS)</option><option value="129">HB CR SEC PAYOR AT LESSER DRG (INS)</option><option value="130">HB CR SMALL BALANCE WRITE OFF (ACCT)</option><option value="131">HB CR SMALL BALANCE WRITE OFF (INS)</option><option value="132">HB CR SP DISCOUNT</option><option value="133">HB CR SYSTEM CREDIT ADJUSTMENT (ACCT)</option><option value="134">HB CR SYSTEM CREDIT ADJUSTMENT (INS)</option><option value="135">HB CR TIME FRAME - MGD CARE COMPLIANCE ISSUE (INS)</option><option value="136">HB CR TIME FRAME - NOT MEDICALLY NECESSARY (INS)</option><option value="137">HB CR TRANSPLANT ADJUSTMENT (INS)</option><option value="138">HB CR TRNSFR TO EXT AGNY (ACCT)</option><option value="139">HB CR UNCOLLECTIBLE ACCOUNT (ACCT)</option><option value="140">HB CR WITHHOLD ADJUSTMENT (INS)</option><option value="141">HB DB (CTSI) CLINICAL TRIAL PAYMENT (INS)</option><option value="142">HB DB ABANDONED MONEY DEBIT (ACCT)</option><option value="143">HB DB ADMINISTRATIVE W/OFF (INS)</option><option value="144">HB DB ADMINISTRATIVE WRITE OFF (ACCT)</option><option value="145">HB DB AFIR &ndash; FINANCIAL RESEARCH (INS)</option><option value="146">HB DB BAD DEBT ADJUSTMENT  (ACCT)</option><option value="147">HB DB BAD DEBT MEDICARE ADJUSTMENT  (ACCT)</option><option value="148">HB DB BAD DEBT MEDICARE REVERSAL (ACCT)</option><option value="149">HB DB BAD DEBT MEDICARE WRITE-OFF (ACCT)</option><option value="150">HB DB BAD DEBT REVERSAL (ACCT)</option><option value="151">HB DB BAD DEBT WRITE-OFF (ACCT)</option><option value="152">HB DB BANKRUPTCY ADJUSTMENT (ACCT)</option><option value="153">HB DB BELLEVUE ADJUSTMENT - OP BOP (INS)</option><option value="154">HB DB BELLEVUE ADJUSTMENT I/P B30 (INS)</option><option value="155">HB DB BELLEVUE ADJUSTMENT O/P B28 (INS)</option><option value="156">HB DB BENEFIT ADJ - NOT MEDICALLY NECESSARY (INS)</option><option value="157">HB DB BENEFITS ADJUSTMENT(INS)</option><option value="158">HB DB BODY PROJECT ADJ. (ACCT)</option><option value="159">HB DB CAPITATED W/O (INS)</option><option value="160">HB DB CAPITATION DEBIT ADJ (INS)</option><option value="161">HB DB CASE RATE ADJUSTMENT (INS)</option><option value="162">HB DB CC BELLEVUE ADJ (INS)</option><option value="163">HB DB CC BONE MARROW ADJ (INS)</option><option value="164">HB DB CC MRI ADJ (INS)</option><option value="165">HB DB CC WOODHULL ADJ (INS)</option><option value="166">HB DB CENTER FOR CORPORATE WELLNESS(INS)</option><option value="167">HB DB CHARITY CARE (ACCT)</option><option value="168">HB DB CHAT WRITE-OFF (ACCT)</option><option value="169">HB DB CHAT WRITE-OFF (INS)</option><option value="170">HB DB CLINICAL TRIAL PAYMENT (ACCT)</option><option value="171">HB DB CLINICAL TRIAL PAYMENT (INS)</option><option value="172">HB DB COLLECTION AGENCY ADJUSTMENT(ACCT)</option><option value="173">HB DB CONTRACTUAL WRITE-OFF (INS)</option><option value="174">HB DB COSMETICS ADJUSTMENT (ACCT)</option><option value="175">HB DB COSMETICS ADJUSTMENT (INS)</option><option value="176">HB DB COST OUTLIER ADJUSTMENT (INS)</option><option value="177">HB DB CYCLING CLUB (ACCT)</option><option value="178">HB DB DEBIT ADJUSTMENT (ACCT)</option><option value="179">HB DB DEBIT ADJUSTMENT (INS)</option><option value="180">HB DB DENIAL - APPEAL DENIED (INS)</option><option value="181">HB DB DENIAL - CODING RELATED (INS)</option><option value="182">HB DB DENIAL - CREDENTIALLING (INS)</option><option value="183">HB DB DENIAL - ELIGIBILITY (INS)</option><option value="184">HB DB DENIAL - MEDICAL NECESSITY (INS)</option><option value="185">HB DB DENIAL - MEDICARE RAC - MEDICAL NECESSITY (INS)</option><option value="186">HB DB DENIAL - NONCOVERED (INS)</option><option value="187">HB DB DENIAL - PRECERTIFICATION/NOTIFICATION (AUTHORIZATION) (INS)</option><option value="188">HB DB DENIAL - TECHNICAL DENIAL (INS)</option><option value="189">HB DB DENIAL - TIMELY FILING (INS)</option><option value="190">HB DB DENIAL - UNTIMELY APPEAL OF MEDICAL NECESSITY DENIAL (INS)</option><option value="191">HB DB DENIAL- AUTH OR REFERRAL (INS)</option><option value="192">HB DB DENIAL- PROCEDURES/SERVICES BUNDLED (INS)</option><option value="193">HB DB DISCOUNT (ACCT)</option><option value="194">HB DB DRG CHANGE FISCAL IMPACT( INS)</option><option value="195">HB DB EMPLOYEE DISCOUNT (INS)</option><option value="196">HB DB EXECUTIVE PHYSICAL ( ACCT)</option><option value="197">HB DB FINANCIAL ASSISTANCE 100% (ACCT)</option><option value="198">HB DB FINANCIAL ASSISTANCE 25% (ACCT)</option><option value="199">HB DB FINANCIAL ASSISTANCE 50% (ACCT)</option><option value="200">HB DB FINANCIAL ASSISTANCE 75% (ACCT)</option><option value="201">HB DB GLOBAL PHYSICIAN LIABILITY (INS)</option><option value="202">HB DB GLOBAL RATE ADJUSTMENT (INS)</option><option value="203">HB DB GME ADJUSTMENT (INS)</option><option value="204">HB DB HAC WRITE OFF (ACCT)</option><option value="205">HB DB HAC WRITE OFF (INS)</option><option value="206">HB DB HARKNESS ADJUSTMENT</option><option value="207">HB DB IME ADJUSTMENT (INS)</option><option value="208">HB DB IMPLANTS DEBIT ADJUSTEMENT</option><option value="209">HB DB INCENTIVE ADJUSTMENT (INS)</option><option value="210">HB DB INSURANCE DISCOUNT REVERSAL (INS)</option><option value="211">HB DB INTEREST DEBIT (INS)</option><option value="212">HB DB LATE CHARGE W/OFF (INS)</option><option value="213">HB DB LATE CHARGE WRITE-OFF (ACCT)</option><option value="214">HB DB LEGAL WRITE OFF (ACCT)</option><option value="215">HB DB LIABILITY TRANSFER (INS)</option><option value="216">HB DB MANAGED CARE COMPLIANCE ISSUES (INS)</option><option value="217">HB DB MANAGED CARE SETTLEMENT ADJUSTMENT (INS)</option><option value="218">HB DB MANUAL ALLOWANCE (ACCT)</option><option value="219">HB DB MANUAL ALLOWANCE (INS)</option><option value="220">HB DB MEDICAL CHART LOSS ALLOWANCE (INS)</option><option value="221">HB DB MEDICARE RAC - DRG VALIDATION (INS)</option><option value="222">HB DB MUSCULAR DYS (ACCT)</option><option value="223">HB DB NEGOTIATED PAYMENT DISCOUNT (INS)</option><option value="224">HB DB NSF FEE (ACCT)</option><option value="225">HB DB NYS SURCHARGE (ACCT)</option><option value="226">HB DB NYU FERTILITY CENTER (ACCT)</option><option value="227">HB DB ORGAN PROCUREMENT (INS)</option><option value="228">HB DB PATIENT DECEASED ADJUSTMENT (ACCT)</option><option value="229">HB DB PAYMENT RATE DISCREPENCY (ACCOUNT)</option><option value="230">HB DB PAYMENT RATE DISCREPENCY (INS)</option><option value="231">HB DB PAYMENT REVERSAL (ACCT)</option><option value="232">HB DB PAYMENT REVERSAL (INS)</option><option value="233">HB DB PAYOR INTIATIED COMBINED ADMISSIONS ADJ (INS)</option><option value="234">HB DB PEDIATRIC FEEDING FUND (ACCT)</option><option value="235">HB DB PRO ADJUSTMENT (INS)</option><option value="236">HB DB PROVIDER ADJUSTMENT (ACCT)</option><option value="237">HB DB REFUND (ACCT)</option><option value="238">HB DB REFUND (INS)</option><option value="239">HB DB RESEARCH &ndash; UNCOLLECTIBLE (INS)</option><option value="240">HB DB RESEARCH ADJ (ACCT)</option><option value="241">HB DB RETURNED CHECK RTCK (ACCT)</option><option value="242">HB DB RETURNED CHECK RTCK (INS)</option><option value="243">HB DB SEC PAYOR AT LESSER DRG (INS)</option><option value="244">HB DB SMALL BALANCE DEBIT (ACCT)</option><option value="245">HB DB SMALL BALANCE W/OFF DEBIT (INS)</option><option value="246">HB DB SYSTEM DEBIT ADJUSTMENT (ACCT)</option><option value="247">HB DB SYSTEM DEBIT ADJUSTMENT (INS)</option><option value="248">HB DB TIME FRAME - MGD CARE COMPLIANCE ISSUE (INS)</option><option value="249">HB DB TIME FRAME - NOT MEDICALLY NECESSARY (INS)</option><option value="250">HB DB TRANSPLANT ADJUSTMENT (INS)</option><option value="251">HB DB TRSNFR FRM EXT AGNY (ACCT)</option><option value="252">HB DB UNCOLLECTIBLE ACCOUNT (ACCT)</option><option value="253">HB DB WITHHOLD REVERSAL (INS)</option></select></td><td align="center" valign="top"><input style="width: 120px; text-align:left" name="frm_Row-0-Comment" id="frm_Row-0-Comment" type="text"></td></tr>
+                    <tr>
+                        <td colspan="15">
+                            <hr style="color:#cccccc">
+                        </td>                            
+                    </tr>
+
+                    <tr>
+                        <td colspan="3" align="left">
+                            <b>Payment Variance</b>
+                        </td>
+                        <td colspan="2" style="background-color:#dedbdb" align="left">
+                            <b>
+$1,294.69                            </b>
+                        </td>
+                    </tr>
+
+                     <tr>
+                        <td colspan="3" align="left">
+                            <b>% Payment Variance</b>
+                        </td>
+                        <td colspan="2" style="background-color:#dedbdb" align="left">
+                            <b>                                
+-100.00%                            </b>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>                            
+                    </tr>
+
+
+                    <tr>
+                        <td colspan="8" align="left">
+                            <b>Payment Analysis Comments</b>
+                            <br>
+                            <textarea name="frm_PaymentAnalysisComments" rows="5" cols="110"></textarea>    
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td colspan="7" align="left">
+                            <b>Pricer Comments (for reference only)</b>
+                            <br>
+                            <textarea style="background-color:#EEEEEE" readonly="readonly" name="frm_ReadOnlyPricerComments" rows="5" cols="110"></textarea>    
+                        </td>
+                    </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+            </tbody></table>
+        </td>
+        </tr>
+    </tbody></table>
+        
+<script>
+document.onreadystatechange = onReadyStateChange;
+    
+function onReadyStateChange()
+{
+    if (document.readyState == "complete")
+    {
+        manageTabCtlState();
+
+        manageCtlState();
+
+        managePostAuditGrid();
+
+        highlightTab();        
+    }
+}
+
+</script>
+
+

@@ -1,0 +1,1548 @@
+
+
+
+
+    <div id="divErrorMsg" style="display:none">
+        <span style="color:red"></span>
+    </div>
+    
+
+<form action="/RM/AuditFindings/FormManager" method="post">        <table style="width: 100%; border-color: #dedbdb; border-style: solid; border-width: 1px;">            
+
+            <tbody><tr>
+                <td colspan="3" align="right">
+                    <a style="color: blue" href="http://rmdwcdcdvm005.nyumc.org/RM/QA_Helpers">QA Utils</a>
+                    &nbsp;                                        
+                    <a style="color: blue" href="http://rmdwcdcdvm005.nyumc.org/RM/Login">Log In</a>
+                    &nbsp;
+                    <a style="color: blue" href="http://rmdwcdcdvm005.nyumc.org/RM/AuditFindings/Financials?a=2013618&amp;n=635406928882087187">View Page</a>                                        
+                        &nbsp;&nbsp;
+                        Current date:&nbsp;<b><span style="color: blue">
+07/11/2014                        </span></b>
+                </td>
+            </tr>
+            
+            <tr>                
+                <td colspan="3" align="right">
+                    
+                    Currently logged in as:&nbsp;<b><span style="color: blue">mannj05</span></b>
+
+                    &nbsp;&nbsp;&nbsp;
+                    Role:&nbsp;<b><span style="color: blue">ADMIN</span></b>
+                    &nbsp;&nbsp;&nbsp;
+                    Account ID:&nbsp;<b><span style="color: blue">58199</span></b>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="33%">
+
+                    <table style="width: 100%; height: 120px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top" width="40%">Auditor</td>
+                            <td valign="top" width="60%">                                
+
+                                
+<select name="frm_List_AuditorID" id="frm_List_AuditorID" onchange="selectPricer();"><option value="76">--Test Auditor22</option><option value="4">Amelia Cañete</option><option value="13">Antoine Smith</option><option value="10">Bill Sweeney</option><option value="12">Carlos Garcia</option><option value="6">Christine Weston</option><option value="19">Claire Hughes</option><option value="9" selected="selected">Cristina Magallanes</option><option value="2">Doris Nadres</option><option value="7">Erin McKay</option><option value="15">Janis Ayler</option><option value="56">Kymara Kyng</option><option value="61">Nirmala Subramhanya</option><option value="14">Odessa Taylor</option><option value="8">Phyllis Marchitelli</option><option value="78">Pttest</option><option value="21">Rosemary Bauer</option><option value="54">Test Auditor</option><option value="60">Tracy Myint</option><option value="5">Wendy Lewis</option></select>                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="40%">Pricer
+                            </td>
+                            <td valign="top" width="60%">
+<select id="frm_List_PricerID" name="frm_List_PricerID"><option selected="selected" value="5">Angela Singh</option>
+<option value="78">Candace Narain</option>
+<option value="4">Devin Mohamed</option>
+<option value="1">Kathleen O'Sullivan</option>
+<option value="3">Kele' Odom</option>
+<option value="76">Test Pricer</option>
+<option value="77">Tracy Myint</option>
+<option value="6">Veronica Ceasar</option>
+</select>                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="40%">Project Source
+                            </td>
+                            <td valign="top" width="60%">                                
+
+ACC Chemo Infusions                                        <input name="frm_List_ProjectSourceID" value="2" type="hidden">        
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+                <td valign="top" width="33%">
+
+                    <table style="width: 100%; height: 120px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top" width="40%">Audit Start
+                            </td>
+                            <td valign="top" width="60%">
+12/17/2012 09:22 AM                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="40%">Audit Complete
+                            </td>
+                            <td valign="top" width="60%">
+12/17/2012 09:33 AM                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="40%">Posting Complete</td>
+                            <td valign="top" width="60%">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="40%">Pricing Complete
+                            </td>
+                            <td valign="top" width="60%">
+12/17/2012 11:05 AM                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="40%">Rebill Date
+                            </td>
+                            <td valign="top" width="60%">
+01/04/2013 12:00 AM                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+                <td valign="top" width="33%">
+
+                    <table style="width: 100%; height: 120px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top" width="35%">
+
+                                <table style="width: 100%;">
+                                    <tbody><tr>
+                                        <td valign="top" width="50%">
+                                            <input id="frm_printType-AUDITOR" name="frm_printType" value="AUDITOR" type="radio">&nbsp;Auditor<br>
+                                            <input id="frm_printType-PRICER" name="frm_printType" value="PRICER" type="radio">&nbsp;Pricer<br>
+                                            <input id="frm_printType-ALL" name="frm_printType" value="ALL" type="radio">&nbsp;All<br>
+                                        </td>
+                                        <td valign="top" width="50%">
+                                            <input name="frm_btnPrint" value="Print" type="submit">
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+
+                            </td>
+                            <td valign="top" width="65%">
+                                <table style="width: 100%;">
+                                    <tbody><tr>
+                                        <td valign="top" width="40%">
+                                            <input name="frm_Button" value="Save" style="width: 64px" type="submit"> <!-- onclick="javascript:submitForm();" -->
+                                        </td>
+                                        <td valign="top" width="60%">
+
+                                            
+
+                                                        <input id="btnAuditComplete" name="frm_Button" value="Audit Complete" style="width: 152px" type="submit">
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" width="40%">
+                                                    <input name="frm_btnDelete" value="Delete" style="width: 64px" onclick="javascript: ConfirmDelete();" type="button">
+                                        </td>
+                                        <td valign="top" width="60%">                                            
+                                                        <input id="btn_PostingComplete" name="frm_Button" value="Posting Complete" style="width: 152px" type="submit">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" width="40%">                                             
+                                                    <input name="frm_Button" value="Open" style="width: 64px" type="submit">
+                                        </td>                                         
+
+                                         <td valign="top" width="60%">                                             
+                                                        <input id="btn_PricingComplete" name="frm_Button" value="Pricing Complete" style="width: 152px" type="submit">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" width="40%">
+                                                    <input name="frm_Button" value="Unlock" style="width: 64px" type="submit">
+                                        </td>
+                                        <td valign="top" width="60%">                                                                                                                                                                               
+                                                        <input disabled="" id="btnRebill" name="frm_Button" value="Rebill" style="width: 152px" type="submit">
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody></table>
+        <br>
+        <table style="width: 100%; border-color: #dedbdb; border-style: solid; border-width: 1px">
+            <tbody><tr>
+                <td valign="top" width="25%">
+
+                    <table style="width: 100%; height: 90px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top">HAR</td>
+                            <td valign="top">
+2013618                                            <input id="frm_HAR" name="frm_HAR" value="2013618" type="hidden">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">MRN</td>
+                            <td valign="top">
+9044695                                            <input id="frm_MRN" name="frm_MRN" value="9044695" type="hidden">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">CSN</td>
+                            <td valign="top"> 
+492078685                                            <input style="width: 100px" id="frm_CSN" name="frm_CSN" value="492078685" type="hidden">
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+                <td valign="top" width="25%">
+                    <table style="width: 100%; height: 90px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top">Last Name</td>
+                            <td valign="top">                                
+MADDEN-GURY                                            <input id="frm_PatientLastName" name="frm_PatientLastName" value="MADDEN-GURY" type="hidden">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">First Name</td>
+                            <td valign="top">
+BRIANA                                            <input id="frm_PatientFirstName" name="frm_PatientFirstName" value="BRIANA" type="hidden">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Admit Date</td>
+                            <td valign="top"> 
+11/30/2012                                            <input onblur="javascript:verifyDates();" style="width: 100px" id="frm_AdmitDate" name="frm_AdmitDate" value="11/30/2012" type="hidden">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Discharge Date</td>
+                            <td valign="top">                                                                                                
+
+                                <input onblur="javascript:verifyDates();" style="width: 100px" id="frm_DischargeDate" name="frm_DischargeDate" value="12/1/2012" type="text">
+
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+                <td valign="top" width="25%">
+                    <table style="width: 100%; height: 90px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top">Visit Type</td>
+                            <td valign="top">
+<select id="frm_List_VisitTypeID" name="frm_List_VisitTypeID"><option value="53">----INVALID VISIT TYPE</option>
+<option selected="selected" value="1">Inpatient</option>
+<option value="46">Observation</option>
+<option value="2">Outpatient</option>
+<option value="47">Recurring</option>
+</select>                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Audit Type</td>
+                            <td valign="top">                                
+<select name="frm_List_AuditTypeID" id="frm_List_AuditTypeID" onchange="setOptions('frm_List_AuditTypeID');"><option value="1" selected="selected">Concurrent</option><option value="2">Retro</option></select>                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Sub Audit Type</td>
+                            <td valign="top">
+<select id="frm_List_SubAuditTypeID" name="frm_List_SubAuditTypeID">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<option value="0">- select -</option><option value="114">_ATEST02</option><option value="116">123</option><option value="1">Abdominal Drains</option><option value="2">Angiomax</option><option value="92">Appeals</option><option value="81">Blood Products</option><option value="3">Brachytherapy</option><option value="5">Business Office Request</option><option value="7">Carve-Outs Only</option><option value="9">Cath Contrast</option><option value="100">CDE Review</option><option value="13">Compliance Review</option><option value="15">Compliance-Clinic Reviews</option><option value="16">Computer Assisted Surgery</option><option value="17">Contrast</option><option value="19">Desensitization</option><option value="21">Device Dependent</option><option value="90">Epilepsy Clinic</option><option value="22">HJD Gauchers Infusions</option><option value="23">HJD Infusions</option><option value="24">Holter Monitoring Cases</option><option value="26">Hyperemesis</option><option value="28">ICare</option><option value="29">Implants</option><option value="31">Implants w/Mlt Surg</option><option value="33">IP Carve-Outs Mult/Surg</option><option value="35">IP Carve-Outs Only</option><option value="37">IP Implants Mult/Surg</option><option value="39">IP Implants Only</option><option value="41">IPVTAM-CBR Pain Mgt</option><option value="42">IR - Missing Charges</option><option value="97">IR Procedures - Tisch at HJD</option><option value="44">Liver Biopsies</option><option value="101">Medical Necessity Denials</option><option value="93">Medicare Outlier</option><option value="45">No Primary Contact</option><option value="47">Non-Catalog Items</option><option value="48">Non-Formulary</option><option value="50">OBOP PI</option><option value="52">Observation</option><option value="53">OCE cases</option><option value="55">Pharmacy</option><option value="57">Pharmacy-Ropivacaine drug</option><option value="79">Potential Missing Charges</option><option value="58">RAC Audit Prep</option><option value="59">Random Sample - Infusions</option><option value="61">Recovery Room</option><option value="117">rhrt</option><option value="63">Routine</option><option value="65">Skin &amp; Cancer</option><option value="66">Stress Agents</option><option value="67">Syngo Suspense</option><option value="69">TEE &amp; TTE cases</option><option value="70">Tisch Infusions</option><option value="72">Tisch IP MTX drug</option><option value="11">Tisch IR Cases</option><option value="94">Tisch IR Procedure</option><option value="73">Tisch-Infusions Gauchers</option><option value="75">UCA&amp;EP Missing Procedures</option><option value="118">UNASSIGNED</option></select>                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Protected Revenue</td>
+                            <td valign="top">
+                                    <input value="1" id="frm_ProtectedRevenue" name="frm_ProtectedRevenue" checked="checked" type="checkbox">
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+                <td valign="top" width="25%">
+                    <table style="width: 100%; height: 90px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top">Facility</td>
+                            <td valign="top">                                                               
+<select name="frm_List_FacilityID" id="frm_List_FacilityID" disabled="disabled"><option value="32">-- Test Facility11</option><option value="4">Cancer Center</option><option value="2" selected="selected">HJD</option><option value="44">new</option><option value="3">Rusk</option><option value="40">TEST FACILITY1</option><option value="41">TEST FACILITY2</option><option value="42">TEST FACILITY3</option><option value="1">Tisch</option></select><input name="frm_List_FacilityID" value="2" type="hidden">                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Service Area</td>
+                            <td valign="top">
+<select name="frm_List_ServiceAreaID" id="frm_List_ServiceAreaID"><option value="0">- select -</option><option value="232">HJD 10 FLOOR</option><option value="9">HJD 11 FLOOR</option><option value="10">HJD 11 NSCU</option><option value="11">HJD 11 SDU</option><option value="12">HJD 12 NORTH</option><option value="13">HJD 12 SOUTH</option><option value="238">HJD 23RD ST RAD XRAY</option><option value="14">HJD 5 RAD MRI</option><option value="15">HJD 6 RAD CT</option><option value="16">HJD 6 RAD IR</option><option value="17">HJD 6 RAD NM</option><option value="18">HJD 6 RAD US</option><option value="19">HJD 6 RAD XRAY</option><option value="20">HJD 8 NORTH</option><option value="21">HJD 8 SOUTH</option><option value="22">HJD 9 NORTH</option><option value="23">HJD 9 SOUTH</option><option value="24">HJD C1 ASC PACU</option><option value="25">HJD C1 ASC PERI-OP</option><option value="26">HJD C2 MAIN PERI-OP</option><option value="256">HJD CMC EMG</option><option value="27">HJD CMC INFUSION</option><option value="277">HJD CMC INJECTIONS</option><option value="271">HJD CMC OT</option><option value="252">HJD CMC PT</option><option value="216">HJD CMC RAD IR</option><option value="215">HJD CMC RAD MRI</option><option value="217">HJD CMC RAD US</option><option value="218">HJD CMC RAD XRAY</option><option value="239">HJD CMC RHEUMATOLOGY</option><option value="240">HJD CMC SPINE INJ</option><option value="233">HJD CMC SPORTS</option><option value="28">HJD C-SPINE AND NECK</option><option value="29">HJD DANCE THERAPY</option><option value="30">HJD DFAC - ENDOCRINE</option><option value="31">HJD DFAC - PODIATRY</option><option value="32">HJD FOOT CLINIC</option><option value="33">HJD GAUCHER - INFUSION</option><option value="34">HJD GENETICS</option><option value="35">HJD HAND - ADULT</option><option value="36">HJD HARKNESS DANCE CLN</option><option value="38">HJD IMMEDIATE CARE</option><option value="39">HJD INFECTIOUS DISEASE</option><option value="40">HJD IWD</option><option value="41">HJD LABORATORY</option><option value="42">HJD LUPUS CLINIC</option><option value="43">HJD MED CLEARANCE</option><option value="44">HJD MS - INFUSION</option><option value="45">HJD MS CENTER - CLINIC</option><option value="46">HJD MS CENTER - FGP</option><option value="47">HJD NEUROLOGY CLINIC</option><option value="48">HJD NEUROPHYSIOLOGY</option><option value="49">HJD OIOC PHYS THER</option><option value="50">HJD ONCOLOGY CLINIC</option><option value="51">HJD ORTHO A - ADULT</option><option value="52">HJD ORTHO B - ADULT</option><option value="53">HJD ORTHO C - ADULT</option><option value="54">HJD OS PERI-OP</option><option value="55">HJD OSTEOPOROSIS</option><option value="56">HJD OT - ADULT</option><option value="57">HJD OT - PEDS</option><option value="253">HJD OT ADLT OP</option><option value="254">HJD OT PEDS OP</option><option value="58">HJD PAIN MANAGEMENT</option><option value="59">HJD PATHOLOGY</option><option value="60">HJD PEDS ADOL SPORTS</option><option value="61">HJD PEDS CLUB FOOT</option><option value="62">HJD PEDS DEV-BEHAV MED</option><option value="63">HJD PEDS GROWTH-SPINE</option><option value="64">HJD PEDS HAND</option><option value="65">HJD PEDS ITB-BACLOFEN</option><option value="66">HJD PEDS NEUROLOGY</option><option value="67">HJD PEDS NEUROMUSC</option><option value="68">HJD PEDS ORTHOPEDS</option><option value="69">HJD PEDS PRE-OP CLINIC</option><option value="70">HJD PEDS PSYCHOLOGY</option><option value="71">HJD PEDS REHAB</option><option value="72">HJD PEDS RHEUMATOLOGY</option><option value="73">HJD PEDS SCOLIOSIS</option><option value="74">HJD PEDS SKEL DYSPL</option><option value="75">HJD PEDS SPASTICITY</option><option value="76">HJD PRE-TESTING</option><option value="77">HJD PRIMARY CARE CTR</option><option value="78">HJD PT - ADULT</option><option value="79">HJD PT - PEDS</option><option value="255">HJD PT PEDS OP</option><option value="80">HJD PULMONARY</option><option value="81">HJD RH - INFUSION</option><option value="82">HJD RHEUMATOLOGY</option><option value="83">HJD RUTHERFORD RADXRAY</option><option value="84">HJD SCOLIOSIS</option><option value="85">HJD SHOULDER CLINIC</option><option value="86">HJD SPINE - ADULT</option><option value="87">HJD SPORTS MED CLINIC</option><option value="88">HJD SPORTS THERAPY</option><option value="89">HJD STARC</option><option value="90">HJD TMJ AND OROFACIAL</option><option value="91">HJD WOUND CARE</option><option value="99">OS PERI-OP</option><option value="223">--Test Service Area222</option></select>                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody></table>
+        <br>
+        <table style="width: 100%; border-color: #dedbdb; border-style: solid; border-width: 1px">
+            <tbody><tr>
+                <td valign="top" width="50%">
+                    <table style="width: 100%; height: 50px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top">Insurance Plan Name</td>
+                            <td valign="top">
+<select id="frm_List_InsuranceID" name="frm_List_InsuranceID"><option selected="selected" value="4">AETNA</option>
+</select>                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Timely Filing Days Left</td>
+                            <td valign="top">
+<b><span style="color: #FF0000">Beyond Timely Filing</span></b>                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+                <td valign="top" width="50%">
+                    <table style="width: 100%; height: 50px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+                        <tbody><tr>
+                            <td valign="top">Original Gross Charges&nbsp;&nbsp;                            
+                                <input style="text-align:right" id="frm_OriginalGrossCharge" name="frm_OriginalGrossCharge" value="$849.12" type="text">                                    
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody></table>
+        <br>
+        <div>
+            <ul id="tabs">
+                <li style="background-color: rgb(222, 219, 219); border-top-width: 3px; border-top-color: rgb(222, 219, 219);" id="tab1"><a style="font-weight: normal;" id="Actions" href="/RM/AuditFindings/Actions?a=2013618">Actions</a></li>
+                <li style="background-color: rgb(255, 255, 255); border-top-width: 3px; border-top-color: rgb(222, 219, 219);" id="tab2"><a style="font-weight: bold;" id="Financials" href="/RM/AuditFindings/Financials?a=2013618">Financials</a></li>
+                <li style="background-color: rgb(222, 219, 219); border-top-width: 3px; border-top-color: rgb(222, 219, 219);" id="tab3"><a style="font-weight: normal;" id="Details" href="/RM/AuditFindings/Details?a=2013618">Details</a></li>
+                <li style="background-color: rgb(222, 219, 219); border-top-width: 3px; border-top-color: rgb(222, 219, 219);" id="tab4"><a style="font-weight: normal;" id="Coding" href="/RM/AuditFindings/Coding?a=2013618">Coding</a></li>
+                <li style="background-color: rgb(222, 219, 219); border-top-width: 3px; border-top-color: rgb(222, 219, 219);" id="tab5"><a style="font-weight: normal;" id="DenialsAppeals" href="/RM/AuditFindings/DenialsAppeals?a=2013618">Denials/Appeals</a></li>
+                <li style="background-color: rgb(222, 219, 219); border-top-width: 3px; border-top-color: rgb(222, 219, 219);" id="tab6"><a style="font-weight: normal;" id="PaymentAnalysis" href="/RM/AuditFindings/PaymentAnalysis?a=2013618">Payment Analysis</a></li>
+            </ul>
+        </div>         
+<input id="Delete_Confirmed" name="Delete_Confirmed" value="0" type="hidden">
+
+<script>
+
+    
+    
+
+    function updateRelatedCtl(sCtlID)
+    {  
+
+        var oSourceElement = null;
+
+        var bUseRate = false;
+
+        var nRate = new Number(0);
+
+        if (sCtlID == "frm_Rate")
+        {
+            oSourceElement = document.getElementById("frm_Rate");
+            nRate = new Number(0);
+            bUseRate = true;
+        }
+        //else
+        //{
+        //    bUseRate = false;
+        //}
+        
+        var oRelatedElement_1 = document.getElementById("spn_NonCarveOutTotalAmount");                    
+        var oRelatedElement_2 = document.getElementById("frm_NetNonCarveOutTotal");             
+        var oRelatedElement_3 = document.getElementById("hdn_NetNonCarveOutTotal"); 
+        var oRelatedElement_4 = document.getElementById("hdn_TotalNetPreCharges");  
+        var oRelatedElement_5 = document.getElementById("spn_PreAuditExpReimb");
+        
+        var s;
+
+        
+
+        var nAmount = new Number(0);
+        var nNetAmount = new Number(0);
+        var nPreCharges = new Number(0);
+
+
+        if (oSourceElement != null && oSourceElement.value != null)
+        {  
+            s = new String(oSourceElement.value).trim();
+                 
+            s = s.replace("%", "");
+            s = s.replace(",", "");            
+            s = s.replace("(", "");
+            s = s.replace(")", "");
+            s = s.replace("-", "");
+
+            if (!isNaN(s))
+            { 
+                nRate = new Number(s);
+            }
+            else
+            { 
+                alert("Invalid value for Rate.");
+                return;
+            }
+        
+        }
+
+
+
+        if (oRelatedElement_1.innerText != null)
+        {
+            s = new String(oRelatedElement_1.innerText).trim();
+            s = s.replace("$", "");
+            s = s.replace(",", "");
+
+            if (s.indexOf("(") > -1 && s.indexOf(")") > -1)
+            { 
+                s = s.replace("(", "");
+                s = s.replace(")", "");
+
+                if (s.indexOf("-") == -1)
+                { 
+                    s = "-" + s;
+                }
+
+            }
+
+        }
+        if (!isNaN(s))
+        {
+            nAmount = new Number(s);
+        }
+        else
+        { 
+            alert("Invalid value for Non Carve Out Total.");
+            return;
+        }
+
+            
+
+        if (oRelatedElement_4.value != null)
+        {
+            s = new String(oRelatedElement_4.value).trim();
+            s = s.replace("$", "");
+            s = s.replace(",", "");
+
+            if (s.indexOf("(") > -1 && s.indexOf(")") > -1)
+            { 
+                s = s.replace("(", "");
+                s = s.replace(")", "");
+
+                if (s.indexOf("-") == -1)
+                { 
+                    s = "-" + s;
+                }
+
+            }
+
+        }
+        if (!isNaN(s))
+        {
+            nPreCharges = new Number(s);
+        }
+            
+
+        
+        if (bUseRate)
+        {
+            nNetAmount = (nAmount * nRate);
+            nNetAmount = (nNetAmount / 100);
+
+            oRelatedElement_2.value = "$" + nNetAmount.toFixed(2);
+            oRelatedElement_3.value = nNetAmount.toFixed(2);
+
+
+            //var sID_UseRate = "hdn_UseRate";
+            //var oCtl_UseRate = document.getElementById(sID_UseRate); 
+
+            //oCtl_UseRate.value = "1";
+
+        }
+        
+        if(!bUseRate)
+        {
+
+            var n = new Number(0);
+
+            if (oRelatedElement_2.value != null)
+            {
+                s = new String(oRelatedElement_2.value).trim();
+                s = s.replace("$", "");
+                s = s.replace(",", "");
+
+                if (s.indexOf("(") > -1 && s.indexOf(")") > -1)
+                { 
+                    s = s.replace("(", "");
+                    s = s.replace(")", "");
+
+                    if (s.indexOf("-") == -1)
+                    { 
+                        s = "-" + s;
+                    }
+
+                }
+
+            }
+
+            if (!isNaN(s))
+            {
+                n = new Number(s);
+            }
+
+            nNetAmount = n;
+
+        }        
+
+        var nTotalExpReimb = new Number(nPreCharges + nNetAmount);
+
+        oRelatedElement_5.innerText = "$" + nTotalExpReimb.toFixed(2);                       
+    
+    }
+
+
+    function toggleRelatedCtl(oSourceElement, sRecordID)
+    { 
+
+        //alert("oSourceElement: " + oSourceElement.id);
+
+        var nRecordID = 0;
+        var sSelectedText = "";
+        
+        var sRelatedElementID = "";
+        var oRelatedElement = null;
+
+        var sRelatedElementID_NetRev = "";
+        var oRelatedElement_NetRev = null;
+        
+
+        if (sRecordID != null && sRecordID != "" && !isNaN(sRecordID))
+        { 
+            nRecordID = new Number(sRecordID);
+        }
+
+        if (oSourceElement.id == "frm_PreAudit_ReimbTypeID")
+        {
+            sSelectedText = new String(oSourceElement.options[oSourceElement.selectedIndex].text);
+
+            sRelatedElementID = "frm_Rate";
+
+            oRelatedElement = document.getElementById(sRelatedElementID);
+
+            if (sSelectedText == "Percent of Charges")
+            {
+                oRelatedElement.disabled = false;
+            }
+            else
+            {
+                oRelatedElement.value = "0.00%";
+                oRelatedElement.disabled = true;
+
+                var oRelatedElement_Is_PercentOfCharges = document.getElementById("hdn_Is_PercentOfCharges_PreAudit");
+                var oRelatedElement_NetNon = document.getElementById("frm_NetNonCarveOutTotal");         
+
+                if (oRelatedElement_Is_PercentOfCharges == null)
+                { 
+                    alert("Ctl is null: oRelatedElement_Is_PercentOfCharges");
+                    return;
+                }
+
+                if (oRelatedElement_NetNon == null)
+                { 
+                    alert("Ctl is null: frm_NetNonCarveOutTotal");
+                    return;
+                }
+                
+                if (oRelatedElement_Is_PercentOfCharges != null && oRelatedElement_NetNon != null)
+                { 
+                    // alert(oRelatedElement_Is_PercentOfCharges.value);
+
+                    if (oRelatedElement_Is_PercentOfCharges.value == "1" || oRelatedElement_Is_PercentOfCharges.value == 1)
+                    { 
+                        oRelatedElement_NetNon.value = "$0.00";
+                    }
+
+                    oRelatedElement_Is_PercentOfCharges.value = "0";
+                    
+                }
+
+            }
+
+        }        
+        else
+        {
+
+            if (nRecordID >= 0)
+            {
+                sSelectedText = new String(oSourceElement.options[oSourceElement.selectedIndex].text);
+
+                sRelatedElementID = "frm_Row-" + sRecordID + "-Rate_POST";
+                oRelatedElement = document.getElementById(sRelatedElementID);
+
+                sRelatedElementID_NetRev = "frm_Row-" + sRecordID + "-NetRevenue_POST";
+                oRelatedElement_NetRev = document.getElementById(sRelatedElementID_NetRev);
+            
+                if (sSelectedText == "Percent of Charges")
+                {
+                    oRelatedElement.value = "0.00%";
+                    oRelatedElement.disabled = false;
+
+                    oRelatedElement_NetRev.disabled = true;
+                    oRelatedElement_NetRev.value = "$0.00";
+                }
+                else
+                {
+                    oRelatedElement.value = "0.00%";
+                    oRelatedElement.disabled = true;
+
+                    oRelatedElement_NetRev.disabled = false;
+                }
+
+            }            
+
+        }
+
+    }
+
+
+    function updateNetRevenuePOST(nRecordID)
+    { 
+
+        var sRecordID = new String(nRecordID);
+        
+        var sElementID = "";
+
+        sElementID = "frm_Row-" + sRecordID + "-TotalAmount";
+        var oElement_Amount = document.getElementById(sElementID);        
+
+        sElementID = "frm_Row-" + sRecordID + "-Rate_POST";
+        var oElement_Rate = document.getElementById(sElementID);
+
+        sElementID = "frm_Row-" + sRecordID + "-NetRevenue_POST";
+        var oElement_NetRevenue = document.getElementById(sElementID);
+
+        var nAmount = new Number(0);
+        var nRate = new Number(0);
+        var nNetRevenue = new Number(0);
+
+        var s;
+
+        if (oElement_Amount.value != null)
+        { 
+            s = new String(oElement_Amount.value).trim();
+            s = s.replace("$", "");
+            s = s.replace(",", "");
+
+            if (s.indexOf("(") > -1 && s.indexOf(")") > -1)
+            { 
+                s = s.replace("(", "");
+                s = s.replace(")", "");
+
+                if (s.indexOf("-") == -1)
+                { 
+                    s = "-" + s;
+                }
+
+            }
+
+            if (!isNaN(s))
+            {
+                nAmount = new Number(s);
+            }
+            else
+            { 
+                alert("Invalid value for Amount.");
+                return;
+            }
+        
+        }
+
+        var bIsPercentage = true;
+
+        if (oElement_Rate.value != null)
+        {   
+
+            s = new String(oElement_Rate.value).trim(); 
+
+            s = s.replace("%", "");
+            s = s.replace(",", "");            
+            s = s.replace("(", "");
+            s = s.replace(")", "");
+            s = s.replace("-", "");
+
+            if (!isNaN(s))
+            { 
+                nRate = new Number(s);
+            }
+            else
+            { 
+                alert("Invalid value for Rate.");
+                return;
+            }
+        
+        }
+
+        nNetRevenue = (nAmount * nRate);
+
+        if (bIsPercentage)
+        {
+            nNetRevenue = (nNetRevenue / 100);
+        }
+
+
+        oElement_NetRevenue.value = nNetRevenue.toFixed(2);
+
+        
+        // OVERRIDE
+
+        //var sRelatedID1 = "";
+        //var oRelatedCtl1 = null;
+
+        //sRelatedID1 = "hdn_Row-" + sRecordID + "-NetRevenue_POST";
+        //oRelatedCtl1 = document.getElementById(sRelatedID1);
+
+        //if (oRelatedCtl1 != null)
+        //{   
+        //    oRelatedCtl1.value = "";
+        //}        
+        //else if (sRecordID != "0")
+        //{
+        //    alert("Ctl not found: " + sRelatedID1);
+        //    return;
+        //}
+        
+            
+    }
+
+
+    function updateNetRevenue(nRecordID)
+    { 
+        var sRecordID = new String(nRecordID);
+        
+        var sElementID = "";
+
+        sElementID = "frm_Row-" + sRecordID + "-Amount";
+        var oElement_Amount = document.getElementById(sElementID);        
+
+        sElementID = "frm_Row-" + sRecordID + "-Rate";
+        var oElement_Rate = document.getElementById(sElementID);
+
+        sElementID = "frm_Row-" + sRecordID + "-NetRevenue";
+        var oHDN_Element_NetRevenue = document.getElementById(sElementID);
+
+        sElementID = "spn-" + sRecordID + "-NetRevenue";
+        var oSPN_Element_NetRevenue = document.getElementById(sElementID);
+
+
+        var nAmount = new Number(0);
+        var nRate = new Number(0);
+        var nNetRevenue = new Number(0);
+
+        var s;
+
+        if (oElement_Amount.value != null)
+        { 
+            s = new String(oElement_Amount.value).trim();
+            s = s.replace("$", "");
+            s = s.replace(",", "");
+
+            if (s.indexOf("(") > -1 && s.indexOf(")") > -1)
+            { 
+                s = s.replace("(", "");
+                s = s.replace(")", "");
+
+                if (s.indexOf("-") == -1)
+                { 
+                    s = "-" + s;
+                }
+
+            }
+
+            if (!isNaN(s))
+            {
+                nAmount = new Number(s);
+            }
+            else
+            { 
+                alert("Invalid value for Amount.");
+                return;
+            }
+        
+        }
+
+        var bIsPercentage = true;
+
+        if (oElement_Rate.value != null)
+        {   
+
+            s = new String(oElement_Rate.value).trim(); 
+
+            s = s.replace("%", "");
+            s = s.replace(",", "");            
+            s = s.replace("(", "");
+            s = s.replace(")", "");
+            s = s.replace("-", "");
+
+            if (!isNaN(s))
+            { 
+                nRate = new Number(s);
+            }
+            else
+            { 
+                alert("Invalid value for Rate.");
+                return;
+            }
+        
+        }
+
+        nNetRevenue = (nAmount * nRate);
+
+        if(bIsPercentage)
+            nNetRevenue = (nNetRevenue / 100);
+
+        oHDN_Element_NetRevenue.value = nNetRevenue;
+        oSPN_Element_NetRevenue.innerText = "$" + nNetRevenue.toFixed(2);       
+    
+    }
+
+
+
+    function verifyQty(oSourceElement)
+    { 
+        
+        var nQty = 0;
+        var s;
+ 
+        if (oSourceElement.value != null && oSourceElement.value != "") 
+        {
+            var sCheckID = "frm_ValidationErrors";
+            var oElement_Check = document.getElementById(sCheckID);
+
+            if (isNaN(oSourceElement.value))
+            { 
+                alert("Invalid value for Quantity.");
+                oElement_Check.value = 1;
+                return;
+            }
+
+            nQty = new Number(oSourceElement.value);
+
+            if (nQty < 0) 
+            {
+                nQty *= -1;
+                oSourceElement.value = nQty;
+            }
+            else if (nQty == 0) 
+            {
+                nQty = 1;
+                oSourceElement.value = nQty;
+            }
+
+            oElement_Check.value = 0;
+        
+        }
+
+    }
+
+    
+
+    function checkDate(oSourceElement, sServiceDate)
+    { 
+        
+        var sDate = oSourceElement.value;
+        var sCheckID = "frm_ValidationErrors";
+        var oElement_Check = document.getElementById(sCheckID);
+
+        if (sDate != "") 
+        {
+            var reGoodDate = /^(?:(\d{1}|\d{2})[\/.](\d{1}|\d{2})[\/.](\d{2}|\d{4}))$/;
+
+            var bDate_IsValid = reGoodDate.test(sDate);
+
+            if (!bDate_IsValid)
+            {
+                oElement_Check.value = 1;
+
+                bError = true;
+                sError = "Remittance Date is not valid.";
+                alert(sError);
+                return;
+            }
+
+            var dtRemitDate = new Date(sDate);
+            var dtServiceDate = new Date(sServiceDate);
+
+            if(dtRemitDate < dtServiceDate)
+            {
+                oElement_Check.value = 1;
+                bError = true;                
+
+                sError = "Remittance Date must be equal to or after the Service Date.";
+                alert(sError);
+                return;
+            }
+
+
+
+            var bIsFutureDate = isFutureDate(sDate);
+
+            if(bIsFutureDate)
+            {
+                oElement_Check.value = 1;
+                bError = true;                
+
+                sError = "Remittance Date must be before or equal to the Current Date.";
+                alert(sError);
+                return;
+            }
+
+            oElement_Check.value = 0;
+
+        }
+
+    }
+
+    function verifyDate(oElement, nRecordID)
+    {
+
+        var sCheckID = "frm_ValidationErrors";
+        var oElement_Check = document.getElementById(sCheckID);
+
+        var sServiceDate = new String(oElement.value);
+        sServiceDate = sServiceDate.trim();
+
+        var oElement_AdmitDate = document.getElementById("frm_Service_AdmitDate_" + nRecordID);
+        var oElement_DischargeDate = document.getElementById("frm_Service_DischargeDate_" + nRecordID);
+
+        var sAdmitDate = new String(oElement_AdmitDate.value);
+        var sDischargeDate = new String(oElement_DischargeDate.value);
+
+        var dtAdmitDate;
+        var dtDischargeDate;
+        var dtServiceDate;
+
+        dtAdmitDate = new Date(sAdmitDate);
+        dtDischargeDate = new Date(sDischargeDate);
+
+        var bError = false;
+        var sError = "";
+
+        var bIsFutureDate;
+
+        if (sServiceDate != "") {
+
+            var reGoodDate = /^(?:(\d{1}|\d{2})[\/.](\d{1}|\d{2})[\/.](\d{2}|\d{4}))$/;
+
+            var bServiceDate_IsValid = reGoodDate.test(sServiceDate);
+
+            if (!bServiceDate_IsValid) {
+                oElement_Check.value = 1;
+
+                bError = true;
+                sError = "Service Date is not valid.";
+                alert(sError);
+                return;
+            }
+
+
+
+            dtServiceDate = new Date(sServiceDate);
+
+            if (dtServiceDate < dtAdmitDate) 
+            {
+                oElement_Check.value = 1;
+                bError = true;
+
+                sError = "Service Date must be equal to or after the Admit Date.";
+                alert(sError);
+                return;
+            }
+
+            if (dtServiceDate > dtDischargeDate) 
+            {
+                oElement_Check.value = 1;
+                bError = true;
+
+                sError = "Service Date must be equal to or before the Discharge Date.";
+                alert(sError);
+                return;
+            }
+
+            bIsFutureDate = isFutureDate(sServiceDate);
+
+            if(bIsFutureDate)
+            {
+                oElement_Check.value = 1;
+                bError = true;                
+
+                sError = "Service Date must be before or equal to the Current Date.";
+                alert(sError);
+                return;
+            }
+
+            oElement_Check.value = 0;
+
+        }
+        else
+        {
+            oElement_Check.value = 1;
+        }
+
+    }
+
+    function updateTotal(nRecordID) 
+    {
+
+        var nFactor = new Number(1);
+
+        var sRecordID = new String(nRecordID);
+
+        var sElementName_ChargeType_U = new String("frm_Row-" + sRecordID + "-ChargeType-U");
+        var sElementName_ChargeType_O = new String("frm_Row-" + sRecordID + "-ChargeType-O");
+        var sElementName_ChargeType_P = new String("frm_Row-" + sRecordID + "-ChargeType-P");
+
+        var oElement_ChargeType_U = document.getElementById(sElementName_ChargeType_U);
+        var oElement_ChargeType_O = document.getElementById(sElementName_ChargeType_O);
+        var oElement_ChargeType_P = document.getElementById(sElementName_ChargeType_P);
+
+
+        if (oElement_ChargeType_O.checked == true) 
+        {
+            nFactor = -1;
+        }
+        else 
+        {
+            nFactor = 1;
+        }
+
+
+        var sElementName_Amount = new String("frm_Row-" + sRecordID + "-Amount");
+        var sElementName_Qty = new String("frm_Row-" + sRecordID + "-Qty");
+        var sElementName_TotalAmount = new String("frm_Row-" + sRecordID + "-TotalAmount");
+
+
+        var oElement_Amount = document.getElementById(sElementName_Amount);
+        var oElement_Qty = document.getElementById(sElementName_Qty);
+        var oElement_TotalAmount = document.getElementById(sElementName_TotalAmount);
+
+        var nAmount = 0;
+        var nQty = 0;
+        var nTotalAmount = 0;
+
+        var s;
+
+
+        if (oElement_Amount.value != null && oElement_Amount.value != "") {
+            s = new String(oElement_Amount.value);
+
+            s = s.replace("$", "");
+            s = s.replace(",", "");
+            s = s.replace("(", "");
+            s = s.replace(")", "");
+
+            nAmount = new Number(s);
+        }
+
+        if (oElement_Qty.value != null && oElement_Qty.value != "") 
+        {
+            nQty = new Number(oElement_Qty.value);
+
+            if (nQty < 0) {
+                nQty *= -1;
+                oElement_Qty.value = nQty;
+            }
+            else if (nQty == 0) {
+                nQty = 1;
+                oElement_Qty.value = nQty;
+            }
+
+        }
+
+        nTotalAmount = new Number(nAmount * nQty * nFactor);
+
+        oElement_TotalAmount.value = (Math.round(nTotalAmount * 100) / 100);
+
+    }
+
+    function formAction(sFormAction, nRowID)
+    {
+        var oElement_Action;
+        var oElement_RowID;
+
+        oElement_Action = document.getElementById("frm_Action");
+        oElement_RowID = document.getElementById("frm_RowID");
+
+        sFormAction = new String(sFormAction);
+
+        if (oElement_Action != null && oElement_RowID != null)
+        {
+            if (sFormAction.indexOf("UPDATE_ROW") > -1 || sFormAction.indexOf("ADD_ROW") > -1)
+            {
+                var sCheckID = "frm_ValidationErrors";
+                var oElement_Check = document.getElementById(sCheckID);
+
+                if (oElement_Check.value == 1)
+                {
+                    alert("Please correct all validation errors, and re-submit.");
+                    return;
+                }
+
+            }
+
+            if (sFormAction.indexOf("DELETE_ROW") > -1)
+            {
+                var bDeleteConfirmed = confirm("Are you sure you want to delete this record?");
+
+                if (!bDeleteConfirmed)
+                {
+                    return;
+                }
+
+            }
+
+            oElement_Action.value = sFormAction;
+            oElement_RowID.value = nRowID;
+
+            document.forms[0].submit();
+        }
+        else
+        {
+            alert("Error: Elements are null");
+        }
+
+    }
+</script>
+
+<div style="border-color: #dedbdb; border-style:solid; border-width: 1px;">
+
+    
+    <table bgcolor="#FFFFFF" border="0" width="90%">
+            <tbody><tr>
+                
+                <td align="top" bgcolor="#ffffff">                    
+                    <table bgcolor="#ffffff" cellpadding="1" cellspacing="5" width="1250px">
+                    <tbody><tr>
+                        <td>
+                            <b>Pre Audit</b>
+                        </td>
+                    </tr>
+                        
+                    <tr>
+                        <td align="left" bgcolor="#ffffff" valign="top" width="50%">
+                            
+                            
+
+                            <table style="background-color:#dedbdb" border="1" bordercolor="#cccccc" cellpadding="2" cellspacing="2" width="100%">
+                            <tbody><tr>
+                                <td colspan="6">
+                                    <b>Pre Carve Outs</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    &nbsp;
+                                </td>
+                                <td align="center">
+                                    <b>Action</b>
+                                </td>
+                                <td align="center">
+                                    <b>Rev Code</b>
+                                </td>
+                                <td align="center">
+                                    <b>Amount</b>
+                                </td>
+                                <td align="center">
+                                    <b>Rate</b>
+                                </td>
+                                <td align="center">
+                                    <b>Net Revenue</b>
+                                </td>
+                            </tr>
+
+<tr style="background-color:#dedbdb"><td>&nbsp;</td><td align="center" nowrap="nowrap"><a href="javascript: formAction('EDIT_ROW_PRE', 2618);">Edit</a>&nbsp;<a href="javascript: formAction('DELETE_ROW_PRE', 2618);">Delete</a></td><td align="center">278</td><td align="right">$2,278.08&nbsp;&nbsp;</td><td align="right">37.00%&nbsp;&nbsp;</td><td align="right">$842.89&nbsp;&nbsp;</td></tr><tr style="background-color:#dedbdb"><td>&nbsp;</td><td align="center" nowrap="nowrap"><a href="javascript: formAction('EDIT_ROW_PRE', 2617);">Edit</a>&nbsp;<a href="javascript: formAction('DELETE_ROW_PRE', 2617);">Delete</a></td><td align="center">279</td><td align="right">$2,304.71&nbsp;&nbsp;</td><td align="right">37.00%&nbsp;&nbsp;</td><td align="right">$852.74&nbsp;&nbsp;</td></tr><tr style="background-color:#dedbdb"><td>&nbsp;</td><td align="center" nowrap="nowrap"><a href="javascript: formAction('EDIT_ROW_PRE', 2619);">Edit</a>&nbsp;<a href="javascript: formAction('DELETE_ROW_PRE', 2619);">Delete</a></td><td align="center">636</td><td align="right">$268.06&nbsp;&nbsp;</td><td align="right">85.00%&nbsp;&nbsp;</td><td align="right">$227.85&nbsp;&nbsp;</td></tr><tr style="background-color:#dedbdb"><td>&nbsp;</td><td align="center" nowrap="nowrap"><a href="javascript: formAction('ADD_ROW_PRE', 0);">Add New Item</a><br><br><a href="javascript: formAction('CANCEL_ROW_PRE', 0);">Cancel</a></td><td align="center"><select name="frm_Row-0-RevCode" id="frm_Row-0-RevCode"><option value="0">- select -</option><option value="131">274</option><option value="132">275</option><option value="133">276</option><option value="136">279</option><option value="200">390</option><option value="201">391</option><option value="325">636</option></select></td><td align="right"><input onblur="javascript: updateNetRevenue(0);" style="width: 65px; text-align:right" name="frm_Row-0-Amount" id="frm_Row-0-Amount" type="text"></td><td align="right"><input onblur="javascript: updateNetRevenue(0);" style="width: 50px; text-align:right" name="frm_Row-0-Rate" id="frm_Row-0-Rate" type="text"></td><td align="right"><span id="spn-0-NetRevenue"></span><input name="frm_Row-0-NetRevenue" id="frm_Row-0-NetRevenue" type="hidden"></td></tr>                                
+                            
+
+                            <tr>
+                                <td colspan="6">
+                                &nbsp;
+                                </td>     
+                            </tr>
+
+                            <tr>                                
+                                <td colspan="3" align="right">
+                                    <b>Pre Audit Carve Out Total - Charges</b>
+                                </td>
+                                <td align="right">
+                                        <b>$4,850.85</b>
+                                </td>  
+                                <td colspan="1">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>                                
+                                <td colspan="3" align="right">
+                                    <b>Pre Audit Net Carve Out Total - Charges</b>
+                                </td>
+                                <td align="right">
+                                        <b>$1,923.48</b>
+                                    <input id="hdn_TotalNetPreCharges" value="1923.4833" type="hidden">
+                                </td>  
+                                <td colspan="1">
+                                    &nbsp;
+                                </td>                                   
+                            </tr>
+
+                            </tbody></table>
+                                                            
+                            
+                        </td>
+                        
+                        <td width="15%">&nbsp;</td>
+
+                        <td align="right" bgcolor="#ffffff" valign="top" width="35%">
+                        <table bgcolor="#ffffff" cellspacing="0" width="100%">
+                        <tbody><tr>
+                            <td style="height:30px" align="left">
+                                <b>Instructions to Pricer</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="frm_InstPricer" cols="120" rows="4"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height:30px" align="left">
+                                <b>Pricer Comments</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="frm_CommentsPricer" cols="120" rows="4"></textarea>
+                            </td>
+                        </tr>
+                        </tbody></table>
+                    </td>
+
+                    </tr>
+                     
+    </tbody></table>
+                </td>
+
+            </tr>
+
+    </tbody></table>
+     
+
+
+    <table bgcolor="#FFFFFF" border="0" width="45%">
+
+                    <tbody><tr>
+                        <td style="background-color:#FFFFFF" align="left">
+                            
+                            <div style="border-color: #000000; border-style:solid; border-width: 2px;">
+
+                                <table style="background-color:#ffffff" border="0" bordercolor="#cccccc" cellpadding="0" cellspacing="4">
+                            <tbody><tr>
+                                <td align="right">
+                                    <b>Pre Audit Reimbursement Type</b>
+                                </td>
+                                <td>                                    
+<select name="frm_PreAudit_ReimbTypeID" id="frm_PreAudit_ReimbTypeID" onchange="toggleRelatedCtl(this, 0);"><option value="0">- select -</option><option value="36">----TEST01</option><option value="14">Additional Percent of Charges</option><option value="1">APC</option><option value="19">APG</option><option value="20">APG/Fee Schedule</option><option value="21">APG/Percent of Charges</option><option value="2">Case Rate</option><option value="3">Case Rate w/Percent of Charges</option><option value="4">Clean Claim</option><option value="5">DRG</option><option value="6">DRG w/Outlier</option><option value="7">DRG w/Percent of Charges</option><option value="8">Fee Schedule</option><option value="9">Fee Schedule w/Percent of Charges</option><option value="10">Full Reimbursement</option><option value="11">Per Diem</option><option value="12">Per Diem w/Percent of Charges</option><option value="13">Percent of Charges</option><option value="15">Stop Loss</option><option value="16">Tier Group for OP</option><option value="17">Tier Group for OP w/Percent of Charges</option><option value="18">Unknown</option></select>                                </td>
+                                <td>
+                                    <b>Rate</b>&nbsp;<input disabled="" onblur="javascript: updateRelatedCtl(this.id);" id="frm_Rate" name="frm_Rate" value="0.00%" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color:#ffffff" align="right">
+                                    <b>Non Carve Out Total</b>
+                                </td>
+                                <td style="background-color:#dedbdb" align="right">
+                                    <span id="spn_NonCarveOutTotalAmount">
+($4,001.73)                                    </span>
+                                </td>
+                                <td style="background-color:#ffffff">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color:#ffffff" align="right">
+                                    <b>Net Non Carve Out Total</b>
+                                </td>
+                                <td align="right">
+                                    <input style="text-align:right" id="frm_NetNonCarveOutTotal" name="frm_NetNonCarveOutTotal" value="$0.00" type="text">
+                                </td>
+                                <td style="background-color:#ffffff" nowrap="nowrap">
+                                    <span style="font-size:8pt">
+                                    </span>                                    
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="right">
+                                    <b>Pre Audit Expected Reimbursement</b>
+                                </td>
+                                <td style="background-color:#dedbdb" align="right">                                                                        
+                                    <span id="spn_PreAuditExpReimb">
+$1,923.48                                    </span>
+                                </td>
+                                <td style="background-color:#ffffff">
+                                    &nbsp;
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3" style="background-color:#ffffff" align="center">
+                                    <input name="btnSavePreAudit" value="Save Pre Audit Section" type="submit">
+                                </td>                                
+                            </tr>
+
+                            </tbody></table>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                        &nbsp;
+                        </td>     
+                    </tr>
+
+    </tbody></table>
+
+    <!-- hr -->
+
+                <div style="border-color: #000000; border-style:solid; border-width: 2px;">
+
+                <table bgcolor="#FFFFFF" border="0" width="90%">
+                    <tbody><tr>
+                        <td class="style1">
+                            <b>Post Audit</b>
+                        </td>
+                    </tr>
+                   
+                    <tr>
+                        <td>
+                           
+                            <table id="tblPostAuditGrid" border="0" cellpadding="2" cellspacing="2" width="100%">
+
+                            <tbody><tr>
+
+                                <td style="background-color:#dedbdb" align="center" valign="middle">
+                                    <b>Action</b>
+                                </td>
+                                <td style="background-color:#dedbdb" align="center" valign="middle">
+                                    <b>Rev Code</b>
+                                </td>
+                                <td style="background-color:#dedbdb" align="center" valign="middle">
+                                    <b>Service Date</b>
+                                </td>                        
+                                <td style="background-color:#dedbdb" align="center" valign="middle">
+                                    <b>HCPCS</b>
+                                </td>
+                                <td style="background-color:#dedbdb;" align="center" valign="middle">
+                                    <b>Mod</b>
+                                </td>                        
+                                <td style="background-color:#dedbdb" align="center" valign="middle">
+                                    <b>Qty</b>
+                                </td>
+                                <td style="background-color:#dedbdb" align="center" valign="middle">
+                                    <b>Charge Type</b>
+                                </td>
+                                <td style="background-color:#dedbdb" align="center" valign="middle">
+                                    <b>Total Amount</b>
+                                </td>
+
+                                <td style="background-color:#dedbdb" align="center" valign="middle">
+                                    <b>Reimbursement Type</b>
+                                </td>
+
+                                <td style="background-color:#dedbdb" align="center" valign="middle">
+                                    <b>Rate</b>
+                                </td>
+                                
+                                <td style="background-color:#dedbdb" align="center" valign="middle">
+                                    <b>Net Revenue</b>
+                                </td>
+                                
+                                
+
+                                <td style="background-color:#dedbdb" align="center" valign="middle">
+                                    <!-- OVERRIDE -->
+                                    <b>Net Revenue Modified</b>
+                                </td>
+                                
+                            </tr>
+                        
+<tr style="background-color:#ffffff"><td align="center"><input id="frm_Service_AdmitDate_213035" name="frm_Service_AdmitDate_213035" value="11/30/2012 12:00:00 AM" type="hidden"><input id="frm_Service_DischargeDate_213035" name="frm_Service_DischargeDate_213035" value="12/1/2012 12:00:00 AM" type="hidden"><a href="javascript: formAction('EDIT_ROW_POST', 213035);">Edit</a></td><td align="center"><span style="color:#000000">270</span></td><td align="center"><span style="color:#000000">11/30/2012</span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000">1</span></td><td align="left"><span style="color:#000000">Over</span></td><td align="right"><span style="color:#000000">($817.95)</span></td><td align="left"><span style="color:#000000"></span></td><td align="right"><span style="color:#000000">45.00%</span></td><td align="right"><span style="color:#000000">($3.28)</span></td><td align="left"><span style="color:#000000"></span></td></tr><tr style="background-color:#dedbdb"><td align="center"><input id="frm_Service_AdmitDate_213025" name="frm_Service_AdmitDate_213025" value="11/30/2012 12:00:00 AM" type="hidden"><input id="frm_Service_DischargeDate_213025" name="frm_Service_DischargeDate_213025" value="12/1/2012 12:00:00 AM" type="hidden"><a href="javascript: formAction('EDIT_ROW_POST', 213025);">Edit</a></td><td align="center"><span style="color:#000000">278</span></td><td align="center"><span style="color:#000000">11/30/2012</span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000">1</span></td><td align="left"><span style="color:#000000">Under</span></td><td align="right"><span style="color:#000000">$80.40</span></td><td align="left"><span style="color:#000000">Percent of Charges</span></td><td align="right"><span style="color:#000000">36.00%</span></td><td align="right"><span style="color:#000000">$28.94</span></td><td align="left"><span style="color:#000000"></span></td></tr><tr style="background-color:#ffffff"><td align="center"><input id="frm_Service_AdmitDate_213033" name="frm_Service_AdmitDate_213033" value="11/30/2012 12:00:00 AM" type="hidden"><input id="frm_Service_DischargeDate_213033" name="frm_Service_DischargeDate_213033" value="12/1/2012 12:00:00 AM" type="hidden"><a href="javascript: formAction('EDIT_ROW_POST', 213033);">Edit</a></td><td align="center"><span style="color:#000000">636</span></td><td align="center"><span style="color:#000000">11/30/2012</span></td><td align="center"><span style="color:#000000">J1100</span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000">4</span></td><td align="left"><span style="color:#000000">Under</span></td><td align="right"><span style="color:#000000">$3.28</span></td><td align="left"><span style="color:#000000">APG</span></td><td align="right"><span style="color:#000000">45.00%</span></td><td align="right"><span style="color:#000000">$111,111.11</span></td><td align="left"><span style="color:#000000">myintt02, 2/13/2014 12:25 PM</span></td></tr><tr style="background-color:#dedbdb"><td align="center"><input id="frm_Service_AdmitDate_213030" name="frm_Service_AdmitDate_213030" value="11/30/2012 12:00:00 AM" type="hidden"><input id="frm_Service_DischargeDate_213030" name="frm_Service_DischargeDate_213030" value="12/1/2012 12:00:00 AM" type="hidden"><a href="javascript: formAction('EDIT_ROW_POST', 213030);">Edit</a></td><td align="center"><span style="color:#000000">636</span></td><td align="center"><span style="color:#000000">11/30/2012</span></td><td align="center"><span style="color:#000000">J0690</span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000">2</span></td><td align="left"><span style="color:#000000">Under</span></td><td align="right"><span style="color:#000000">$10.44</span></td><td align="left"><span style="color:#000000">APG</span></td><td align="right"><span style="color:#000000">45.00%</span></td><td align="right"><span style="color:#000000">$4.70</span></td><td align="left"><span style="color:#000000"></span></td></tr><tr style="background-color:#ffffff"><td align="center"><input id="frm_Service_AdmitDate_213024" name="frm_Service_AdmitDate_213024" value="11/30/2012 12:00:00 AM" type="hidden"><input id="frm_Service_DischargeDate_213024" name="frm_Service_DischargeDate_213024" value="12/1/2012 12:00:00 AM" type="hidden"><a href="javascript: formAction('EDIT_ROW_POST', 213024);">Edit</a></td><td align="center"><span style="color:#000000">636</span></td><td align="center"><span style="color:#000000">11/30/2012</span></td><td align="center"><span style="color:#000000">J3010</span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000">1</span></td><td align="left"><span style="color:#000000">Under</span></td><td align="right"><span style="color:#000000">$2.83</span></td><td align="left"><span style="color:#000000">APG</span></td><td align="right"><span style="color:#000000">45.00%</span></td><td align="right"><span style="color:#000000">$1.27</span></td><td align="left"><span style="color:#000000"></span></td></tr><tr><td align="center"><input id="frm_Service_AdmitDate_0" name="frm_Service_AdmitDate_0" value="11/30/2012 12:00:00 AM" type="hidden"><input id="frm_Service_DischargeDate_0" name="frm_Service_DischargeDate_0" value="12/1/2012 12:00:00 AM" type="hidden"><a href="javascript: formAction('ADD_ROW_POST', 0);">Add New Item</a><br><br><a href="javascript: formAction('CANCEL_ROW_POST', 0);">Cancel</a></td><td align="center" valign="top"><select name="frm_Row-0-RevCode-POST" id="frm_Row-0-RevCode-POST"><option value="0">- select -</option><option value="18">121</option><option value="19">122</option><option value="20">123</option><option value="28">131</option><option value="29">132</option><option value="62">171</option><option value="63">172</option><option value="64">173</option><option value="65">174</option><option value="83">206</option><option value="92">219</option><option value="111">250</option><option value="112">251</option><option value="113">252</option><option value="115">254</option><option value="116">255</option><option value="117">256</option><option value="118">257</option><option value="119">258</option><option value="120">259</option><option value="121">260</option><option value="122">261</option><option value="123">262</option><option value="124">263</option><option value="125">264</option><option value="126">269</option><option value="127">270</option><option value="128">271</option><option value="129">272</option><option value="130">273</option><option value="131">274</option><option value="132">275</option><option value="133">276</option><option value="135">278</option><option value="136">279</option><option value="137">280</option><option value="138">289</option><option value="139">290</option><option value="140">291</option><option value="141">292</option><option value="142">293</option><option value="143">294</option><option value="144">299</option><option value="145">300</option><option value="146">301</option><option value="147">302</option><option value="148">303</option><option value="149">304</option><option value="150">305</option><option value="151">306</option><option value="152">307</option><option value="153">309</option><option value="154">310</option><option value="155">311</option><option value="156">312</option><option value="157">314</option><option value="158">319</option><option value="159">320</option><option value="160">321</option><option value="161">322</option><option value="162">323</option><option value="163">324</option><option value="164">329</option><option value="165">330</option><option value="166">331</option><option value="167">332</option><option value="168">333</option><option value="169">335</option><option value="170">339</option><option value="171">340</option><option value="172">341</option><option value="173">342</option><option value="174">343</option><option value="175">344</option><option value="176">349</option><option value="177">350</option><option value="178">351</option><option value="179">352</option><option value="180">359</option><option value="181">360</option><option value="182">361</option><option value="183">362</option><option value="184">367</option><option value="185">369</option><option value="186">370</option><option value="187">371</option><option value="188">372</option><option value="190">379</option><option value="191">380</option><option value="192">381</option><option value="193">382</option><option value="194">383</option><option value="195">384</option><option value="196">385</option><option value="197">386</option><option value="198">387</option><option value="199">389</option><option value="200">390</option><option value="201">391</option><option value="202">392</option><option value="203">399</option><option value="204">400</option><option value="205">401</option><option value="206">402</option><option value="207">403</option><option value="208">404</option><option value="209">409</option><option value="210">410</option><option value="211">412</option><option value="212">413</option><option value="213">419</option><option value="214">420</option><option value="215">421</option><option value="216">422</option><option value="217">423</option><option value="218">424</option><option value="219">429</option><option value="220">430</option><option value="221">431</option><option value="222">432</option><option value="223">433</option><option value="224">434</option><option value="225">439</option><option value="226">440</option><option value="227">441</option><option value="228">442</option><option value="229">443</option><option value="230">444</option><option value="231">449</option><option value="232">450</option><option value="233">451</option><option value="234">452</option><option value="235">456</option><option value="236">459</option><option value="237">460</option><option value="238">469</option><option value="239">470</option><option value="240">471</option><option value="241">472</option><option value="242">479</option><option value="243">480</option><option value="244">481</option><option value="245">482</option><option value="246">483</option><option value="247">489</option><option value="248">490</option><option value="249">499</option><option value="252">510</option><option value="253">511</option><option value="254">512</option><option value="255">513</option><option value="256">514</option><option value="257">515</option><option value="258">516</option><option value="259">517</option><option value="260">519</option><option value="271">530</option><option value="272">531</option><option value="273">539</option><option value="308">610</option><option value="309">611</option><option value="310">612</option><option value="311">614</option><option value="312">615</option><option value="313">616</option><option value="314">618</option><option value="315">619</option><option value="316">621</option><option value="317">622</option><option value="318">623</option><option value="319">624</option><option value="320">631</option><option value="321">632</option><option value="322">633</option><option value="323">634</option><option value="324">635</option><option value="325">636</option><option value="326">637</option><option value="355">681</option><option value="356">682</option><option value="357">683</option><option value="358">684</option><option value="359">689</option><option value="360">700</option><option value="361">710</option><option value="362">720</option><option value="363">721</option><option value="364">722</option><option value="365">723</option><option value="366">724</option><option value="367">729</option><option value="368">730</option><option value="369">731</option><option value="370">732</option><option value="371">739</option><option value="372">740</option><option value="373">750</option><option value="374">760</option><option value="375">761</option><option value="376">762</option><option value="377">769</option><option value="378">770</option><option value="379">771</option><option value="381">790</option><option value="382">800</option><option value="383">801</option><option value="384">802</option><option value="385">803</option><option value="386">804</option><option value="387">809</option><option value="388">810</option><option value="389">811</option><option value="390">812</option><option value="391">813</option><option value="392">814</option><option value="393">819</option><option value="394">820</option><option value="395">821</option><option value="396">822</option><option value="397">823</option><option value="398">824</option><option value="399">825</option><option value="400">829</option><option value="401">830</option><option value="402">831</option><option value="407">839</option><option value="408">840</option><option value="409">841</option><option value="414">849</option><option value="415">850</option><option value="416">851</option><option value="421">859</option><option value="422">880</option><option value="423">881</option><option value="425">889</option><option value="426">900</option><option value="427">901</option><option value="428">902</option><option value="429">903</option><option value="430">904</option><option value="431">905</option><option value="432">906</option><option value="433">907</option><option value="434">911</option><option value="435">912</option><option value="436">913</option><option value="437">914</option><option value="438">915</option><option value="439">916</option><option value="440">917</option><option value="441">918</option><option value="442">919</option><option value="443">920</option><option value="444">921</option><option value="445">922</option><option value="446">923</option><option value="447">924</option><option value="448">925</option><option value="449">929</option><option value="452">940</option><option value="453">941</option><option value="454">942</option><option value="455">943</option><option value="456">944</option><option value="457">945</option><option value="460">948</option><option value="461">949</option><option value="486">988</option><option value="488">990</option><option value="496">998</option></select></td><td align="center" valign="top"><input style="width: 60px; text-align:right" id="frm_Row-0-ServiceDate" name="frm_Row-0-ServiceDate" onblur="javascript:verifyDate(this, 0);" type="text"></td><td align="center" valign="top"><input style="width: 55px; text-align:right" id="frm_Row-0-HCPCSCPT" name="frm_Row-0-HCPCSCPT" type="text"></td><td align="center" valign="top"><input style="width: 55px; text-align:right" id="frm_Row-0-HCPCSCPTModifier" name="frm_Row-0-HCPCSCPTModifier" type="text"></td><td align="center" valign="top"><input onblur="javascript:verifyQty(this);" style="width: 22px; text-align:right" id="frm_Row-0-Qty" name="frm_Row-0-Qty" type="text"></td><td align="left" valign="top"><select name="frm_Row-0-ChargeTypeID" id="frm_Row-0-ChargeTypeID"><option value="0">- select -</option><option value="2">Under</option><option value="1">Over</option><option value="3">Potential</option></select></td><td align="right" valign="top"><input onblur="javascript: updateNetRevenuePOST(0);" style="width: 65px; text-align:right" id="frm_Row-0-TotalAmount" name="frm_Row-0-TotalAmount" type="text"></td><td align="center" valign="top"><select name="frm_Row-0-ReimbTypeID" id="frm_Row-0-ReimbTypeID" style="font-size: 7pt;" onchange="toggleRelatedCtl(this, 0);"><option value="0">- select -</option><option value="14">Additional Percent of Charges</option><option value="1">APC</option><option value="19">APG</option><option value="20">APG/Fee Schedule</option><option value="21">APG/Percent of Charges</option><option value="2">Case Rate</option><option value="3">Case Rate w/Percent of Charges</option><option value="4">Clean Claim</option><option value="5">DRG</option><option value="6">DRG w/Outlier</option><option value="7">DRG w/Percent of Charges</option><option value="8">Fee Schedule</option><option value="9">Fee Schedule w/Percent of Charges</option><option value="10">Full Reimbursement</option><option value="11">Per Diem</option><option value="12">Per Diem w/Percent of Charges</option><option value="13">Percent of Charges</option><option value="15">Stop Loss</option><option value="16">Tier Group for OP</option><option value="17">Tier Group for OP w/Percent of Charges</option><option value="18">Unknown</option></select></td><td align="right" valign="top"><input onblur="javascript: updateNetRevenuePOST(0);" style="width: 45px; text-align:right" id="frm_Row-0-Rate_POST" name="frm_Row-0-Rate_POST" type="text"></td><td align="right" valign="top"><input value="" style="width: 65px; text-align:right" id="frm_Row-0-NetRevenue_POST" name="frm_Row-0-NetRevenue_POST" type="text"></td><td align="center" valign="top">&nbsp;</td></tr>
+                            <tr style="background-color:#dedbdb">                                
+                                <td colspan="7" align="right">
+                                    <b>Totals</b>
+                                </td>
+                                <td colspan="1" align="right">
+                                    <b>                                        
+($721.00)                                    </b>
+                                </td>
+                                <td colspan="1">
+                                    &nbsp;
+                                </td>
+                                <td colspan="1">
+                                    &nbsp;
+                                </td>
+                                <td colspan="1" align="right">
+                                    <b>
+$111,142.75                                    </b>
+                                </td>                                
+                                <td colspan="1" align="center">
+                                    <!-- OVERRIDE -->
+                                    <input name="btnClearModified" value="Clear All Modified Fields" type="submit">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td colspan="15">
+                                    <hr style="color:#cccccc">
+                                </td>                            
+                            </tr>
+
+                            <tr>
+                                <td colspan="4" align="left">
+                                    <b>Final Reported Net Revenue Variance</b>
+                                </td>
+                                <td colspan="1" style="background-color:#dedbdb" align="right">                                    
+
+                                 
+
+                                    
+
+                                    <!-- OVERRIDE -->
+                                    <input style="text-align:right" id="frm_NetRevenueVariance" name="frm_NetRevenueVariance" value="$112,701.43" type="text">
+
+                                </td>
+                                
+                                <td style="background-color:#ffffff" nowrap="nowrap">
+                                    <!-- OVERRIDE -->
+
+                                    <span style="font-size:8pt">
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                             <tr>
+                                <td colspan="4" align="left">
+                                    <b>Post Audit Total Expected Reimbursement</b>
+                                </td>
+                                <td colspan="1" style="background-color:#dedbdb" align="right">
+
+                                    
+
+                                    <!-- OVERRIDE -->
+                                    <input style="text-align:right" id="frm_PostAuditTotalExpectedReimbursement" name="frm_PostAuditTotalExpectedReimbursement" value="$112,701.43" type="text">
+
+                                    
+
+                                </td>
+
+                                 <td style="background-color:#ffffff" nowrap="nowrap">
+                                    <!-- OVERRIDE -->
+
+                                    <span style="font-size:8pt">
+                                    </span>
+
+                                </td>
+
+                                 <td align="center" valign="top">
+                                    <input name="btnSavePostAudit" value="Save Post Audit Section" type="submit">
+                                 </td>
+
+                            </tr> 
+                           
+                            </tbody></table>
+
+                        </td>
+                    </tr>
+    </tbody></table>
+    
+                </div>
+    
+    
+
+    
+
+
+        
+
+
+
+<script>
+document.onreadystatechange = onReadyStateChange;
+    
+function onReadyStateChange()
+{
+    if (document.readyState == "complete")
+    {
+        manageTabCtlState();
+
+        manageCtlState();
+
+        managePostAuditGrid();
+
+        highlightTab();        
+    }
+}
+
+</script>
+
+
