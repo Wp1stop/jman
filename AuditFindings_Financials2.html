@@ -31,32 +31,35 @@
         <li><a href="#">Worklist</a>
         <!-- First Tier Drop Down -->
         <ul>
-            <li><a href="#">Themes</a></li>
-            <li><a href="#">Plugins</a></li>
-            <li><a href="#">Tutorials</a></li>
-        </ul>        
+            <li><a href="#">Auditor Worklist</a></li>
+            <li><a href="#">Pricer Worklist</a></li>
+            <li><a href="#">Inventory Worklist</a></li>
+        </ul>          
         </li>
-        <li><a href="#">Account Import</a>
-        <li><a href="#">CDN Import</a>  
-        <li><a href="#">Admin</a>
+        <li><a href="#">Account Import</a></li>
+        <li><a href="#">CDN Import</a> </li> 
+           <li><a href="#">Admin</a> 
+               <ul>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Links</a></li>
+            <li><a href="#">Tutorials</a>
+            <!-- Second Tier Drop Down -->
+           
+            </li>
+        </ul>
+           </li>
+        <li><a href="#">Reports</a>
         <!-- First Tier Drop Down -->
         <ul>
             <li><a href="#">Resources</a></li>
             <li><a href="#">Links</a></li>
             <li><a href="#">Tutorials</a>
             <!-- Second Tier Drop Down -->
-            <ul>
-                <li><a href="#">HTML/CSS</a></li>
-                <li><a href="#">jQuery</a></li>
-                <li><a href="#">Other</a></li>
-            </ul>
+           
             </li>
         </ul>
         </li>
-        <li><a href="#">Graphic Design</a></li>
-        <li><a href="#">Inspiration</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About</a></li>
+        
     </ul>
 </nav><div id="uppernav">
 <a href="http://rmdwcdcdvm005.nyumc.org/RM/QA_Helpers" class="qautils">QA Utils</a>
@@ -107,6 +110,9 @@
    <div id="filecommands">
                                             <button type="submit" id="save" name="frm_Button" value="Save" style="width: 64px" /> Save</button><!-- onclick="javascript:submitForm();" -->
 
+
+                                             <button disabled="disabled" type="submit" name="frm_Button" value="Delete" style="width: 64px" />Delete</button>
+                                              <button disabled="disabled" type="submit" name="frm_Button" value="Open" style="width: 64px" />Open</button>
       <button disabled="disabled" type="submit" name="frm_Button" value="Unlock" style="width: 64px" />Unlock</button>
 
 </div>
@@ -744,12 +750,12 @@ hhf                                            <input type="hidden" value="hhf" 
 
       <div>
             <ul id="tabs">
-                <li id="tab1" class="active"> <a href="/RM/AuditFindings/Actions?a=P111111" id="Actions">Actions</a></li>
-                <li id="tab2"><a href="/RM/AuditFindings/Financials?a=P111111" id="Financials">Financials</a></li>
+                <li id="tab1"> <a href="/RM/AuditFindings/Actions?a=P111111" id="Actions">Actions</a></li>
+                <li id="tab2" class="active"><a href="/RM/AuditFindings/Financials?a=P111111" id="Financials">Financials</a></li>
                 <li id="tab3"><a href="/RM/AuditFindings/Details?a=P111111" id="Details" >Details</a></li>
                 <li id="tab4"><a href="/RM/AuditFindings/Coding?a=P111111" id="Coding">Coding</a></li>
                 <li id="tab5"><a href="/RM/AuditFindings/DenialsAppeals?a=P111111" id="DenialsAppeals">Denials/Appeals</a></li>
-                <li id="tab6"><a href="/RM/AuditFindings/PaymentAnalysis?a=P111111" id="PaymentAnalysis">Payment Analysis</a></li>
+                <li id="tab6"  ><a href="/RM/AuditFindings/PaymentAnalysis?a=P111111" id="PaymentAnalysis">Payment Analysis</a></li>
             </ul>
         </div>
 
@@ -758,48 +764,391 @@ hhf                                            <input type="hidden" value="hhf" 
          <div id="detailsection">
   
          
-         
-    <table  class="tg">                                     
-           <tr id="detailsheader"> 		<th>Action</th>
-                        <th>Service Date</th>
-                        <th>Department<br>Cost Center</th>
-                        <th>CDM Description/<br>CDM Code</th>
-                        <th>Rev Code</th>
-                        <th>HCPCS</th>
-                        <th>Mod</th>
-                        <th>Unit Amount</th>
-                        <th>Qty</th>
-                        <th>U</th>
-                        <th>O</th>
-                        <th>P</th>
-                        <th>Total Amount</th>
-                        <th>Root Cause</th>
-                        <th>CE Comments</th>                        
+      <div style="border-color: #dedbdb; border-style:solid; border-width: 1px;">
+
+    
+    <table bgcolor="#FFFFFF" border="0" width="90%">
+            <tbody><tr>
+                
+                <td align="top" bgcolor="#ffffff">                    
+                    <table bgcolor="#ffffff" cellpadding="1" cellspacing="5" width="1250px">
+                    <tbody><tr>
+                        <td>
+                            <b>Pre Audit</b>
+                        </td>
                     </tr>
-
-<tr><td class="tg-031e" ><a href="javascript: formAction('EDIT_ROW', 241793);" class="edit">Edit</a>&nbsp;<a href="javascript: formAction('DELETE_ROW', 241793);" class="delete">Delete</a></td><td class="tg-031e" >12/2/2013</td><td >RUSK SPEECH LANGUAGE PATHOLOGY<br>8RM111801</td><td ><br>6054446</td><td class="tg-031e" >272</td><td class="tg-031e" ></td><td class="tg-031e" ></td><td class="tg-031e" >$2.00 </td><td class="tg-031e" >2</td><td class="tg-031e" >X</td><td class="tg-031e" ></td><td class="tg-031e" ></td><td class="tg-031e" >$4.00 </td><td >Bundled Procedure</td><td ></td></tr><tr id="detailsheader"><td colspan="16"><b>Add New Item</b></td></tr><tr id="detailsheader"><td class="tg-031e" ><input type="hidden" value="0" name="frm_ID"><input type="hidden" value="11/01/2013" id="frm_Service_AdmitDate"><input type="hidden" value="11/01/2013" id="frm_Service_DischargeDate"><a href="javascript: formAction('UPDATE_ROW', 0);" class="update">Add Item</a><br><br><a href="javascript: formAction('CANCEL_ROW', 0);" class="delete">Cancel</a></td><td class="tg-031e" ><input type="text" value="12/2/2013" onblur="javascript:verifyDate(this);" name="frm_Row-0-ServiceDate" id="frm_Row-0-ServiceDate" style="width: 60px; text-align:right"></td><td class="tg-031e" ><select id="frm_Row-0-DeptID" name="frm_Row-0-DeptID"><option value="0">- select -</option><option value="140">RUSK 1N</option><option value="141">RUSK 1S</option><option value="142">RUSK 4W</option><option value="143">RUSK 5S</option><option value="144">RUSK HCC 9/CARDIAC REHAB</option><option value="145">RUSK IRM  ADULT CLINIC</option><option value="146">RUSK IRM  CARDIAC REHAB</option><option value="147">RUSK IRM  ORTHOTICS IMPLANTS</option><option value="148">RUSK IRM  PSYCHOLOGY</option><option value="149">RUSK IRM  PULMONARY SERVICES</option><option value="150">RUSK IRM  RECREATION THERAPY</option><option value="151">RUSK IRM  VOCATIONAL SERVICES</option><option value="152">RUSK IRM HEAD TRAUMA PROGRAM</option><option value="153">RUSK IRM ORTHOTICS</option><option value="154">RUSK IRM ORTHOTICS SUPPLIES</option><option value="155">RUSK IRM PHYSICAL THERAPY SUPPLIES</option><option value="156">RUSK MEDICAL SOCIAL WORK</option><option value="157">RUSK MUSCULAR DYSTROPHY CLINIC</option><option value="158">RUSK OT</option><option value="159">RUSK OT SUPPLIES</option><option value="160">RUSK PT</option><option value="161">RUSK SPEECH LANGUAGE PATHOLOGY</option><option value="202">TH ANESTHESIA</option><option value="215">TH CHEMISTRY LAB</option><option value="226">TH CYTOLOGY LAB</option><option value="230">TH ENDO/GI</option><option value="231">TH ENDO/GI IMPLANTS</option><option value="232">TH ENDO/GI SUPPLIES</option><option value="261">TH NON-INVASIVE CARDIOLOGY</option><option value="279">TH VASCULAR LAB</option><option value="280">TH X-RAY</option></select><div id="frm_Row-0-CostCenterName"></div></td>
-
-<td class="tg-031e" ><input type="text" name="frm_Row-0-CDMDescription" id="frm_Row-0-CDMDescription" style="width: 70px; text-align:left"><br><input type="text" name="frm_Row-0-CDMCode" id="frm_Row-0-CDMCode" style="width: 55px; text-align:right" onblur="javascript:runClientSearch(this.value, 0);"><a href="javascript: popupSearchCDM(0);"><img src="../Images/search_icon_1.png" style="border-style: none;"></a></td>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+                        
                     <tr>
-                        <td colspan="15">
-                            <hr style="color:#cccccc">
-                        </td>                            
+                        <td align="left" bgcolor="#ffffff" valign="top" width="50%">
+                            
+                            
+
+                            <table  border="1" bordercolor="#cccccc" cellpadding="2" cellspacing="2" width="100%">
+                            <tbody><tr>
+                                <td colspan="6">
+                                    <b>Pre Carve Outs</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    &nbsp;
+                                </td>
+                                <td align="center">
+                                    <b>Action</b>
+                                </td>
+                                <td align="center">
+                                    <b>Rev Code</b>
+                                </td>
+                                <td align="center">
+                                    <b>Amount</b>
+                                </td>
+                                <td align="center">
+                                    <b>Rate</b>
+                                </td>
+                                <td align="center">
+                                    <b>Net Revenue</b>
+                                </td>
+                            </tr>
+
+<tr ><td>&nbsp;</td><td align="center" nowrap="nowrap"><a href="javascript: formAction('EDIT_ROW_PRE', 2618);">Edit</a>&nbsp;<a href="javascript: formAction('DELETE_ROW_PRE', 2618);">Delete</a></td><td align="center">278</td><td align="right">$2,278.08&nbsp;&nbsp;</td><td align="right">37.00%&nbsp;&nbsp;</td><td align="right">$842.89&nbsp;&nbsp;</td></tr><tr ><td>&nbsp;</td><td align="center" nowrap="nowrap"><a href="javascript: formAction('EDIT_ROW_PRE', 2617);">Edit</a>&nbsp;<a href="javascript: formAction('DELETE_ROW_PRE', 2617);">Delete</a></td><td align="center">279</td><td align="right">$2,304.71&nbsp;&nbsp;</td><td align="right">37.00%&nbsp;&nbsp;</td><td align="right">$852.74&nbsp;&nbsp;</td></tr><tr ><td>&nbsp;</td><td align="center" nowrap="nowrap"><a href="javascript: formAction('EDIT_ROW_PRE', 2619);">Edit</a>&nbsp;<a href="javascript: formAction('DELETE_ROW_PRE', 2619);">Delete</a></td><td align="center">636</td><td align="right">$268.06&nbsp;&nbsp;</td><td align="right">85.00%&nbsp;&nbsp;</td><td align="right">$227.85&nbsp;&nbsp;</td></tr><tr ><td>&nbsp;</td><td align="center" nowrap="nowrap"><a href="javascript: formAction('ADD_ROW_PRE', 0);">Add New Item</a><br><br><a href="javascript: formAction('CANCEL_ROW_PRE', 0);">Cancel</a></td><td align="center"><select name="frm_Row-0-RevCode" id="frm_Row-0-RevCode"><option value="0">- select -</option><option value="131">274</option><option value="132">275</option><option value="133">276</option><option value="136">279</option><option value="200">390</option><option value="201">391</option><option value="325">636</option></select></td><td align="right"><input onblur="javascript: updateNetRevenue(0);" style="width: 65px; text-align:right" name="frm_Row-0-Amount" id="frm_Row-0-Amount" type="text"></td><td align="right"><input onblur="javascript: updateNetRevenue(0);" style="width: 50px; text-align:right" name="frm_Row-0-Rate" id="frm_Row-0-Rate" type="text"></td><td align="right"><span id="spn-0-NetRevenue"></span><input name="frm_Row-0-NetRevenue" id="frm_Row-0-NetRevenue" type="hidden"></td></tr>                                
+                            
+
+                            <tr>
+                                <td colspan="6">
+                                &nbsp;
+                                </td>     
+                            </tr>
+
+                            <tr>                                
+                                <td colspan="3" align="right">
+                                    <b>Pre Audit Carve Out Total - Charges</b>
+                                </td>
+                                <td align="right">
+                                        <b>$4,850.85</b>
+                                </td>  
+                                <td colspan="1">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>                                
+                                <td colspan="3" align="right">
+                                    <b>Pre Audit Net Carve Out Total - Charges</b>
+                                </td>
+                                <td align="right">
+                                        <b>$1,923.48</b>
+                                    <input id="hdn_TotalNetPreCharges" value="1923.4833" type="hidden">
+                                </td>  
+                                <td colspan="1">
+                                    &nbsp;
+                                </td>                                   
+                            </tr>
+
+                            </tbody></table>
+                                                            
+                            
+                        </td>
+                        
+                        <td width="15%">&nbsp;</td>
+
+                        <td align="right" bgcolor="#ffffff" valign="top" width="35%" style="padding-left:10px;">
+                        <table bgcolor="#ffffff" cellspacing="0" width="100%" style="padding-left:10px;">
+                        <tbody><tr>
+                            <td style="height:30px" align="left">
+                                <b>Instructions to Pricer</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="frm_InstPricer" cols="120" rows="4"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height:30px" align="left">
+                                <b>Pricer Comments</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="frm_CommentsPricer" cols="120" rows="4"></textarea>
+                            </td>
+                        </tr>
+                        </tbody></table>
+                    </td>
+
+                    </tr>
+                     
+    </tbody></table>
+                </td>
+
+            </tr>
+
+    </tbody></table>
+     
+
+
+    <table bgcolor="#FFFFFF" border="0" width="45%">
+
+                    <tbody><tr>
+                        <td style="background-color:#FFFFFF" align="left">
+                            
+                            <div style="border-color: #000000; border-style:solid; border-width: 2px;">
+
+                                <table style="background-color:#ffffff" border="0" bordercolor="#cccccc" cellpadding="0" cellspacing="4">
+                            <tbody><tr>
+                                <td align="right">
+                                    <b>Pre Audit Reimbursement Type</b>
+                                </td>
+                                <td>                                    
+<select name="frm_PreAudit_ReimbTypeID" id="frm_PreAudit_ReimbTypeID" onchange="toggleRelatedCtl(this, 0);"><option value="0">- select -</option><option value="36">----TEST01</option><option value="14">Additional Percent of Charges</option><option value="1">APC</option><option value="19">APG</option><option value="20">APG/Fee Schedule</option><option value="21">APG/Percent of Charges</option><option value="2">Case Rate</option><option value="3">Case Rate w/Percent of Charges</option><option value="4">Clean Claim</option><option value="5">DRG</option><option value="6">DRG w/Outlier</option><option value="7">DRG w/Percent of Charges</option><option value="8">Fee Schedule</option><option value="9">Fee Schedule w/Percent of Charges</option><option value="10">Full Reimbursement</option><option value="11">Per Diem</option><option value="12">Per Diem w/Percent of Charges</option><option value="13">Percent of Charges</option><option value="15">Stop Loss</option><option value="16">Tier Group for OP</option><option value="17">Tier Group for OP w/Percent of Charges</option><option value="18">Unknown</option></select>                                </td>
+                                <td>
+                                    <b>Rate</b>&nbsp;<input disabled="" onblur="javascript: updateRelatedCtl(this.id);" id="frm_Rate" name="frm_Rate" value="0.00%" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color:#ffffff" align="right">
+                                    <b>Non Carve Out Total</b>
+                                </td>
+                                <td  align="right">
+                                    <span id="spn_NonCarveOutTotalAmount">
+($4,001.73)                                    </span>
+                                </td>
+                                <td style="background-color:#ffffff">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color:#ffffff" align="right">
+                                    <b>Net Non Carve Out Total</b>
+                                </td>
+                                <td align="right">
+                                    <input style="text-align:right" id="frm_NetNonCarveOutTotal" name="frm_NetNonCarveOutTotal" value="$0.00" type="text">
+                                </td>
+                                <td style="background-color:#ffffff" nowrap="nowrap">
+                                    <span style="font-size:8pt">
+                                    </span>                                    
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="right">
+                                    <b>Pre Audit Expected Reimbursement</b>
+                                </td>
+                                <td  align="right">                                                                        
+                                    <span id="spn_PreAuditExpReimb">
+$1,923.48                                    </span>
+                                </td>
+                                <td style="background-color:#ffffff">
+                                    &nbsp;
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3" style="background-color:#ffffff" align="center">
+                                    <input name="btnSavePreAudit" value="Save Pre Audit Section" type="submit">
+                                </td>                                
+                            </tr>
+
+                            </tbody></table>
+                            </div>
+                        </td>
                     </tr>
 
-                    <tr >
-                        <td  colspan="7">
-                            <b>Account Comments</b>
-                            <br>
-                            <textarea cols="50" rows="5" name="frm_AccountComments"></textarea>    
-                        </td>
+                    <tr>
+                        <td>
+                        &nbsp;
+                        </td>     
+                    </tr>
 
-                        <td  colspan="7">
-                            <b>Instructions to Pricer</b>
-                            <br>
-                            <textarea cols="50" rows="5" name="frm_InstPricer">Text</textarea>    
+    </tbody></table>
+
+    <!-- hr -->
+
+                <div style="border-color: #000000; border-style:solid; border-width: 2px;">
+
+                <table bgcolor="#FFFFFF" border="0" width="90%">
+                    <tbody><tr>
+                        <td class="style1">
+                            <b>Post Audit</b>
                         </td>
                     </tr>
-                    </tbody></table>
+                   
+                    <tr>
+                        <td>
+                           
+                            <table id="tblPostAuditGrid" border="0" cellpadding="2" cellspacing="2" width="100%">
+
+                            <tbody><tr>
+
+                                <td>
+                                    <b>Action</b>
+                                </td>
+                                <td>
+                                    <b>Rev Code</b>
+                                </td>
+                                <td>
+                                    <b>Service Date</b>
+                                </td>                        
+                                <td>
+                                    <b>HCPCS</b>
+                                </td>
+                                <td >
+                                    <b>Mod</b>
+                                </td>                        
+                                <td>
+                                    <b>Qty</b>
+                                </td>
+                                <td>
+                                    <b>Charge Type</b>
+                                </td>
+                                <td>
+                                    <b>Total Amount</b>
+                                </td>
+
+                                <td>
+                                    <b>Reimbursement Type</b>
+                                </td>
+
+                                <td>
+                                    <b>Rate</b>
+                                </td>
+                                
+                                <td>
+                                    <b>Net Revenue</b>
+                                </td>
+                                
+                                
+
+                                <td>
+                                    <!-- OVERRIDE -->
+                                    <b>Net Revenue Modified</b>
+                                </td>
+                                
+                            </tr>
+                        
+<tr style="background-color:#ffffff"><td align="center"><input id="frm_Service_AdmitDate_213035" name="frm_Service_AdmitDate_213035" value="11/30/2012 12:00:00 AM" type="hidden"><input id="frm_Service_DischargeDate_213035" name="frm_Service_DischargeDate_213035" value="12/1/2012 12:00:00 AM" type="hidden"><a href="javascript: formAction('EDIT_ROW_POST', 213035);">Edit</a></td><td align="center"><span style="color:#000000">270</span></td><td align="center"><span style="color:#000000">11/30/2012</span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000">1</span></td><td align="left"><span style="color:#000000">Over</span></td><td align="right"><span style="color:#000000">($817.95)</span></td><td align="left"><span style="color:#000000"></span></td><td align="right"><span style="color:#000000">45.00%</span></td><td align="right"><span style="color:#000000">($3.28)</span></td><td align="left"><span style="color:#000000"></span></td></tr><tr ><td align="center"><input id="frm_Service_AdmitDate_213025" name="frm_Service_AdmitDate_213025" value="11/30/2012 12:00:00 AM" type="hidden"><input id="frm_Service_DischargeDate_213025" name="frm_Service_DischargeDate_213025" value="12/1/2012 12:00:00 AM" type="hidden"><a href="javascript: formAction('EDIT_ROW_POST', 213025);">Edit</a></td><td align="center"><span style="color:#000000">278</span></td><td align="center"><span style="color:#000000">11/30/2012</span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000">1</span></td><td align="left"><span style="color:#000000">Under</span></td><td align="right"><span style="color:#000000">$80.40</span></td><td align="left"><span style="color:#000000">Percent of Charges</span></td><td align="right"><span style="color:#000000">36.00%</span></td><td align="right"><span style="color:#000000">$28.94</span></td><td align="left"><span style="color:#000000"></span></td></tr><tr style="background-color:#ffffff"><td align="center"><input id="frm_Service_AdmitDate_213033" name="frm_Service_AdmitDate_213033" value="11/30/2012 12:00:00 AM" type="hidden"><input id="frm_Service_DischargeDate_213033" name="frm_Service_DischargeDate_213033" value="12/1/2012 12:00:00 AM" type="hidden"><a href="javascript: formAction('EDIT_ROW_POST', 213033);">Edit</a></td><td align="center"><span style="color:#000000">636</span></td><td align="center"><span style="color:#000000">11/30/2012</span></td><td align="center"><span style="color:#000000">J1100</span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000">4</span></td><td align="left"><span style="color:#000000">Under</span></td><td align="right"><span style="color:#000000">$3.28</span></td><td align="left"><span style="color:#000000">APG</span></td><td align="right"><span style="color:#000000">45.00%</span></td><td align="right"><span style="color:#000000">$111,111.11</span></td><td align="left"><span style="color:#000000">myintt02, 2/13/2014 12:25 PM</span></td></tr><tr ><td align="center"><input id="frm_Service_AdmitDate_213030" name="frm_Service_AdmitDate_213030" value="11/30/2012 12:00:00 AM" type="hidden"><input id="frm_Service_DischargeDate_213030" name="frm_Service_DischargeDate_213030" value="12/1/2012 12:00:00 AM" type="hidden"><a href="javascript: formAction('EDIT_ROW_POST', 213030);">Edit</a></td><td align="center"><span style="color:#000000">636</span></td><td align="center"><span style="color:#000000">11/30/2012</span></td><td align="center"><span style="color:#000000">J0690</span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000">2</span></td><td align="left"><span style="color:#000000">Under</span></td><td align="right"><span style="color:#000000">$10.44</span></td><td align="left"><span style="color:#000000">APG</span></td><td align="right"><span style="color:#000000">45.00%</span></td><td align="right"><span style="color:#000000">$4.70</span></td><td align="left"><span style="color:#000000"></span></td></tr><tr style="background-color:#ffffff"><td align="center"><input id="frm_Service_AdmitDate_213024" name="frm_Service_AdmitDate_213024" value="11/30/2012 12:00:00 AM" type="hidden"><input id="frm_Service_DischargeDate_213024" name="frm_Service_DischargeDate_213024" value="12/1/2012 12:00:00 AM" type="hidden"><a href="javascript: formAction('EDIT_ROW_POST', 213024);">Edit</a></td><td align="center"><span style="color:#000000">636</span></td><td align="center"><span style="color:#000000">11/30/2012</span></td><td align="center"><span style="color:#000000">J3010</span></td><td align="center"><span style="color:#000000"></span></td><td align="center"><span style="color:#000000">1</span></td><td align="left"><span style="color:#000000">Under</span></td><td align="right"><span style="color:#000000">$2.83</span></td><td align="left"><span style="color:#000000">APG</span></td><td align="right"><span style="color:#000000">45.00%</span></td><td align="right"><span style="color:#000000">$1.27</span></td><td align="left"><span style="color:#000000"></span></td></tr><tr><td align="center"><input id="frm_Service_AdmitDate_0" name="frm_Service_AdmitDate_0" value="11/30/2012 12:00:00 AM" type="hidden"><input id="frm_Service_DischargeDate_0" name="frm_Service_DischargeDate_0" value="12/1/2012 12:00:00 AM" type="hidden"><a href="javascript: formAction('ADD_ROW_POST', 0);">Add New Item</a><br><br><a href="javascript: formAction('CANCEL_ROW_POST', 0);">Cancel</a></td><td align="center" valign="top"><select name="frm_Row-0-RevCode-POST" id="frm_Row-0-RevCode-POST"><option value="0">- select -</option><option value="18">121</option><option value="19">122</option><option value="20">123</option><option value="28">131</option><option value="29">132</option><option value="62">171</option><option value="63">172</option><option value="64">173</option><option value="65">174</option><option value="83">206</option><option value="92">219</option><option value="111">250</option><option value="112">251</option><option value="113">252</option><option value="115">254</option><option value="116">255</option><option value="117">256</option><option value="118">257</option><option value="119">258</option><option value="120">259</option><option value="121">260</option><option value="122">261</option><option value="123">262</option><option value="124">263</option><option value="125">264</option><option value="126">269</option><option value="127">270</option><option value="128">271</option><option value="129">272</option><option value="130">273</option><option value="131">274</option><option value="132">275</option><option value="133">276</option><option value="135">278</option><option value="136">279</option><option value="137">280</option><option value="138">289</option><option value="139">290</option><option value="140">291</option><option value="141">292</option><option value="142">293</option><option value="143">294</option><option value="144">299</option><option value="145">300</option><option value="146">301</option><option value="147">302</option><option value="148">303</option><option value="149">304</option><option value="150">305</option><option value="151">306</option><option value="152">307</option><option value="153">309</option><option value="154">310</option><option value="155">311</option><option value="156">312</option><option value="157">314</option><option value="158">319</option><option value="159">320</option><option value="160">321</option><option value="161">322</option><option value="162">323</option><option value="163">324</option><option value="164">329</option><option value="165">330</option><option value="166">331</option><option value="167">332</option><option value="168">333</option><option value="169">335</option><option value="170">339</option><option value="171">340</option><option value="172">341</option><option value="173">342</option><option value="174">343</option><option value="175">344</option><option value="176">349</option><option value="177">350</option><option value="178">351</option><option value="179">352</option><option value="180">359</option><option value="181">360</option><option value="182">361</option><option value="183">362</option><option value="184">367</option><option value="185">369</option><option value="186">370</option><option value="187">371</option><option value="188">372</option><option value="190">379</option><option value="191">380</option><option value="192">381</option><option value="193">382</option><option value="194">383</option><option value="195">384</option><option value="196">385</option><option value="197">386</option><option value="198">387</option><option value="199">389</option><option value="200">390</option><option value="201">391</option><option value="202">392</option><option value="203">399</option><option value="204">400</option><option value="205">401</option><option value="206">402</option><option value="207">403</option><option value="208">404</option><option value="209">409</option><option value="210">410</option><option value="211">412</option><option value="212">413</option><option value="213">419</option><option value="214">420</option><option value="215">421</option><option value="216">422</option><option value="217">423</option><option value="218">424</option><option value="219">429</option><option value="220">430</option><option value="221">431</option><option value="222">432</option><option value="223">433</option><option value="224">434</option><option value="225">439</option><option value="226">440</option><option value="227">441</option><option value="228">442</option><option value="229">443</option><option value="230">444</option><option value="231">449</option><option value="232">450</option><option value="233">451</option><option value="234">452</option><option value="235">456</option><option value="236">459</option><option value="237">460</option><option value="238">469</option><option value="239">470</option><option value="240">471</option><option value="241">472</option><option value="242">479</option><option value="243">480</option><option value="244">481</option><option value="245">482</option><option value="246">483</option><option value="247">489</option><option value="248">490</option><option value="249">499</option><option value="252">510</option><option value="253">511</option><option value="254">512</option><option value="255">513</option><option value="256">514</option><option value="257">515</option><option value="258">516</option><option value="259">517</option><option value="260">519</option><option value="271">530</option><option value="272">531</option><option value="273">539</option><option value="308">610</option><option value="309">611</option><option value="310">612</option><option value="311">614</option><option value="312">615</option><option value="313">616</option><option value="314">618</option><option value="315">619</option><option value="316">621</option><option value="317">622</option><option value="318">623</option><option value="319">624</option><option value="320">631</option><option value="321">632</option><option value="322">633</option><option value="323">634</option><option value="324">635</option><option value="325">636</option><option value="326">637</option><option value="355">681</option><option value="356">682</option><option value="357">683</option><option value="358">684</option><option value="359">689</option><option value="360">700</option><option value="361">710</option><option value="362">720</option><option value="363">721</option><option value="364">722</option><option value="365">723</option><option value="366">724</option><option value="367">729</option><option value="368">730</option><option value="369">731</option><option value="370">732</option><option value="371">739</option><option value="372">740</option><option value="373">750</option><option value="374">760</option><option value="375">761</option><option value="376">762</option><option value="377">769</option><option value="378">770</option><option value="379">771</option><option value="381">790</option><option value="382">800</option><option value="383">801</option><option value="384">802</option><option value="385">803</option><option value="386">804</option><option value="387">809</option><option value="388">810</option><option value="389">811</option><option value="390">812</option><option value="391">813</option><option value="392">814</option><option value="393">819</option><option value="394">820</option><option value="395">821</option><option value="396">822</option><option value="397">823</option><option value="398">824</option><option value="399">825</option><option value="400">829</option><option value="401">830</option><option value="402">831</option><option value="407">839</option><option value="408">840</option><option value="409">841</option><option value="414">849</option><option value="415">850</option><option value="416">851</option><option value="421">859</option><option value="422">880</option><option value="423">881</option><option value="425">889</option><option value="426">900</option><option value="427">901</option><option value="428">902</option><option value="429">903</option><option value="430">904</option><option value="431">905</option><option value="432">906</option><option value="433">907</option><option value="434">911</option><option value="435">912</option><option value="436">913</option><option value="437">914</option><option value="438">915</option><option value="439">916</option><option value="440">917</option><option value="441">918</option><option value="442">919</option><option value="443">920</option><option value="444">921</option><option value="445">922</option><option value="446">923</option><option value="447">924</option><option value="448">925</option><option value="449">929</option><option value="452">940</option><option value="453">941</option><option value="454">942</option><option value="455">943</option><option value="456">944</option><option value="457">945</option><option value="460">948</option><option value="461">949</option><option value="486">988</option><option value="488">990</option><option value="496">998</option></select></td><td align="center" valign="top"><input style="width: 60px; text-align:right" id="frm_Row-0-ServiceDate" name="frm_Row-0-ServiceDate" onblur="javascript:verifyDate(this, 0);" type="text"></td><td align="center" valign="top"><input style="width: 55px; text-align:right" id="frm_Row-0-HCPCSCPT" name="frm_Row-0-HCPCSCPT" type="text"></td><td align="center" valign="top"><input style="width: 55px; text-align:right" id="frm_Row-0-HCPCSCPTModifier" name="frm_Row-0-HCPCSCPTModifier" type="text"></td><td align="center" valign="top"><input onblur="javascript:verifyQty(this);" style="width: 22px; text-align:right" id="frm_Row-0-Qty" name="frm_Row-0-Qty" type="text"></td><td align="left" valign="top"><select name="frm_Row-0-ChargeTypeID" id="frm_Row-0-ChargeTypeID"><option value="0">- select -</option><option value="2">Under</option><option value="1">Over</option><option value="3">Potential</option></select></td><td align="right" valign="top"><input onblur="javascript: updateNetRevenuePOST(0);" style="width: 65px; text-align:right" id="frm_Row-0-TotalAmount" name="frm_Row-0-TotalAmount" type="text"></td><td align="center" valign="top"><select name="frm_Row-0-ReimbTypeID" id="frm_Row-0-ReimbTypeID" style="font-size: 7pt;" onchange="toggleRelatedCtl(this, 0);"><option value="0">- select -</option><option value="14">Additional Percent of Charges</option><option value="1">APC</option><option value="19">APG</option><option value="20">APG/Fee Schedule</option><option value="21">APG/Percent of Charges</option><option value="2">Case Rate</option><option value="3">Case Rate w/Percent of Charges</option><option value="4">Clean Claim</option><option value="5">DRG</option><option value="6">DRG w/Outlier</option><option value="7">DRG w/Percent of Charges</option><option value="8">Fee Schedule</option><option value="9">Fee Schedule w/Percent of Charges</option><option value="10">Full Reimbursement</option><option value="11">Per Diem</option><option value="12">Per Diem w/Percent of Charges</option><option value="13">Percent of Charges</option><option value="15">Stop Loss</option><option value="16">Tier Group for OP</option><option value="17">Tier Group for OP w/Percent of Charges</option><option value="18">Unknown</option></select></td><td align="right" valign="top"><input onblur="javascript: updateNetRevenuePOST(0);" style="width: 45px; text-align:right" id="frm_Row-0-Rate_POST" name="frm_Row-0-Rate_POST" type="text"></td><td align="right" valign="top"><input value="" style="width: 65px; text-align:right" id="frm_Row-0-NetRevenue_POST" name="frm_Row-0-NetRevenue_POST" type="text"></td><td align="center" valign="top">&nbsp;</td></tr>
+                            <tr >                                
+                                <td colspan="7" align="right">
+                                    <b>Totals</b>
+                                </td>
+                                <td colspan="1" align="right">
+                                    <b>                                        
+($721.00)                                    </b>
+                                </td>
+                                <td colspan="1">
+                                    &nbsp;
+                                </td>
+                                <td colspan="1">
+                                    &nbsp;
+                                </td>
+                                <td colspan="1" align="right">
+                                    <b>
+$111,142.75                                    </b>
+                                </td>                                
+                                <td colspan="1" align="center">
+                                    <!-- OVERRIDE -->
+                                    <input name="btnClearModified" value="Clear All Modified Fields" type="submit">
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td colspan="15">
+                                    <hr style="color:#cccccc">
+                                </td>                            
+                            </tr>
+
+                            <tr>
+                                <td colspan="4" align="left">
+                                    <b>Final Reported Net Revenue Variance</b>
+                                </td>
+                                <td colspan="1"  align="right">                                    
+
+                                 
+
+                                    
+
+                                    <!-- OVERRIDE -->
+                                    <input style="text-align:right" id="frm_NetRevenueVariance" name="frm_NetRevenueVariance" value="$112,701.43" type="text">
+
+                                </td>
+                                
+                                <td style="background-color:#ffffff" nowrap="nowrap">
+                                    <!-- OVERRIDE -->
+
+                                    <span style="font-size:8pt">
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                             <tr>
+                                <td colspan="4" align="left">
+                                    <b>Post Audit Total Expected Reimbursement</b>
+                                </td>
+                                <td colspan="1"  align="right">
+
+                                    
+
+                                    <!-- OVERRIDE -->
+                                    <input style="text-align:right" id="frm_PostAuditTotalExpectedReimbursement" name="frm_PostAuditTotalExpectedReimbursement" value="$112,701.43" type="text">
+
+                                    
+
+                                </td>
+
+                                 <td style="background-color:#ffffff" nowrap="nowrap">
+                                    <!-- OVERRIDE -->
+
+                                    <span style="font-size:8pt">
+                                    </span>
+
+                                </td>
+
+                                 <td align="center" valign="top">
+                                    <input name="btnSavePostAudit" value="Save Post Audit Section" type="submit">
+                                 </td>
+
+                            </tr> 
+                           
+                            </tbody></table>
+
+                        </td>
+                    </tr>
+    </tbody></table>
+    
+                </div>
+    
+    
+
+    
+
+
+        
+
+
+
+<script>
+document.onreadystatechange = onReadyStateChange;
+    
+function onReadyStateChange()
+{
+    if (document.readyState == "complete")
+    {
+        manageTabCtlState();
+
+        manageCtlState();
+
+        managePostAuditGrid();
+
+        highlightTab();        
+    }
+}
+
+</script>
+
+
+</div>   
+ 
 
     <input type="hidden" value="" id="frm_Action" name="frm_Action">    
     <input type="hidden" value="" id="frm_RowID" name="frm_RowID">
@@ -813,7 +1162,7 @@ hhf                                            <input type="hidden" value="hhf" 
       </div></div>
                                           
 </div> <!--end container-->
-
+     <div id="bottombanner"></div>
       </body>
 
   <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>

@@ -2,6 +2,7 @@ body {
 font-size: 9pt;
 color: #000000;
 font-family: Arial;
+min-width:1260px;
 }
 
 h1 {font-size: 19px;
@@ -11,14 +12,41 @@ color: #fff;
 }
 
 a {color:#49037D; cursor:pointer;}
+a.edit {
+color:#23648d;
+font-weight:bold;
+text-decoration:none;
+margin-right:10px;
+
+}
+
+a.delete {
+color:#b61933;
+font-weight:bold;
+text-decoration:none;
+margin-right:10px;
+
+}
+
+a.update {
+color:#7da51b ;
+font-weight:bold;
+text-decoration:none;
+margin-right:10px;
+
+}
+#add {
+float:right;
+background:#7da51b;
+}
 
 table, tbody {border:none !important; border-collapse:collapse;}
-button {padding:8px 6px 8px 6px; margin:2px 0 2px 0; border:none; font-weight:bold;font-size:12px; color:#fff; background-color: #666; opacity:1; cursor:pointer;}
+button {padding:6px 5px 6px 5px; margin:2px 0 2px 0; border:none; font-weight:bold;font-size:12px; color:#fff; background-color: #666; opacity:1; cursor:pointer;}
 button:hover {opacity:.8;}
 
 
-td {padding:4px 4px 4px 10px;}
-th {font-weight:bold; text-align: left;}
+td {padding:4px 4px 4px 0px;}
+th {font-weight:bold; text-align: left; padding-left:0px}
 
 textarea {min-width:98%; max-width:90%;}
 
@@ -26,7 +54,7 @@ select {
 min-width: 70%;
 max-width: 70%;
 border: 1px solid #424244;
-padding: 6px;
+padding: 4px;
 -webkit-box-shadow: 0 2px 1px -1px #BABABA; -moz-box-shadow: 0 2px 1px -1px #BABABA; box-shadow: 0 2px 1px -1px #BABABA;
 background-color:#fff;
 -webkit-appearance: none; 
@@ -49,22 +77,48 @@ background-color: #49037D;
 background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/131591/logo_nyulmc_1.png');
 background-repeat: no-repeat;
 background-position: 90% 40%;
-margin: 0 20px 10px 0;
+margin: 0 0px 10px 0;
 font-size: 19px;
-padding: 10px;
+padding: 10px 0px 10px 0px;
 height:50px;
 font-family: "century gothic";
 color: #fff;
   overflow:auto;
 }
 
+#bottombanner {
+	width: 100%;
+min-width:800px;
+background-color: #49037D;
+background-repeat: no-repeat;
+background-position: 90% 40%;
+margin: 0 0px 10px 0;
+font-size: 19px;
+padding: 10px 0px 10px 0px;
+height:10px;
+font-family: "century gothic";
+color: #fff;
+  overflow:auto;
+}
 
+ #topbanner h1 {
+               margin-left:10px;
+ }
+ 
+ .qautils {
+       clear:both;
+ float:right;
+ font-size:10px;
+ text-decoration:none;
+ margin-bottom:2px;
+ }
+ 
 
 #row1, #row2, #row3 {
   width:100%;
   height:150px;
   background-color: #F1F1F1;
-  padding:10px;
+  padding:10px 0px 0px 0px;
   margin:0 0 15px 0;
 }
 
@@ -87,12 +141,24 @@ min-height: 150px;
 #row4 {
   width:100%;
   background-color: #F1F1F1;
-  padding:10px 10px 30px 10px; 
+  padding:10px 0px 30px 0px; 
 }
 
 .tabledata20 {width:20%; margin:0 10px 0 0; float:left;}
 .tabledata30 {width:30%; margin:0 10px 0 0; float:left;} 
 
+
+#row2 .tabledata20 {
+ margin-left:10px;
+}
+
+
+#row4 #detailsection table {
+
+margin-left:10px;
+
+
+}
 #identification {
 width: 360px;
 padding: 0 0px 0 0;
@@ -107,7 +173,7 @@ padding: 0px 30px 20px 0;
 
 #roles {
 float: left;
-padding: 25px 75px 20px 0;
+padding: 0px 75px 20px 0;
 margin: 0 0 0 50px;
 }
 
@@ -116,6 +182,9 @@ margin: 0 0 0 50px;
 padding: 0px 30px 3px 20px;
 margin: 0px 0 0 0;
 width: 400px;
+ vertical-align:text-top;
+
+
 }
 
 
@@ -128,11 +197,17 @@ filter: alpha(opacity=80); /* For IE8 and earlier */
 
 }
 
+#filecommands [disabled] {
+
+background:#c7c7c9;
+color:#000000;
+}
+
 
 .who select {
 border: 1px solid #424244;
 margin: 7px 0 0px 5px;
-padding: 6px;
+padding: 4px;
 vertical-align: bottom;
 }
 
@@ -143,7 +218,7 @@ vertical-align: bottom;
 {display:inline-block; padding: 0 5px 0 0;}
 
 #uppernav li a
-{text-decoration:none;}
+{text-decoration:none; font-weight:bold;}
 
 #uppernav li a:hover
 {color:#49037D;}
@@ -203,7 +278,15 @@ margin:0px;
 padding:0px;
 font-size:10px;
 color:#6d6d6d;
+ float:right;
+              
+              height:15px;
+              clear:both;
 }
+
+#toptabs #uppernav ul li a:hover {
+                                background:none;
+} 
 
 
 nav ul {
@@ -281,7 +364,7 @@ color:#616261;
 
 
 
-#detailsection  {padding:20px 15px 20px 0; background-color:#fff; width:95%; margin:0 30px 0 10px;}
+#detailsection  {padding:0px 0px 0px 0; background-color:#fff; width:100%; margin:0 0px 0 0px;}
 
 
 
@@ -289,7 +372,9 @@ color:#616261;
 #datetable {margin:0 0 0 25px; width:100%;background-color:#fff; }
 #datetable tbody {padding:25px; background:#fff;}
 #detailsheader {border-bottom:1px solid #666;}
-
+ #detailsheader th{
+  font-weight:bold;
+ }
 
 #dateinfo {padding:10px 30px 10px 0; background-color:#fff; margin:0 0 0 30px; width:300px; float: left;}
 
@@ -304,12 +389,18 @@ float: left;
 display: inline-block;
 width: 90px;
 font-weight: bold;
-display: tablerow;
+ vertical-align:text-top;
 }
+
+.who .title {
+line-height:10px;
+
+}
+
 
 #btnAuditComplete {background-color:#513282;color:#fff; }
 #print, #save {background-color:#0C57A4;}
-#print {margin:5px 0 5px 0; width:80px;}
+#print {margin:5px 0 5px 0; width:80px; margin-top:20px;}
 
 input {
 
@@ -325,3 +416,13 @@ background-repeat: no-repeat;
 background-position: right;
 
 }
+
+
+input[type="radio"] {
+ border-radius:10px;
+}
+
+
+.tg  {border-collapse:collapse;border-spacing:0; width:100%;}
+.tg td{font-family:Arial, sans-serif;font-size:12px;padding:10px 5px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;overflow:hidden;word-break:normal;}

@@ -31,32 +31,35 @@
         <li><a href="#">Worklist</a>
         <!-- First Tier Drop Down -->
         <ul>
-            <li><a href="#">Themes</a></li>
-            <li><a href="#">Plugins</a></li>
-            <li><a href="#">Tutorials</a></li>
-        </ul>        
+            <li><a href="#">Auditor Worklist</a></li>
+            <li><a href="#">Pricer Worklist</a></li>
+            <li><a href="#">Inventory Worklist</a></li>
+        </ul>          
         </li>
-        <li><a href="#">Account Import</a>
-        <li><a href="#">CDN Import</a>  
-        <li><a href="#">Admin</a>
+        <li><a href="#">Account Import</a></li>
+        <li><a href="#">CDN Import</a> </li> 
+           <li><a href="#">Admin</a> 
+               <ul>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Links</a></li>
+            <li><a href="#">Tutorials</a>
+            <!-- Second Tier Drop Down -->
+           
+            </li>
+        </ul>
+           </li>
+        <li><a href="#">Reports</a>
         <!-- First Tier Drop Down -->
         <ul>
             <li><a href="#">Resources</a></li>
             <li><a href="#">Links</a></li>
             <li><a href="#">Tutorials</a>
             <!-- Second Tier Drop Down -->
-            <ul>
-                <li><a href="#">HTML/CSS</a></li>
-                <li><a href="#">jQuery</a></li>
-                <li><a href="#">Other</a></li>
-            </ul>
+           
             </li>
         </ul>
         </li>
-        <li><a href="#">Graphic Design</a></li>
-        <li><a href="#">Inspiration</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About</a></li>
+        
     </ul>
 </nav><div id="uppernav">
 <a href="http://rmdwcdcdvm005.nyumc.org/RM/QA_Helpers" class="qautils">QA Utils</a>
@@ -107,6 +110,9 @@
    <div id="filecommands">
                                             <button type="submit" id="save" name="frm_Button" value="Save" style="width: 64px" /> Save</button><!-- onclick="javascript:submitForm();" -->
 
+
+                                             <button disabled="disabled" type="submit" name="frm_Button" value="Delete" style="width: 64px" />Delete</button>
+                                              <button disabled="disabled" type="submit" name="frm_Button" value="Open" style="width: 64px" />Open</button>
       <button disabled="disabled" type="submit" name="frm_Button" value="Unlock" style="width: 64px" />Unlock</button>
 
 </div>
@@ -744,12 +750,12 @@ hhf                                            <input type="hidden" value="hhf" 
 
       <div>
             <ul id="tabs">
-                <li id="tab1" class="active"> <a href="/RM/AuditFindings/Actions?a=P111111" id="Actions">Actions</a></li>
+                <li id="tab1"> <a href="/RM/AuditFindings/Actions?a=P111111" id="Actions">Actions</a></li>
                 <li id="tab2"><a href="/RM/AuditFindings/Financials?a=P111111" id="Financials">Financials</a></li>
                 <li id="tab3"><a href="/RM/AuditFindings/Details?a=P111111" id="Details" >Details</a></li>
                 <li id="tab4"><a href="/RM/AuditFindings/Coding?a=P111111" id="Coding">Coding</a></li>
-                <li id="tab5"><a href="/RM/AuditFindings/DenialsAppeals?a=P111111" id="DenialsAppeals">Denials/Appeals</a></li>
-                <li id="tab6"><a href="/RM/AuditFindings/PaymentAnalysis?a=P111111" id="PaymentAnalysis">Payment Analysis</a></li>
+                <li id="tab5"  class="active"><a href="/RM/AuditFindings/DenialsAppeals?a=P111111" id="DenialsAppeals">Denials/Appeals</a></li>
+                <li id="tab6" ><a href="/RM/AuditFindings/PaymentAnalysis?a=P111111" id="PaymentAnalysis">Payment Analysis</a></li>
             </ul>
         </div>
 
@@ -758,48 +764,274 @@ hhf                                            <input type="hidden" value="hhf" 
          <div id="detailsection">
   
          
-         
-    <table  class="tg">                                     
-           <tr id="detailsheader"> 		<th>Action</th>
-                        <th>Service Date</th>
-                        <th>Department<br>Cost Center</th>
-                        <th>CDM Description/<br>CDM Code</th>
-                        <th>Rev Code</th>
-                        <th>HCPCS</th>
-                        <th>Mod</th>
-                        <th>Unit Amount</th>
-                        <th>Qty</th>
-                        <th>U</th>
-                        <th>O</th>
-                        <th>P</th>
-                        <th>Total Amount</th>
-                        <th>Root Cause</th>
-                        <th>CE Comments</th>                        
+      <table bgcolor="#FFFFFF" border="0" width="90%">
+        <tbody><tr>
+            <td bgcolor="#ffffff" valign="top" width="90%">
+                <table cellspacing="0" width="100%">
+                    <tbody><tr>
+                        <td valign="top">
+                            <table border="0" bordercolor="#cccccc" cellpadding="1&quot;" cellspacing="0" width="100%">
+                                <tbody><tr>
+                                    <td align="left" valign="baseline">
+                                         <label><b>Remittance Date </b></label>
+                                         <input class="date hasDatepicker" id="frm_Remitdate" name="frm_Remitdate" style="width: 75px" type="text"><img title="Show Date" alt="Show Date" src="../Images/Calendar.png" class="ui-datepicker-trigger">
+                                    </td>
+                                    <td align="left" valign="baseline">
+                                        <label><b>Days Remaining </b></label>
+<b><span style="color: #FF0000">Beyond Timely Filing</span></b>                                    </td>
+                                    <td align="left" valign="baseline">
+                                        <label><b>Replacement Bill Request</b></label>
+                                        <input name="cbx_ReplacementbillRequest" id="cbx_ReplacementbillRequest" onclick="enableDisable(this.checked, 'frm_Replacedate')" type="checkbox">
+                                        <input disabled="" class="date hasDatepicker" id="frm_Replacedate" name="frm_Replacedate" style="width: 75px" type="text"><img style="opacity: 0.5; cursor: default;" title="Show Date" alt="Show Date" src="../Images/Calendar.png" class="ui-datepicker-trigger">
+                                        <script type="text/javascript">
+                                            $(document).ready(function () {
+                                                enableDisable($('#cbx_ReplacementbillRequest').prop('checked'), 'frm_Replacedate');
+                                            });
+                                        </script>
+                                    </td>
+                                   
+                                    <td align="left" valign="baseline">
+                                        <b>Tracking #</b>
+                                         <input name="frm_TrackingNo" type="text">
+                                    </td>
+                                    <td align="left" valign="baseline">
+                                        <label><b>Appeal Sent?</b></label>
+                                        <input name="cbx_AppealSent" id="cbx_AppealSent" onclick="enableDisable(this.checked, 'frm_Appealdate')" type="checkbox">
+                                        <input disabled="" class="date hasDatepicker" name="frm_Appealdate" id="frm_Appealdate" style="width: 75px" type="text"><img style="opacity: 0.5; cursor: default;" title="Show Date" alt="Show Date" src="../Images/Calendar.png" class="ui-datepicker-trigger">
+                                        <script type="text/javascript">
+                                            $(document).ready(function () {
+                                                enableDisable($('#cbx_AppealSent').prop('checked'), 'frm_Appealdate');
+                                            });
+                                        </script>
+                                    </td>
+                                  </tr>
+                           </tbody></table>
+                            <table border="0" bordercolor="#cccccc" cellpadding="1" cellspacing="0" width="100%">
+                                <tbody><tr>
+                                    <td align="left" valign="baseline">
+                                        <label><b>Root Cause</b></label>
+<select name="frm_List_RootCauseID" id="frm_List_RootCauseID"><option value="0">- select -</option><option value="63">--INVALID ROOT CAUSE123--</option><option value="61">_NONE_</option><option value="1">Adjustment Drug/Supply Quantity</option><option value="2">Adjustment Time</option><option value="4">Anesthesia Drug Bundled</option><option value="6">Bundled Procedure</option><option value="8">Data Entry Error</option><option value="9">Duplicate Charge</option><option value="55">IR Superbill</option><option value="12">IV Start/Stop Time Missing</option><option value="14">No MD Order</option><option value="15">No Supporting Documentation</option><option value="16">Not Chargeable</option><option value="17">Omitted Charges</option><option value="19">Other (charge error comments required)</option><option value="20">Pharmacy Error</option><option value="25">Service/Procedure Not Performed</option><option value="26">Time Calculation Error</option><option value="27">Unable to Administer Meds</option><option value="28">Unbundled Service</option><option value="29">Update CDM/Charge Code</option><option value="56">Willow Charge Configuration Issue</option></select>                                    </td>
+                                  
+                                    <td align="left" valign="baseline">
+                                        <label><b>Provider Name</b></label>
+                                        <input name="frm_ProviderName" style="width: 75px" type="text">
+<select name="frm_List_ProviderTitleID" id="frm_List_ProviderTitleID"><option value="0">- select -</option><option value="6">------INVALID01</option><option value="10">-----TEST</option><option value="1">MD</option><option value="3">NP</option><option value="2">RM</option><option value="5">TEST1</option></select>                                    </td>
+                                   
+                                    <td align="left" valign="baseline">
+                                        <label for="cbx_CMS" "=""><b>CMS Response?</b></label>
+                                        <input id="cbx_CMS" name="cbx_CMS" onclick="enableDisable(this.checked, 'frm_CMSdate')" type="checkbox">
+                                        <input disabled="" class="date hasDatepicker" id="frm_CMSdate" name="frm_CMSdate" style="width: 75px" type="text"><img style="opacity: 0.5; cursor: default;" title="Show Date" alt="Show Date" src="../Images/Calendar.png" class="ui-datepicker-trigger">
+                                        <script type="text/javascript">
+                                            $(document).ready(function () {
+                                                enableDisable($('#cbx_CMS').prop('checked'), 'frm_CMSdate');
+                                            });
+                                        </script>
+                                    </td>
+                                  
+                                    <td align="left" valign="baseline">
+                                       <label><b>Days Remaining </b></label>
+<b><span style="color: #FF0000">Beyond Timely Filing</span></b>                                    </td>
+                                  
+                                </tr>
+                            </tbody></table>
+                        </td>
                     </tr>
+                </tbody></table>
+            </td>
+        </tr>
 
-<tr><td class="tg-031e" ><a href="javascript: formAction('EDIT_ROW', 241793);" class="edit">Edit</a>&nbsp;<a href="javascript: formAction('DELETE_ROW', 241793);" class="delete">Delete</a></td><td class="tg-031e" >12/2/2013</td><td >RUSK SPEECH LANGUAGE PATHOLOGY<br>8RM111801</td><td ><br>6054446</td><td class="tg-031e" >272</td><td class="tg-031e" ></td><td class="tg-031e" ></td><td class="tg-031e" >$2.00 </td><td class="tg-031e" >2</td><td class="tg-031e" >X</td><td class="tg-031e" ></td><td class="tg-031e" ></td><td class="tg-031e" >$4.00 </td><td >Bundled Procedure</td><td ></td></tr><tr id="detailsheader"><td colspan="16"><b>Add New Item</b></td></tr><tr id="detailsheader"><td class="tg-031e" ><input type="hidden" value="0" name="frm_ID"><input type="hidden" value="11/01/2013" id="frm_Service_AdmitDate"><input type="hidden" value="11/01/2013" id="frm_Service_DischargeDate"><a href="javascript: formAction('UPDATE_ROW', 0);" class="update">Add Item</a><br><br><a href="javascript: formAction('CANCEL_ROW', 0);" class="delete">Cancel</a></td><td class="tg-031e" ><input type="text" value="12/2/2013" onblur="javascript:verifyDate(this);" name="frm_Row-0-ServiceDate" id="frm_Row-0-ServiceDate" style="width: 60px; text-align:right"></td><td class="tg-031e" ><select id="frm_Row-0-DeptID" name="frm_Row-0-DeptID"><option value="0">- select -</option><option value="140">RUSK 1N</option><option value="141">RUSK 1S</option><option value="142">RUSK 4W</option><option value="143">RUSK 5S</option><option value="144">RUSK HCC 9/CARDIAC REHAB</option><option value="145">RUSK IRM  ADULT CLINIC</option><option value="146">RUSK IRM  CARDIAC REHAB</option><option value="147">RUSK IRM  ORTHOTICS IMPLANTS</option><option value="148">RUSK IRM  PSYCHOLOGY</option><option value="149">RUSK IRM  PULMONARY SERVICES</option><option value="150">RUSK IRM  RECREATION THERAPY</option><option value="151">RUSK IRM  VOCATIONAL SERVICES</option><option value="152">RUSK IRM HEAD TRAUMA PROGRAM</option><option value="153">RUSK IRM ORTHOTICS</option><option value="154">RUSK IRM ORTHOTICS SUPPLIES</option><option value="155">RUSK IRM PHYSICAL THERAPY SUPPLIES</option><option value="156">RUSK MEDICAL SOCIAL WORK</option><option value="157">RUSK MUSCULAR DYSTROPHY CLINIC</option><option value="158">RUSK OT</option><option value="159">RUSK OT SUPPLIES</option><option value="160">RUSK PT</option><option value="161">RUSK SPEECH LANGUAGE PATHOLOGY</option><option value="202">TH ANESTHESIA</option><option value="215">TH CHEMISTRY LAB</option><option value="226">TH CYTOLOGY LAB</option><option value="230">TH ENDO/GI</option><option value="231">TH ENDO/GI IMPLANTS</option><option value="232">TH ENDO/GI SUPPLIES</option><option value="261">TH NON-INVASIVE CARDIOLOGY</option><option value="279">TH VASCULAR LAB</option><option value="280">TH X-RAY</option></select><div id="frm_Row-0-CostCenterName"></div></td>
+        <tr>
+            <td bgcolor="#ffffff" valign="top" width="90%">
+                <table cellspacing="0" width="100%">
+                    <tbody><tr>
+                        <td valign="top">
+                            <table  border="0" bordercolor="#cccccc" cellpadding="1" cellspacing="1" width="100%">
+                                <tbody><tr id="detailsheader">
+                                    <td align="center" valign="baseline">
+                                        <b>Item Type</b>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">
+                                        <b>DOS</b>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">
+                                        <b>Item #</b>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">
+                                        <b>Qty</b>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">
+                                        <b>Charge</b>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">
+                                        <b>Path</b>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">
+                                        <b>Billing Indicator</b>
+                                    </td>
+                                    
+                                    <td align="center" valign="baseline">
+                                        <b>Pmt Rcd?</b>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">
+                                        <b>Pmt Date</b>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">
+                                        <b>Remark Code</b>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">
+                                        <b>Comment</b>
+                                    </td>
+                                    <td>&nbsp;</td>
+                                </tr>
 
-<td class="tg-031e" ><input type="text" name="frm_Row-0-CDMDescription" id="frm_Row-0-CDMDescription" style="width: 70px; text-align:left"><br><input type="text" name="frm_Row-0-CDMCode" id="frm_Row-0-CDMCode" style="width: 55px; text-align:right" onblur="javascript:runClientSearch(this.value, 0);"><a href="javascript: popupSearchCDM(0);"><img src="../Images/search_icon_1.png" style="border-style: none;"></a></td>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-                    <tr>
-                        <td colspan="15">
-                            <hr style="color:#cccccc">
-                        </td>                            
+                                <tr>
+                                    <td align="center" valign="baseline">DROPDOWN
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">
+                                        <input id="DOS" type="text">
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">
+                                        <input name="frm_DA_Row_1_ItemNo" type="text">
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">
+                                        <input name="frm_DA_Row_1_Qty" type="text">
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">
+                                        <input name="frm_DA_Row_1_Charge" type="text">
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">DROPDOWN
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="left" valign="baseline">
+                                      DROPDOWN
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">
+                                        <input name="frm_DA_Row_1_PaymentReceived" type="checkbox">
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">
+                                        <input id="Paydate" type="text">
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">DROPDOWN
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">
+                                        <input name="frm_DA_Row_1_Comment" type="text">
+                                    </td>
+                                    <td align="center" valign="baseline">[X]</td>
+                                </tr>
+                                <tr>
+                                    <td align="center" valign="baseline">DROPDOWN
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">DATE_PICKER
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">
+                                        <input name="frm_DA_Row_1_ItemNo" type="text">
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">
+                                        <input name="frm_DA_Row_1_Qty" type="text">
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">
+                                        <input name="frm_DA_Row_1_Charge" type="text">
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">DROPDOWN
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">DROPDOWN
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">
+                                        <input name="frm_DA_Row_1_PaymentReceived" type="checkbox">
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">DATE_PICKER
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">DROPDOWN
+                                    </td>
+                                    <td>&nbsp;</td>
+                                    <td align="center" valign="baseline">
+                                        <input name="frm_DA_Row_1_Comment" type="text">
+                                    </td>
+                                    <td align="center" valign="baseline">[X]</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="22">&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="22" align="left" valign="baseline">
+                                        <input name="frm_DA_btnAdd" value="Add" type="button">
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
                     </tr>
+                </tbody></table>
+            </td>
+        </tr>
 
-                    <tr >
-                        <td  colspan="7">
+        
+        <tr>
+            <td colspan="2" valign="top">
+                <table border="0" cellspacing="6" width="100%">
+                    <tbody><tr>
+                        
+                     <td align="left" valign="baseline">
+                           <input name="frm_DA_btnRvd" value="Denial Reviewed" type="Submit">
+                      </td>
+                       <td style="background-color:#ffffff" nowrap="nowrap">
+                                    <!-- OVERRIDE -->
+
+                                    <span style="font-size:8pt">
+                                    </span>
+                        </td>
+      
+                    </tr>
+                    
+                    <tr>                        
+                        <td align="left" valign="top" width="45%">
                             <b>Account Comments</b>
                             <br>
-                            <textarea cols="50" rows="5" name="frm_AccountComments"></textarea>    
+                            <textarea name="frm_AccountComments" rows="8" cols="50"></textarea>    
                         </td>
-
-                        <td  colspan="7">
-                            <b>Instructions to Pricer</b>
+                        <td width="10%">
+                            &nbsp;
+                        </td>
+                        <td align="left" valign="top" width="45%">
+                            <b>Analyst/Pricer Comments</b>
                             <br>
-                            <textarea cols="50" rows="5" name="frm_InstPricer">Text</textarea>    
+                          <textarea name="frm_AnalystPricerComments" rows="8" cols="50"></textarea>    
                         </td>
                     </tr>
-                    </tbody></table>
+                </tbody></table>
+            </td>
+        </tr>
+
+
+    </tbody></table>   
+ 
 
     <input type="hidden" value="" id="frm_Action" name="frm_Action">    
     <input type="hidden" value="" id="frm_RowID" name="frm_RowID">
@@ -813,7 +1045,7 @@ hhf                                            <input type="hidden" value="hhf" 
       </div></div>
                                           
 </div> <!--end container-->
-
+     <div id="bottombanner"></div>
       </body>
 
   <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>

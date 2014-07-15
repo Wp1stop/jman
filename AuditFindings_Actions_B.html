@@ -31,32 +31,35 @@
         <li><a href="#">Worklist</a>
         <!-- First Tier Drop Down -->
         <ul>
-            <li><a href="#">Themes</a></li>
-            <li><a href="#">Plugins</a></li>
-            <li><a href="#">Tutorials</a></li>
-        </ul>        
+            <li><a href="#">Auditor Worklist</a></li>
+            <li><a href="#">Pricer Worklist</a></li>
+            <li><a href="#">Inventory Worklist</a></li>
+        </ul>          
         </li>
-        <li><a href="#">Account Import</a>
-        <li><a href="#">CDN Import</a>  
-        <li><a href="#">Admin</a>
+        <li><a href="#">Account Import</a></li>
+        <li><a href="#">CDN Import</a> </li> 
+           <li><a href="#">Admin</a> 
+               <ul>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Links</a></li>
+            <li><a href="#">Tutorials</a>
+            <!-- Second Tier Drop Down -->
+           
+            </li>
+        </ul>
+           </li>
+        <li><a href="#">Reports</a>
         <!-- First Tier Drop Down -->
         <ul>
             <li><a href="#">Resources</a></li>
             <li><a href="#">Links</a></li>
             <li><a href="#">Tutorials</a>
             <!-- Second Tier Drop Down -->
-            <ul>
-                <li><a href="#">HTML/CSS</a></li>
-                <li><a href="#">jQuery</a></li>
-                <li><a href="#">Other</a></li>
-            </ul>
+           
             </li>
         </ul>
         </li>
-        <li><a href="#">Graphic Design</a></li>
-        <li><a href="#">Inspiration</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About</a></li>
+        
     </ul>
 </nav><div id="uppernav">
 <a href="http://rmdwcdcdvm005.nyumc.org/RM/QA_Helpers" class="qautils">QA Utils</a>
@@ -107,6 +110,9 @@
    <div id="filecommands">
                                             <button type="submit" id="save" name="frm_Button" value="Save" style="width: 64px" /> Save</button><!-- onclick="javascript:submitForm();" -->
 
+
+                                             <button disabled="disabled" type="submit" name="frm_Button" value="Delete" style="width: 64px" />Delete</button>
+                                              <button disabled="disabled" type="submit" name="frm_Button" value="Open" style="width: 64px" />Open</button>
       <button disabled="disabled" type="submit" name="frm_Button" value="Unlock" style="width: 64px" />Unlock</button>
 
 </div>
@@ -744,7 +750,7 @@ hhf                                            <input type="hidden" value="hhf" 
 
       <div>
             <ul id="tabs">
-                <li id="tab1" class="active"> <a href="/RM/AuditFindings/Actions?a=P111111" id="Actions">Actions</a></li>
+                <li id="tab1"   class="active"> <a href="/RM/AuditFindings/Actions?a=P111111" id="Actions">Actions</a></li>
                 <li id="tab2"><a href="/RM/AuditFindings/Financials?a=P111111" id="Financials">Financials</a></li>
                 <li id="tab3"><a href="/RM/AuditFindings/Details?a=P111111" id="Details" >Details</a></li>
                 <li id="tab4"><a href="/RM/AuditFindings/Coding?a=P111111" id="Coding">Coding</a></li>
@@ -758,48 +764,249 @@ hhf                                            <input type="hidden" value="hhf" 
          <div id="detailsection">
   
          
-         
-    <table  class="tg">                                     
-           <tr id="detailsheader"> 		<th>Action</th>
-                        <th>Service Date</th>
-                        <th>Department<br>Cost Center</th>
-                        <th>CDM Description/<br>CDM Code</th>
-                        <th>Rev Code</th>
-                        <th>HCPCS</th>
-                        <th>Mod</th>
-                        <th>Unit Amount</th>
-                        <th>Qty</th>
-                        <th>U</th>
-                        <th>O</th>
-                        <th>P</th>
-                        <th>Total Amount</th>
-                        <th>Root Cause</th>
-                        <th>CE Comments</th>                        
-                    </tr>
-
-<tr><td class="tg-031e" ><a href="javascript: formAction('EDIT_ROW', 241793);" class="edit">Edit</a>&nbsp;<a href="javascript: formAction('DELETE_ROW', 241793);" class="delete">Delete</a></td><td class="tg-031e" >12/2/2013</td><td >RUSK SPEECH LANGUAGE PATHOLOGY<br>8RM111801</td><td ><br>6054446</td><td class="tg-031e" >272</td><td class="tg-031e" ></td><td class="tg-031e" ></td><td class="tg-031e" >$2.00 </td><td class="tg-031e" >2</td><td class="tg-031e" >X</td><td class="tg-031e" ></td><td class="tg-031e" ></td><td class="tg-031e" >$4.00 </td><td >Bundled Procedure</td><td ></td></tr><tr id="detailsheader"><td colspan="16"><b>Add New Item</b></td></tr><tr id="detailsheader"><td class="tg-031e" ><input type="hidden" value="0" name="frm_ID"><input type="hidden" value="11/01/2013" id="frm_Service_AdmitDate"><input type="hidden" value="11/01/2013" id="frm_Service_DischargeDate"><a href="javascript: formAction('UPDATE_ROW', 0);" class="update">Add Item</a><br><br><a href="javascript: formAction('CANCEL_ROW', 0);" class="delete">Cancel</a></td><td class="tg-031e" ><input type="text" value="12/2/2013" onblur="javascript:verifyDate(this);" name="frm_Row-0-ServiceDate" id="frm_Row-0-ServiceDate" style="width: 60px; text-align:right"></td><td class="tg-031e" ><select id="frm_Row-0-DeptID" name="frm_Row-0-DeptID"><option value="0">- select -</option><option value="140">RUSK 1N</option><option value="141">RUSK 1S</option><option value="142">RUSK 4W</option><option value="143">RUSK 5S</option><option value="144">RUSK HCC 9/CARDIAC REHAB</option><option value="145">RUSK IRM  ADULT CLINIC</option><option value="146">RUSK IRM  CARDIAC REHAB</option><option value="147">RUSK IRM  ORTHOTICS IMPLANTS</option><option value="148">RUSK IRM  PSYCHOLOGY</option><option value="149">RUSK IRM  PULMONARY SERVICES</option><option value="150">RUSK IRM  RECREATION THERAPY</option><option value="151">RUSK IRM  VOCATIONAL SERVICES</option><option value="152">RUSK IRM HEAD TRAUMA PROGRAM</option><option value="153">RUSK IRM ORTHOTICS</option><option value="154">RUSK IRM ORTHOTICS SUPPLIES</option><option value="155">RUSK IRM PHYSICAL THERAPY SUPPLIES</option><option value="156">RUSK MEDICAL SOCIAL WORK</option><option value="157">RUSK MUSCULAR DYSTROPHY CLINIC</option><option value="158">RUSK OT</option><option value="159">RUSK OT SUPPLIES</option><option value="160">RUSK PT</option><option value="161">RUSK SPEECH LANGUAGE PATHOLOGY</option><option value="202">TH ANESTHESIA</option><option value="215">TH CHEMISTRY LAB</option><option value="226">TH CYTOLOGY LAB</option><option value="230">TH ENDO/GI</option><option value="231">TH ENDO/GI IMPLANTS</option><option value="232">TH ENDO/GI SUPPLIES</option><option value="261">TH NON-INVASIVE CARDIOLOGY</option><option value="279">TH VASCULAR LAB</option><option value="280">TH X-RAY</option></select><div id="frm_Row-0-CostCenterName"></div></td>
-
-<td class="tg-031e" ><input type="text" name="frm_Row-0-CDMDescription" id="frm_Row-0-CDMDescription" style="width: 70px; text-align:left"><br><input type="text" name="frm_Row-0-CDMCode" id="frm_Row-0-CDMCode" style="width: 55px; text-align:right" onblur="javascript:runClientSearch(this.value, 0);"><a href="javascript: popupSearchCDM(0);"><img src="../Images/search_icon_1.png" style="border-style: none;"></a></td>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-                    <tr>
-                        <td colspan="15">
-                            <hr style="color:#cccccc">
-                        </td>                            
-                    </tr>
-
-                    <tr >
-                        <td  colspan="7">
-                            <b>Account Comments</b>
-                            <br>
-                            <textarea cols="50" rows="5" name="frm_AccountComments"></textarea>    
+               <div style="border-color: #dedbdb; border-style:solid; border-width: 1px;">
+                
+        <table bgcolor="#FFFFFF" border="0" width="80%">
+            <tbody><tr>
+                <td bgcolor="#FFFFFF" valign="top">                  
+                    <table border="0">
+                    <tbody><tr>
+                        <td class="style1">
+                            Not Auditing
                         </td>
-
-                        <td  colspan="7">
-                            <b>Instructions to Pricer</b>
-                            <br>
-                            <textarea cols="50" rows="5" name="frm_InstPricer">Text</textarea>    
+                        <td>  
+                                        <input id="frm_cbxNotAuditing" name="frm_cbxNotAuditing" onclick="javascript: manageCtlState();" value="1" type="checkbox">
+                        </td>
+                        <td class="style2">&nbsp;</td>
+                        <td>
+                            Reason
+                        </td>
+                        <td>                            
+<select disabled="" name="frm_List_NotAuditingReasonID" id="frm_List_NotAuditingReasonID"><option value="0">- select -</option><option value="4">Billing Time Frame Expired</option><option value="3">Case/Visit Canceled</option><option value="25">Charges captured on another HAR</option><option value="5">Converted to Inpatient</option><option value="1">Documentation Missing</option><option value="2">Incomplete Charge Posting</option><option value="24">Minimal Potential Incremental Revenue Impact</option><option value="26">Service provided in physican's office</option><option value="23">Unable to review within hold timeframe</option></select> 
+                        </td>   
+                    </tr>
+                    <tr>
+                        <td class="style1">
+                        Hold Placement Request
+                        </td>
+                        <td>
+                                        <input id="frm_cbxHoldPlacementRequest" name="frm_cbxHoldPlacementRequest" onclick="javascript: manageCtlState();" value="1" type="checkbox">
+                        </td>
+                        <td class="style2">&nbsp;</td>
+                        <td>
+                        Reason
+                        </td>
+                    <td>
+<select disabled="" name="frm_List_HoldPlacementReasonID" id="frm_List_HoldPlacementReasonID"><option value="0">- select -</option><option value="30">--test</option><option value="4">Audit in Progress</option><option value="3">Coding Pending</option><option value="1">Department Follow-Up </option><option value="2">Documentation Missing</option></select>                    </td>
+                    </tr>
+                    <tr>
+                        <td class="style1">
+                        Partial Billing Review
+                        </td>
+                        <td>
+                                        <input id="frm_cbxPartialBillingReview" name="frm_cbxPartialBillingReview" onclick="javascript: manageCtlState();" value="1" type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style1">
+                        Clean Claim
+                        </td>
+                        <td>
+                                        <input id="frm_cbxCleanClaim" name="frm_cbxCleanClaim" value="1" type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style1">
+                        Number Of Events
+                        </td>
+                        <td colspan="3">                        
+                                    <input id="frm_txtNumberOfEvents" name="frm_txtNumberOfEvents" maxlength="5" style="width: 20px" value="1" type="text">
                         </td>
                     </tr>
                     </tbody></table>
+                </td>
+                    
+                <td bgcolor="#FFFFFF" valign="top">                  
+                    <table align="center" bgcolor="#FFFFFF" border="0">
+                    <tbody><tr>
+                        <td class="style1" align="center" valign="middle">
+                            Denial Account&nbsp;
+                                        <input id="frm_cbxDenialAccount" name="frm_cbxDenialAccount" onclick="javascript: manageCtlState();" value="1" type="checkbox">
+                        </td>
+                        <td valign="middle">
+                            Reason&nbsp;&nbsp;                            
+<select disabled="" name="frm_List_DenialReasonID" id="frm_List_DenialReasonID"><option value="0">- select -</option><option value="2">Denial Reason B</option><option value="3">Denial Reason C</option><option value="4">Denial Reason D</option><option value="5">Denial Reason E</option><option value="8">Denial Reason F</option></select>                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="middle">
+
+                                    <input disabled="" id="frm_DenialResult1" name="frm_DenialResult" value="UPHELD" onclick="javascript: manageCtlState();" type="radio">&nbsp;Upheld&nbsp;&nbsp;&nbsp;&nbsp;<input disabled="" id="frm_DenialResult2" name="frm_DenialResult" value="APPEALED" onclick="javascript: manageCtlState();" type="radio">&nbsp;Appealed                        </td>
+                        <td valign="middle">
+                            Reason&nbsp;&nbsp;
+<select disabled="" name="frm_List_DenialResultReasonID" id="frm_List_DenialResultReasonID"><option value="0">- select -</option><option value="1">Denial Result Reason A</option><option value="2">Denial Result Reason B</option><option value="3">Denial Result Reason C</option><option value="4">Denial Result Reason D</option></select>                        </td>
+                    </tr>
+                    </tbody></table>                               
+                </td>
+
+            </tr>
+        </tbody></table> 
+    
+        <hr style="color:#cccccc">    
+
+        <div>
+            <table style="width:65%" bgcolor="#ffffff" cellspacing="2">
+            <tbody><tr>
+                <td width="60%">
+                    <table style="width:100%" border="0">
+                        <tbody><tr>
+                            <td colspan="3">
+                                <b>Financial Summary</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="50%">
+                            &nbsp;
+                            </td>
+                            <td align="center" width="25%">
+                                <b>Total Quantity</b>
+                            </td>
+                            <td align="center" width="25%">
+                                <b>Total Amount</b>
+                            </td>
+                        </tr>
+                            
+                        <tr>
+                            <td align="right">
+                                Total Over Charges
+                            </td>
+                            <td style="background-color:#dedbdb" align="right">
+1                            </td>
+                            <td style="background-color:#dedbdb" align="right">                                 
+($817.95)                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                Total Under Charges
+                            </td>
+                            <td style="background-color:#dedbdb" align="right">
+                                 
+8                            </td>
+                            <td style="background-color:#dedbdb" align="right">
+                                 
+$96.95                            </td>
+                        </tr>
+                        <tr><td>&nbsp;</td></tr>
+
+                            <tr>
+                            <td align="right">
+                                Pre Audit Carve Out Total Charges
+                            </td>
+                            <td style="background-color:#dedbdb" align="right">
+                                 
+$4,850.85                            </td>
+                            <td align="right">
+                                &nbsp;
+                            </td>
+                        </tr>
+                            <tr>
+                            <td align="right">
+                                Pre Audit Net Revenue for Carve Out Charges
+                            </td>
+                            <td style="background-color:#dedbdb" align="right">
+                                 
+$1,923.48                            </td>
+                            <td align="right">
+                                &nbsp;
+                            </td>
+                        </tr>
+                            <tr>
+                            <td align="right">
+                                Non Carve Out Total Charges
+                            </td>
+                            <td style="background-color:#dedbdb" align="right">
+                                 
+($4,001.73)                            </td>
+                            <td align="right">
+                                &nbsp;
+                            </td>
+                        </tr>
+                            <tr>
+                            <td align="right">
+                                Pre Audit Net Revenue for Non Carve Out Charges
+                            </td>
+                            <td style="background-color:#dedbdb" align="right">
+                                 
+$0.00                            </td>
+                            <td align="right">
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+                <td width="40%">
+                    <table style="width:100%">
+                        <tbody><tr>
+                            <td colspan="2" style="height: 48px">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" width="65%">
+                                Pre Audit Expected Reimbursement
+                            </td>
+                            <td style="background-color:#dedbdb" align="right" width="35%">                                
+$1,923.48                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" width="65%">
+                                Post Audit Revised Gross Charge
+                            </td>
+                            <td style="background-color:#dedbdb" align="right" width="35%">                                 
+$128.12                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" width="65%">
+                                Net Charge Adjustment
+                            </td>
+                            <td style="background-color:#dedbdb" align="right" width="35%">
+                                 
+($721.00)                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td align="right" width="65%">
+                                Final Reported Net Revenue Variance
+                            </td>
+                            <td style="background-color:#dedbdb" align="right" width="35%">
+$112,701.43                            </td>
+                        </tr>
+
+                        <tr>
+                            <td align="right" width="65%">
+                                Post Audit Total Expected Reimbursement
+                            </td>
+                            <td style="background-color:#dedbdb" align="right" width="35%">                                 
+$112,701.43                            </td>
+                        </tr>
+
+                        <tr>
+                            <td align="right" width="65%">
+                                % Net Revenue Variance
+                            </td>
+                            <td style="background-color:#dedbdb" align="right" width="35%">
+5,759.24%                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody></table>
+
+        </div>           
+
+        <input id="frm_ActiveTab" name="frm_ActiveTab" value="Actions" type="hidden">
+
+</div>
+ 
 
     <input type="hidden" value="" id="frm_Action" name="frm_Action">    
     <input type="hidden" value="" id="frm_RowID" name="frm_RowID">
@@ -813,7 +1020,7 @@ hhf                                            <input type="hidden" value="hhf" 
       </div></div>
                                           
 </div> <!--end container-->
-
+     <div id="bottombanner"></div>
       </body>
 
   <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
