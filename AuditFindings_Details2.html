@@ -247,8 +247,8 @@ hhf                                            <input type="hidden" value="hhf" 
 </div> <!--end row2 -->
 
     <div id="row3">
-            <div class="row3side">
-                <table style="width: 100%; height: 50px; border-color: #dedbdb; border-style: solid; border-width: 1px">
+            <div class="row3side ">
+                <table class="tabledata20" style="width: 100%; height: 50px; border-color: #dedbdb; border-style: solid; border-width: 1px">
                         <tbody><tr>
                             <th>Insurance Plan Name</th>
                             <td>
@@ -752,10 +752,10 @@ hhf                                            <input type="hidden" value="hhf" 
             <ul id="tabs">
                 <li id="tab1"> <a href="/RM/AuditFindings/Actions?a=P111111" id="Actions">Actions</a></li>
                 <li id="tab2"><a href="/RM/AuditFindings/Financials?a=P111111" id="Financials">Financials</a></li>
-                <li id="tab3"><a href="/RM/AuditFindings/Details?a=P111111" id="Details" >Details</a></li>
+                <li id="tab3"  class="active"><a href="/RM/AuditFindings/Details?a=P111111" id="Details" >Details</a></li>
                 <li id="tab4"><a href="/RM/AuditFindings/Coding?a=P111111" id="Coding">Coding</a></li>
                 <li id="tab5"><a href="/RM/AuditFindings/DenialsAppeals?a=P111111" id="DenialsAppeals">Denials/Appeals</a></li>
-                <li id="tab6"  class="active"><a href="/RM/AuditFindings/PaymentAnalysis?a=P111111" id="PaymentAnalysis">Payment Analysis</a></li>
+                <li id="tab6" ><a href="/RM/AuditFindings/PaymentAnalysis?a=P111111" id="PaymentAnalysis">Payment Analysis</a></li>
             </ul>
         </div>
 
@@ -789,7 +789,7 @@ hhf                                            <input type="hidden" value="hhf" 
 
 
 
-<tr><td class="tg-031e" ><input type="hidden" value="0" name="frm_ID"><input type="hidden" value="11/01/2013" id="frm_Service_AdmitDate"><input type="hidden" value="11/01/2013" id="frm_Service_DischargeDate"><a href="javascript: formAction('UPDATE_ROW', 0);" class="update">Update</a> <a class="delete" href="javascript: formAction('CANCEL_ROW', 0);">Cancel</a></td><td class="tg-031e" ><input type="text" value="12/2/2013" onblur="javascript:verifyDate(this);" name="frm_Row-0-ServiceDate" id="frm_Row-0-ServiceDate" style="width: 60px; text-align:right"></td><td class="tg-031e" ><select id="frm_Row-0-DeptID" name="frm_Row-0-DeptID"><option value="0">- select -</option><option value="140">RUSK 1N</option><option value="141">RUSK 1S</option><option value="142">RUSK 4W</option><option value="143">RUSK 5S</option><option value="144">RUSK HCC 9/CARDIAC REHAB</option><option value="145">RUSK IRM  ADULT CLINIC</option><option value="146">RUSK IRM  CARDIAC REHAB</option><option value="147">RUSK IRM  ORTHOTICS IMPLANTS</option><option value="148">RUSK IRM  PSYCHOLOGY</option><option value="149">RUSK IRM  PULMONARY SERVICES</option><option value="150">RUSK IRM  RECREATION THERAPY</option><option value="151">RUSK IRM  VOCATIONAL SERVICES</option><option value="152">RUSK IRM HEAD TRAUMA PROGRAM</option><option value="153">RUSK IRM ORTHOTICS</option><option value="154">RUSK IRM ORTHOTICS SUPPLIES</option><option value="155">RUSK IRM PHYSICAL THERAPY SUPPLIES</option><option value="156">RUSK MEDICAL SOCIAL WORK</option><option value="157">RUSK MUSCULAR DYSTROPHY CLINIC</option><option value="158">RUSK OT</option><option value="159">RUSK OT SUPPLIES</option><option value="160">RUSK PT</option><option value="161">RUSK SPEECH LANGUAGE PATHOLOGY</option><option value="202">TH ANESTHESIA</option><option value="215">TH CHEMISTRY LAB</option><option value="226">TH CYTOLOGY LAB</option><option value="230">TH ENDO/GI</option><option value="231">TH ENDO/GI IMPLANTS</option><option value="232">TH ENDO/GI SUPPLIES</option><option value="261">TH NON-INVASIVE CARDIOLOGY</option><option value="279">TH VASCULAR LAB</option><option value="280">TH X-RAY</option></select><div id="frm_Row-0-CostCenterName"></div></td>
+<tr ><td class="tg-031e" ><input type="hidden" value="0" name="frm_ID"><input type="hidden" value="11/01/2013" id="frm_Service_AdmitDate"><input type="hidden" value="11/01/2013" id="frm_Service_DischargeDate"><a href="javascript: formAction('UPDATE_ROW', 0);" class="update">Update</a> <a class="delete" href="javascript: formAction('CANCEL_ROW', 0);">Cancel</a></td><td class="tg-031e" ><input type="text" value="12/2/2013" onblur="javascript:verifyDate(this);" name="frm_Row-0-ServiceDate" id="frm_Row-0-ServiceDate" style="width: 60px; text-align:right"></td><td class="tg-031e" ><select id="frm_Row-0-DeptID" name="frm_Row-0-DeptID"><option value="0">- select -</option><option value="140">RUSK 1N</option><option value="141">RUSK 1S</option><option value="142">RUSK 4W</option><option value="143">RUSK 5S</option><option value="144">RUSK HCC 9/CARDIAC REHAB</option><option value="145">RUSK IRM  ADULT CLINIC</option><option value="146">RUSK IRM  CARDIAC REHAB</option><option value="147">RUSK IRM  ORTHOTICS IMPLANTS</option><option value="148">RUSK IRM  PSYCHOLOGY</option><option value="149">RUSK IRM  PULMONARY SERVICES</option><option value="150">RUSK IRM  RECREATION THERAPY</option><option value="151">RUSK IRM  VOCATIONAL SERVICES</option><option value="152">RUSK IRM HEAD TRAUMA PROGRAM</option><option value="153">RUSK IRM ORTHOTICS</option><option value="154">RUSK IRM ORTHOTICS SUPPLIES</option><option value="155">RUSK IRM PHYSICAL THERAPY SUPPLIES</option><option value="156">RUSK MEDICAL SOCIAL WORK</option><option value="157">RUSK MUSCULAR DYSTROPHY CLINIC</option><option value="158">RUSK OT</option><option value="159">RUSK OT SUPPLIES</option><option value="160">RUSK PT</option><option value="161">RUSK SPEECH LANGUAGE PATHOLOGY</option><option value="202">TH ANESTHESIA</option><option value="215">TH CHEMISTRY LAB</option><option value="226">TH CYTOLOGY LAB</option><option value="230">TH ENDO/GI</option><option value="231">TH ENDO/GI IMPLANTS</option><option value="232">TH ENDO/GI SUPPLIES</option><option value="261">TH NON-INVASIVE CARDIOLOGY</option><option value="279">TH VASCULAR LAB</option><option value="280">TH X-RAY</option></select><div id="frm_Row-0-CostCenterName"></div></td>
 
 
 
@@ -803,30 +803,22 @@ hhf                                            <input type="hidden" value="hhf" 
  <td class="tg-031e"><input onclick="javascript:updateTotal(0);" name="frm_Row-0-ChargeType" id="frm_Row-0-ChargeType-P" value="POTENTIAL" type="radio"> </td>
  <td class="tg-031e"><input onblur="javascript:updateTotal(0);" style="width: 60px; text-align:right" name="frm_Row-0-TotalAmount" id="frm_Row-0-TotalAmount" type="text"></td>
  <td class="tg-031e"><select name="frm_Row-0-RootCause" id="frm_Row-0-RootCause"><option value="0">- select -</option><option value="63">--INVALID ROOT CAUSE123--</option><option value="61">_NONE_</option><option value="1">Adjustment Drug/Supply Quantity</option><option value="2">Adjustment Time</option><option value="4">Anesthesia Drug Bundled</option><option value="6">Bundled Procedure</option><option value="8">Data Entry Error</option><option value="9">Duplicate Charge</option><option value="55">IR Superbill</option><option value="12">IV Start/Stop Time Missing</option><option value="14">No MD Order</option><option value="15">No Supporting Documentation</option><option value="16">Not Chargeable</option><option value="17">Omitted Charges</option><option value="19">Other (charge error comments required)</option><option value="20">Pharmacy Error</option><option value="25">Service/Procedure Not Performed</option><option value="26">Time Calculation Error</option><option value="27">Unable to Administer Meds</option><option value="28">Unbundled Service</option><option value="29">Update CDM/Charge Code</option><option value="56">Willow Charge Configuration Issue</option></select></td>
- <td class="tg-031e"><input style="width: 125px;" name="frm_Row-0-Comments" id="frm_Row-0-Comments" type="text"> </td></tr>
-                    <tr>
-                        <td colspan="15">
-                            <hr style="color:#cccccc">
-                              
-                        </td>                            
-                    </tr>
-                        <tr>
-                             <td colspan="15">
-                        <button type="submit" name="frm_btnPrint" value="Print" id="add">Add</button>
-                              
-                        </td> 
-                        </tr>
+ <td class="tg-031e"><input style="width: 50px;" name="frm_Row-0-Comments" id="frm_Row-0-Comments" type="text"> 
+ <br> <button style="position:absolute;" type="submit" name="frm_btnPrint" value="Print" id="add">Add</button> </td></tr>
+                  
+                        
                     <tr >
-                        <td  colspan="7">
+                        <td  colspan="15">
+                        <div style="float:left;width:50%;">
                             <b>Account Comments</b>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
                             <br>
                             <textarea cols="50" rows="5" name="frm_AccountComments"></textarea>    
-                        </td>
-
-                        <td  colspan="7">
+                            </div>
+                             <div style="float:right;width:50%; ">
                             <b>Instructions to Pricer</b>
                             <br>
-                            <textarea cols="50" rows="5" name="frm_InstPricer">Text</textarea>    
+                            <textarea cols="50" rows="5" name="frm_InstPricer">Text</textarea> 
+                             </div>   
                         </td>
                     </tr>
                     </tbody></table>

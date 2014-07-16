@@ -764,9 +764,9 @@ hhf                                            <input type="hidden" value="hhf" 
          <div id="detailsection">
   
          
-               <div style="border-color: #dedbdb; border-style:solid; border-width: 1px;">
+               <div >
                 
-        <table bgcolor="#FFFFFF" border="0" width="80%">
+        <table class="tg" bgcolor="#FFFFFF" border="0" width="80%">
             <tbody><tr>
                 <td bgcolor="#FFFFFF" valign="top">                  
                     <table border="0">
@@ -827,12 +827,13 @@ hhf                                            <input type="hidden" value="hhf" 
                 </td>
                     
                 <td bgcolor="#FFFFFF" valign="top">                  
-                    <table align="center" bgcolor="#FFFFFF" border="0">
+                    <table class="bolder" align="center" bgcolor="#FFFFFF" border="0">
                     <tbody><tr>
-                        <td class="style1" align="center" valign="middle">
+                        <td class="style1" align="center" >
                             Denial Account&nbsp;
                                         <input id="frm_cbxDenialAccount" name="frm_cbxDenialAccount" onclick="javascript: manageCtlState();" value="1" type="checkbox">
                         </td>
+                        <td valign="middle" style="width:100px;">  </td>
                         <td valign="middle">
                             Reason&nbsp;&nbsp;                            
 <select disabled="" name="frm_List_DenialReasonID" id="frm_List_DenialReasonID"><option value="0">- select -</option><option value="2">Denial Reason B</option><option value="3">Denial Reason C</option><option value="4">Denial Reason D</option><option value="5">Denial Reason E</option><option value="8">Denial Reason F</option></select>                        </td>
@@ -841,6 +842,8 @@ hhf                                            <input type="hidden" value="hhf" 
                         <td valign="middle">
 
                                     <input disabled="" id="frm_DenialResult1" name="frm_DenialResult" value="UPHELD" onclick="javascript: manageCtlState();" type="radio">&nbsp;Upheld&nbsp;&nbsp;&nbsp;&nbsp;<input disabled="" id="frm_DenialResult2" name="frm_DenialResult" value="APPEALED" onclick="javascript: manageCtlState();" type="radio">&nbsp;Appealed                        </td>
+                            <td valign="middle">  </td>
+                        
                         <td valign="middle">
                             Reason&nbsp;&nbsp;
 <select disabled="" name="frm_List_DenialResultReasonID" id="frm_List_DenialResultReasonID"><option value="0">- select -</option><option value="1">Denial Result Reason A</option><option value="2">Denial Result Reason B</option><option value="3">Denial Result Reason C</option><option value="4">Denial Result Reason D</option></select>                        </td>
@@ -854,16 +857,16 @@ hhf                                            <input type="hidden" value="hhf" 
         <hr style="color:#cccccc">    
 
         <div>
-            <table style="width:65%" bgcolor="#ffffff" cellspacing="2">
+            <table class="tg" style="width:65%" bgcolor="#ffffff" cellspacing="2">
             <tbody><tr>
                 <td width="60%">
                     <table style="width:100%" border="0">
-                        <tbody><tr>
+                        <tbody><tr id="detailsheader">
                             <td colspan="3">
                                 <b>Financial Summary</b>
                             </td>
                         </tr>
-                        <tr>
+                        <tr id="detailsheader">
                             <td width="50%">
                             &nbsp;
                             </td>
@@ -884,7 +887,7 @@ hhf                                            <input type="hidden" value="hhf" 
                             <td style="background-color:#dedbdb" align="right">                                 
 ($817.95)                            </td>
                         </tr>
-                        <tr>
+                        <tr id="detailsheader">
                             <td align="right">
                                 Total Under Charges
                             </td>
@@ -897,7 +900,7 @@ $96.95                            </td>
                         </tr>
                         <tr><td>&nbsp;</td></tr>
 
-                            <tr>
+                            <tr id="detailsheader">
                             <td align="right">
                                 Pre Audit Carve Out Total Charges
                             </td>
@@ -930,7 +933,7 @@ $1,923.48                            </td>
                                 &nbsp;
                             </td>
                         </tr>
-                            <tr>
+                            <tr id="detailsheader">
                             <td align="right">
                                 Pre Audit Net Revenue for Non Carve Out Charges
                             </td>
@@ -944,27 +947,27 @@ $0.00                            </td>
                     </tbody></table>
                 </td>
                 <td width="40%">
-                    <table style="width:100%">
-                        <tbody><tr>
+                    <table style="width:96%" >
+                        <tbody><tr id="detailsheader">
                             <td colspan="2" style="height: 48px">
                                 &nbsp;
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="borderleft" >
                             <td align="right" width="65%">
                                 Pre Audit Expected Reimbursement
                             </td>
                             <td style="background-color:#dedbdb" align="right" width="35%">                                
 $1,923.48                            </td>
                         </tr>
-                        <tr>
+                        <tr class="borderleft">
                             <td align="right" width="65%">
                                 Post Audit Revised Gross Charge
                             </td>
                             <td style="background-color:#dedbdb" align="right" width="35%">                                 
 $128.12                            </td>
                         </tr>
-                        <tr>
+                        <tr class="borderleft">
                             <td align="right" width="65%">
                                 Net Charge Adjustment
                             </td>
@@ -973,7 +976,7 @@ $128.12                            </td>
 ($721.00)                            </td>
                         </tr>
                         
-                        <tr>
+                        <tr class="borderleft">
                             <td align="right" width="65%">
                                 Final Reported Net Revenue Variance
                             </td>
@@ -981,7 +984,7 @@ $128.12                            </td>
 $112,701.43                            </td>
                         </tr>
 
-                        <tr>
+                        <tr class="borderleft">
                             <td align="right" width="65%">
                                 Post Audit Total Expected Reimbursement
                             </td>
@@ -989,7 +992,7 @@ $112,701.43                            </td>
 $112,701.43                            </td>
                         </tr>
 
-                        <tr>
+                        <tr id="detailsheader" class="borderleft" >
                             <td align="right" width="65%">
                                 % Net Revenue Variance
                             </td>

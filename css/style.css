@@ -134,6 +134,22 @@ min-height: 150px;
 
 #row1 {height:160px;}
 
+body.worklist  #row1 {
+
+
+height:220px;}
+
+ body.worklist  #row2 {
+
+
+height:60px;}
+
+
+#pworklist_length {
+width:40%;
+float:left;
+}
+
 #row3 {
   height:80px;
 }
@@ -148,7 +164,7 @@ min-height: 150px;
 .tabledata30 {width:30%; margin:0 10px 0 0; float:left;} 
 
 
-#row2 .tabledata20 {
+#row2 .tabledata20, #row3 .tabledata20 {
  margin-left:10px;
 }
 
@@ -179,7 +195,7 @@ margin: 0 0 0 50px;
 
 
 .who {
-padding: 0px 30px 3px 20px;
+padding: 0px 30px 3px 10px;
 margin: 0px 0 0 0;
 width: 400px;
  vertical-align:text-top;
@@ -250,8 +266,12 @@ li#tab3 {
 }
 
 .row3side {
-width:48%;float:left;border-right:4px solid #FFFFFF;
+width:48%;float:left;
 
+}
+
+#frm_OriginalGrossCharge {
+margin-left:20px;
 }
 
 .row3side2 {
@@ -423,6 +443,20 @@ input[type="radio"] {
 }
 
 
+.bolder {
+font-weight:bold;
+}
+
+
+td.style1 {
+line-height:10px;
+}
+
+ tr .borderleft{
+border-left:1px solid #000000;
+}
+
+
 .tg  {border-collapse:collapse;border-spacing:0; width:100%;}
-.tg td{font-family:Arial, sans-serif;font-size:12px;padding:10px 5px;overflow:hidden;word-break:normal;}
+.tg td{font-family:Arial, sans-serif;font-size:12px;padding:10px 5px 10px 5px;overflow:hidden;word-break:normal;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;overflow:hidden;word-break:normal;}
